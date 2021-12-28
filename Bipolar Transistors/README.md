@@ -31,4 +31,22 @@ Therefore, carriers injected from a nearby emitter junction can result in a larg
 The following figure shows the various current components in an ideal p-n-p transistor biased in the active mode. Note that we assume that there are no generation-recombination currents in the depletion regions. The holes injected from the emitter constitute the current I<sub>Ep</sub> which is the largest current component in a well-designed transistor. Most of the injected holes will reach the collector junction and give rise to the current I<sub>Cp</sub>. There are three base current components, labeled I<sub>BB</sub>, I<sub>En</sub>, and I<sub>Cn</sub>. I<sub>BB</sub> corresponds to electrons that must
 be supplied by the base to replace electrons recombined with the injected holes (i.e., I<sub>BB</sub> = I<sub>Ep</sub> - I<sub>Cp</sub>). I<sub>En</sub> corresponds to the current arising from electrons being injected from the base to the emitter. However, I<sub>En</sub> is not desirable. It can be minimized by using heavier emitter doping or a heterojunction. I<sub>Cn</sub> corresponds to thermally generated electrons that are near the base-collector junction edge and drift from the collector to the base. As indicated in the figure, the direction of the electron current is opposite the direction of the electron flow.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/curr_BT.png)
+
+We can now express the terminal currents in terms of the various current components described above:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_E%20%3D%20I_%7BEp%7D%20&plus;%20I_%7BEn%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20I_C%20%3D%20I_%7BCp%7D%20&plus;%20I_%7BCn%7D%20%5C%5C%5C%5C%20I_B%20%3D%20I_E%20-%20I_C%20%3D%20%28I_%7BEp%7D%20-%20I_%7BCp%7D%29%20&plus;%20%28I_%7BEn%7D%20-%20I_%7BCn%7D%29)
+
+An important parameter in the characterization of bipolar transistors is the common-base current gain α<sub>0</sub>. This quantity is defined by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Calpha_0%20%5Cequiv%20%5Cfrac%7BI_%7BCp%7D%7D%7BI_E%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%5Calpha_0%20%3D%20%5Cfrac%7BI_%7BCp%7D%7D%7BI_%7BEp%7D&plus;I_%7BEn%7D%7D%20%3D%20%28%5Cfrac%7BI_%7BEp%7D%7D%7BI_%7BEp%7D&plus;I_%7BEn%7D%7D%29%28%5Cfrac%7BI_%7BCp%7D%7D%7BI_%7BEp%7D%7D%29)
+
+The first term on the right-hand side is called the emitter efficiency γ, which is a measure of the injected hole current compared with the total emitter current. The first term on the right-hand side is called the emitter efficiency γ, which is a measure of the injected hole current compared with the total emitter current. Therefore:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cgamma%20%3D%20%5Cfrac%7BI_%7BEp%7D%7D%7BI_E%7D%20%3D%20%5Cfrac%7BI_%7BEp%7D%7D%7BI_%7BEp%7D&plus;I_%7BEn%7D%7D%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5Calpha_T%20%3D%20%5Cfrac%7BI_%7BCp%7D%7D%7BI_%7BEp%7D%7D%20%5C%5C%5C%5C%20%5Calpha_0%20%3D%20%5Cgamma%20%5Calpha%20_T)
+
+For a well-designed transistor, because I<sub>Ep</sub> is small compared with I<sub>Ep</sub> and I<sub>Cp</sub> is close to I<sub>Ep</sub>, both γ and α<sub>T</sub>, approach unity. Therefore, α<sub>0</sub> is close to 1. We can express the collector current in terms of α<sub>0</sub>. The collector current can be described by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_C%20%3D%20%5Calpha%20_0I_E%20&plus;%20I_%7BCn%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20I_C%20%3D%20%5Calpha%20_0I_E%20&plus;%20I_%7BCBO%7D)
+
+where I<sub>Cn</sub> corresponds to the collector-base current flowing with the emitter open-circuited ( I<sub>E</sub> = 0). We designate I<sub>Cn</sub> as I<sub>CBO</sub>, where the first two subscripts (CB) refer to the two terminals between which the current (or voltage) is measured and the third subscript (O) refers to the state of the third terminal with respect to the second. In the present case, I<sub>CBO</sub> designates the leakage current between the collector and the base with the emitter-base junction open.
