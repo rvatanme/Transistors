@@ -56,3 +56,17 @@ In this section, we study the static current-voltage characteristics for an idea
 
 To derive the current-voltage expression for an ideal transistor, we assume the following: 1) The device has uniform doping in each region. 2) The hole drift current in the base region as well as the collector saturation current is negligible. 3) There is low-level injection. 4) There are no generation-combination currents in the depletion regions. 5) There are no series resistances in the device. Basically, we assume that holes are injected from the emitter into the base under forward-biased condition. These holes then diffuse across the base region and reach the collector junction. Once we determine the minority-carrier distribution (i.e., holes in the n-type base region), we can obtain the current from the minority-carrier gradient.
 
+The minority-carrier distribution in the neutral base region can be described by the field-free, steady-state continuity equation:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20D_p%28%5Cfrac%7Bd%5E2p_n%7D%7Bdx%5E2%7D%29%20-%20%5Cfrac%7Bp_n%20-%20p_%7Bn0%7D%7D%7B%5Ctau%20_p%7D%20%3D%200)
+
+where D<sub>p</sub>  and τ<sub>p</sub>  are the diffusion constant and the lifetime of minority carriers, respectively. The general solution of the above equation is:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20p_n%28x%29%20%3D%20p_%7Bn0%7D%20&plus;%20C_1e%5E%7Bx/L_p%7D%20&plus;%20C_2e%5E%7B-%5Cfrac%7Bx%7D%7BL_p%7D%7D%20%5C%5C%5C%5C%20p_n%280%29%20%3D%20p_%7Bn0%7Dexp%28%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20p_n%28W%29%20%3D%200)
+
+where Lp = (D<sub>p</sub>τ<sub>p</sub>)^0.5 the diffusion length of holes. The constants C, and C, can be determined by the above given boundary conditions for the active mode. The first boundary condition states that under forward bias, the minority-carrier concentration at the edge of the emitter-base depletion region (x = 0) is increased above the equilibrium value by the exponential factor exp(qVEB/kT). The second boundary condition states that under reverse bias, the minority carrier concentration at the edge of the base-collector depletion region (x = W) is zero. By applying the boundary conditions and using the approximation of sinh(W/Lp) = W/Lp where W/Lp close to zero, then the carrier distribution is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20p_n%28x%29%20%3D%20p_%7Bn0%7De%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D%281-%5Cfrac%7Bx%7D%7BW%7D%29%20%3D%20p_n%280%29%281-%5Cfrac%7Bx%7D%7BW%7D%29)
+
+The distribution approaches a straight line. The approximation is reasonable because the width of the base region is designed to be much smaller than the diffusion length of the minority carrier. Note that assuming linear minority-carrier distribution can simplify the derivation of current-voltage characteristics.
+
