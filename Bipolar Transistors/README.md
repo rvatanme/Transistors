@@ -16,4 +16,4 @@ An idealized, one-dimensional structure of a p-n-p bipolar transistor is shown i
 
 The following figure a show an idealized p-n-p transistor in thermal equilibrium, that is, where all three leads are connected together or all are grounded. The depletion regions near the two junctions are illustrated by colored areas. Figure b shows the impurity densities in the three doped regions, where the emitter is more heavily doped than the collector. However, the base doping is less than the emitter doping, but greater than the collector doping. Figure c shows the corresponding electric-field profiles in the two depletion regions. Figure d illustrates the energy band diagram, which is a simple extension of the thermal-equilibrium situation for the p-n junction as applied to a pair of closely coupled p<sup>+</sup>-n and n-p junctions. At thermal equilibrium there is no net current flow, hence the Fermi level is a constant in the regions.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/pnp-sche.png)
