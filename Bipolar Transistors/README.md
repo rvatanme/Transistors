@@ -80,3 +80,10 @@ where n<sub>EO</sub> and n<sub>CO</sub> are the equilibrium electron concentrati
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20n_E%28x%29%20%3D%20n_%7BEO%7D%20&plus;%20n_%7BEO%7D%28e%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D-1%29e%5E%7B%5Cfrac%7Bx&plus;x_E%7D%7BL_E%7D%7D%20%5C%5C%5C%5C%20n_C%28x%29%20%3D%20n_%7BCO%7D%20&plus;%20n_%7BCO%7De%5E%7B-%5Cfrac%7Bx-x_C%7D%7BL_C%7D%7D%3D0)
 
+Once the minority-carrier distributions are known, the various current components shown can be calculated. The hole current I<sub>Ep</sub>, injected from the emitter at x = 0, is proportional to the gradient of the minority carrier concentration. For W/Lp << 1, the hole current I<sub>Ep</sub> at x = 0, I<sub>Cp</sub> at x = W, I<sub>En</sub> at -x<sub>E</sub> and I<sub>Cn</sub> at x<sub>C</sub> are first derived and then using those expression, I<sub>E</sub>, I<sub>C</sub> and I<sub>B</sub> are obtained as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_E%20%3D%20a_%7B11%7D%28e%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D-1%29%20&plus;%20a_%7B12%7D%20%5C%5C%5C%5C%20I_C%20%3D%20a_%7B21%7D%28e%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D-1%29%20&plus;%20a_%7B22%7D%20%5C%5C%5C%5C%20I_B%20%3D%20%28a_%7B11%7D-a_%7B21%7D%29%28e%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D-1%29%20&plus;%20%28a_%7B12%7D-a_%7B22%7D%29)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20a_%7B11%7D%20%5Cequiv%20qA%28%5Cfrac%7BD_pp_%7Bn0%7D%7D%7BW%7D%20&plus;%20%5Cfrac%7BD_En_%7BEO%7D%7D%7BL_E%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3Ba_%7B12%7D%20%5Cequiv%20%5Cfrac%7BqAD_pp_%7Bn0%7D%7D%7BW%7D%20%5C%5C%5C%5C%5C%5C%20a_%7B21%7D%20%5Cequiv%20%5Cfrac%7BqAD_pp_%7Bn0%7D%7D%7BW%7D%20%5C%3B%5C%3B%5C%3B%5C%3Ba_%7B22%7D%20%5Cequiv%20qA%28%5Cfrac%7BD_pp_%7Bn0%7D%7D%7BW%7D%20&plus;%20%5Cfrac%7BD_Cn_%7BCO%7D%7D%7BL_C%7D%29)
+
+where D<sub>E</sub> and D<sub>C</sub> are the diffusion constants in the emitter and collector, respectively. From these discussions, we see that the currents in the three terminals of a transistor are mainly determined by the minority carrier distribution in the base region. Once we derive the current components, the common-base current gain α<sub>0</sub>, can be obtained.
