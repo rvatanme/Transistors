@@ -70,4 +70,13 @@ where Lp = (D<sub>p</sub>τ<sub>p</sub>)^0.5 the diffusion length of holes. The 
 
 The distribution approaches a straight line. The approximation is reasonable because the width of the base region is designed to be much smaller than the diffusion length of the minority carrier. The following figure shows a linear minority-carrier distribution in a typical transistor operated under active mode.Note that assuming linear minority-carrier distribution can simplify the derivation of current-voltage characteristics.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Car_dis.png)
+
+The minority-carrier distributions in the emitter and collector can be obtained in a manner similar to the one used to obtain the distributions for the base region. In the above figure, the boundary conditions in the neutral emitter and collector regions are:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20n_E%28x%3D-x_E%29%20%3D%20n_%7BEO%7De%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D%20%5C%5C%5C%5C%20n_C%28x%3Dx_C%29%20%3D%20n_%7BCO%7De%5E%7B-q%7CV_%7BCB%7D%7C%7D%3D0)
+
+where n<sub>EO</sub> and n<sub>CO</sub> are the equilibrium electron concentrations in the emitter and collector, respectively. We assume that the emitter depth and the collector depth are much larger than their corresponding diffusion lengths L<sub>E</sub> and L<sub>C</sub>, respectively. Substituting these boundary conditions into expressions similar to:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20n_E%28x%29%20%3D%20n_%7BEO%7D%20&plus;%20n_%7BEO%7D%28e%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D-1%29e%5E%7B%5Cfrac%7Bx&plus;x_E%7D%7BL_E%7D%7D%20%5C%5C%5C%5C%20n_C%28x%29%20%3D%20n_%7BCO%7D%20&plus;%20n_%7BCO%7De%5E%7B-%5Cfrac%7Bx-x_C%7D%7BL_C%7D%7D%3D0)
+
