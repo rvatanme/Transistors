@@ -50,3 +50,9 @@ For a well-designed transistor, because I<sub>Ep</sub> is small compared with I<
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_C%20%3D%20%5Calpha%20_0I_E%20&plus;%20I_%7BCn%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20I_C%20%3D%20%5Calpha%20_0I_E%20&plus;%20I_%7BCBO%7D)
 
 where I<sub>Cn</sub> corresponds to the collector-base current flowing with the emitter open-circuited ( I<sub>E</sub> = 0). We designate I<sub>Cn</sub> as I<sub>CBO</sub>, where the first two subscripts (CB) refer to the two terminals between which the current (or voltage) is measured and the third subscript (O) refers to the state of the third terminal with respect to the second. In the present case, I<sub>CBO</sub> designates the leakage current between the collector and the base with the emitter-base junction open.
+
+## Static Characteristics of BT
+In this section, we study the static current-voltage characteristics for an ideal transistor and derive equations for the terminal currents. The current equations are based on the minority-carrier concentration in each region and therefore are described by semiconductor parameters such as doping and minority-carrier lifetime.
+
+To derive the current-voltage expression for an ideal transistor, we assume the following: 1) The device has uniform doping in each region. 2) The hole drift current in the base region as well as the collector saturation current is negligible. 3) There is low-level injection. 4) There are no generation-combination currents in the depletion regions. 5) There are no series resistances in the device. Basically, we assume that holes are injected from the emitter into the base under forward-biased condition. These holes then diffuse across the base region and reach the collector junction. Once we determine the minority-carrier distribution (i.e., holes in the n-type base region), we can obtain the current from the minority-carrier gradient.
+
