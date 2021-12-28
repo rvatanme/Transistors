@@ -68,5 +68,6 @@ where Lp = (D<sub>p</sub>τ<sub>p</sub>)^0.5 the diffusion length of holes. The 
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20p_n%28x%29%20%3D%20p_%7Bn0%7De%5E%7B%5Cfrac%7BqV_%7BEB%7D%7D%7BkT%7D%7D%281-%5Cfrac%7Bx%7D%7BW%7D%29%20%3D%20p_n%280%29%281-%5Cfrac%7Bx%7D%7BW%7D%29)
 
-The distribution approaches a straight line. The approximation is reasonable because the width of the base region is designed to be much smaller than the diffusion length of the minority carrier. Note that assuming linear minority-carrier distribution can simplify the derivation of current-voltage characteristics.
+The distribution approaches a straight line. The approximation is reasonable because the width of the base region is designed to be much smaller than the diffusion length of the minority carrier. The following figure shows a linear minority-carrier distribution in a typical transistor operated under active mode.Note that assuming linear minority-carrier distribution can simplify the derivation of current-voltage characteristics.
 
+![]()
