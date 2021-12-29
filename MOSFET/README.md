@@ -18,4 +18,4 @@ It is important also to point out the nature of the channel in more details. Acc
 sumed by the surface depletion layer. In the FET family, MESFETs and JFETs are always buried-channel devices, while MODFETs are surface-channel devices.
 MOSFETs and MISFETs can have both kinds of channels in parallel, but in practice, they are mostly surface-channel devices.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/channel.png)
