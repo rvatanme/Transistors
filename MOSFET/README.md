@@ -124,4 +124,10 @@ where μ is the low-field mobility. The value of n changes the shape of the curv
 
 To derive the I-V characteristics it is important to know the ν-ξ relationship (the following figure). We find that mathematically, for the above equation with n=2, the analysis is rather complicated. Fortunately for the cases of two-piece linear approximation (following figure) and the above equation with n=1, the mathematics is manageable and simple solutions can be obtained. Since these two extremes mostly cover the realistic bounds for different kinds of carriers, we will consider both assumptions.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/nu_xi_rela.png)
+
+Field-Dependent Mobility: Two-Piece Linear Approximation: In the two-piece linear approximation, the constant-mobility model is valid up to the point when the maximum field near the drain exceeds ξ<sub>c</sub>. Conversely, Eq. 2 is valid up to a new V<sub>Dsat</sub> value which occurs earlier than the constant-mobility model, so the only task is to find the new V<sub>Dsat</sub> which is given by:
+
 ![]()
+
+Since VDsat here is always smaller than (VG - VT)/M, the field-dependent mobility always gives a lower IDsat.
