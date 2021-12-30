@@ -69,13 +69,13 @@ This final form will be used as the channel charge responsible for the current c
 For deriving the basic MOSFET I-V characteristics, we assume 1) there are no interface traps and mobile oxide charge in the gate structure 2) only drift current exists 3) doping in the chanel is uniform 4) reverse leakage current is negligable 5) the transverse field (field in the x-direction) is much larger than longitudinal field (field in the y-direction). This last condition corresponds to the so-called gradual-channel approximation. Note that in
 condition 1 , the requirements of zero fixed oxide charge and work-function difference are removed, and their effects are included in a flat-band voltage V<sub>FB</sub> required by the gate to produce the flat-band condition. Consequently V<sub>G</sub> is replaced by V<sub>G</sub> - VV<sub>FB</sub> for the inversion charge, giving:
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20%5BV_G-V_%7BFB%7D-%28%5CDelta%5Cpsi_i%28y%29&plus;2%5Cpsi_B%29%5DC_%7Box%7D%20%5C%5C%5C%5C%20-%5Csqrt%7B2%5Cepsilon_sqN_A%28%5CDelta%5Cpsi_i%28y%29&plus;2%5Cpsi_B%29%7D)
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20%5BV_G-V_%7BFB%7D-%28%5CDelta%5Cpsi_i%28y%29&plus;2%5Cpsi_B%29%5DC_%7Box%7D%20%5C%5C%5C%5C%20-%5Csqrt%7B2%5Cepsilon_sqN_A%28%5CDelta%5Cpsi_i%28y%29&plus;2%5Cpsi_B%29%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20%281%29)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%28y%29%20%3D%20Z%7CQ_n%28y%29%7C%5Cnu%28y%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20I_D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cint_%7B0%7D%5E%7BL%7D%7CQ_n%28y%29%7C%5Cnu%28y%29dy)
 
 where ν(y) is the average carrier velocity. The carrier velocity ν(y) is a function of the y-position since the longitudinal field χ<sub>y</sub>(y) is a variable. Because of this, the relationship between ν(y) and χ<sub>y</sub>(y) is important to evaluate the above equation. We first consider the case where χ<sub>y</sub>(y) is low such that the mobility is constant (for shorter channel lengths, higher field causes velocity saturation and ultimately ballistic transport). Under this assumption, the above equation is simplified to:
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%3D%5Cfrac%7BZ%7D%7BL%7D%5Cmu_nC_%7Box%7D%5C%7B%20%28V_G-V_%7BFB%7D-2%5Cpsi_B-%5Cfrac%7BV_D%7D%7B2%7D%29V_D%20%5C%5C%5C%5C%20-%5Cfrac%7B2%7D%7B3%7D%5Cfrac%7B%5Csqrt%7B2%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D%5B%28V_D&plus;2%5Cpsi_B%29%5E%7B3/2%7D-%282%5Cpsi_B%29%5E%7B3/2%7D%5D%5C%7D)
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%3D%5Cfrac%7BZ%7D%7BL%7D%5Cmu_nC_%7Box%7D%5C%7B%20%28V_G-V_%7BFB%7D-2%5Cpsi_B-%5Cfrac%7BV_D%7D%7B2%7D%29V_D%20%5C%5C%5C%5C%20-%5Cfrac%7B2%7D%7B3%7D%5Cfrac%7B%5Csqrt%7B2%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D%5B%28V_D&plus;2%5Cpsi_B%29%5E%7B3/2%7D-%282%5Cpsi_B%29%5E%7B3/2%7D%5D%5C%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
 
 The above equation predicts that for a given V, the drain current first increases linearly with drain voltage (the linear region), then gradually levels off (the nonlinear region), and finally approaching a saturated value (the saturation region). A qualitative discussion of the device operation can be helpful, with the aid of the following Fig. 
 
@@ -92,14 +92,14 @@ We shall now consider the current equations for the three cases of linear, non-l
 
 where V<sub>T</sub> is the threshold voltage. 
 
-The pinch-off point occurs because the relative voltage between the gate and the semiconductor is reduced. The drain voltage and the drain current at this point are designated as V<sub>Dsat</sub> and I<sub>Dsat</sub> respectively. Beyond the pinch-off point the current remains independent of V<sub>D</sub> and we have the saturation region. The value of V<sub>Dsat</sub> is obtained from Eq. 20 under the condition Q<sub>n</sub>(L) = 0. The solution yields:
+The pinch-off point occurs because the relative voltage between the gate and the semiconductor is reduced. The drain voltage and the drain current at this point are designated as V<sub>Dsat</sub> and I<sub>Dsat</sub> respectively. Beyond the pinch-off point the current remains independent of V<sub>D</sub> and we have the saturation region. The value of V<sub>Dsat</sub> is obtained from Eq. 1 under the condition Q<sub>n</sub>(L) = 0. The solution yields:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7BDsat%7D%20%3D%20%5CDelta%5Cpsi_i%28L%29%20%3D%20V_G%20-%20V_%7BFB%7D%20-%202%5Cpsi_B%20&plus;%20%5C%5C%5C%5C%20K%5E2%5B1-%5Csqrt%7B1&plus;%5Cfrac%7B2%28V_G-V_%7BFB%7D%29%7D%7BK%5E2%7D%7D%5D)
 
-By Substituing V<sub>Dsat</sub> in the I equation, the saturation current I<sub>Dsat</sub> is obtained as:
+By Substituing V<sub>Dsat</sub> in the equation 2, the saturation current I<sub>Dsat</sub> is obtained as:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%7D%7B2ML%7D%5Cmu_nC_%7Box%7D%28V_G-V_T%29%5E2%20%5C%5C%5C%5C%20M%5Cequiv%201&plus;%5Cfrac%7BK%7D%7B2%5Csqrt%7B%5Cpsi_B%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20K%20%5Cequiv%20%5Cfrac%7B%5Csqrt%7B%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D)
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%7D%7B2ML%7D%5Cmu_nC_%7Box%7D%28V_G-V_T%29%5E2%20%5C%5C%5C%5C%20M%5Cequiv%201&plus;%5Cfrac%7BK%7D%7B2%5Csqrt%7B%5Cpsi_B%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20K%20%5Cequiv%20%5Cfrac%7B%5Csqrt%7B%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
+M has a value slightly larger than unity and it approaches unity with thinner oxide and lower doping. Furthermore, a more convenient form for V<sub>Dsat</sub> can be expressed as:
 
-M has a value slightly larger than unity and it approaches unity with thinner oxide and lower doping. Furthermore, a more convenient form for V<sub>Dsat</sub> can be expressed as
+![]()
