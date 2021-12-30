@@ -118,16 +118,16 @@ This simplified charge expression is helpful to analyze the conditions under fie
 
 As technology advances and pushes for device performance and density, the channel length gets shorter and shorter. The internal longitudinal field gy in the channel also increases as a result. For low fields, the mobility is constant. This low-field mobility is used for the long-channel characteristics in the last section. In the extreme case of very high field, the velocity approaches a value, saturation velocity ν<sub>s</sub>. In between the constant-mobility regime and the saturation-velocity regime, the carrier velocity can be described by:
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cnu%28%5Cxi%29%20%3D%20%5Cfrac%7B%5Cmu%5Cxi%7D%7B%5B1&plus;%28%5Cmu%5Cxi/%5Cnu_s%29%5En%5D%5E%7B1/n%7D%7D%20%3D%20%5Cfrac%7B%5Cmu%5Cxi%7D%7B%5B1&plus;%28%5Cxi/%5Cxi_c%29%5En%5D%5E%7B1/n%7D%7D)
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cnu%28%5Cxi%29%20%3D%20%5Cfrac%7B%5Cmu%5Cxi%7D%7B%5B1&plus;%28%5Cmu%5Cxi/%5Cnu_s%29%5En%5D%5E%7B1/n%7D%7D%20%3D%20%5Cfrac%7B%5Cmu%5Cxi%7D%7B%5B1&plus;%28%5Cxi/%5Cxi_c%29%5En%5D%5E%7B1/n%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20%284%29)
 
 where μ is the low-field mobility. The value of n changes the shape of the curve, but μ, ν<sub>s</sub>, and the critical field ξ<sub>c</sub> (= ν<sub>s</sub>/μ) remain the same. It has been observed that in silicon for electrons n = 2 and for holes n = 1 have the best fit. The value of ν<sub>s</sub> for electron in silicon at room temperature is around 1E7 cm/s. As the terminal voltage VD is increased from zero, current is increased because of higher field and higher velocity. Eventually the velocity reaches the maximum value of ν<sub>s</sub>, and the current also saturates to a constant value. Notice that this current saturation comes from a completely different mechanism than in the case of constant mobility. Here, it is due to velocity saturation of carriers, before the pinch-off condition can occur.
 
-To derive the I-V characteristics it is important to know the ν-ξ relationship (the following figure). We find that mathematically, for the above equation with n=2, the analysis is rather complicated. Fortunately for the cases of two-piece linear approximation (following figure) and the above equation with n=1, the mathematics is manageable and simple solutions can be obtained. Since these two extremes mostly cover the realistic bounds for different kinds of carriers, we will consider both assumptions.
+To derive the I-V characteristics it is important to know the ν-ξ relationship (the following figure). We find that mathematically, for Eq. 4 with n=2, the analysis is rather complicated. Fortunately for the cases of two-piece linear approximation (following figure) and the above equation with n=1, the mathematics is manageable and simple solutions can be obtained. Since these two extremes mostly cover the realistic bounds for different kinds of carriers, we will consider both assumptions.
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/nu_xi_rela.png)
 
 Field-Dependent Mobility: Two-Piece Linear Approximation: In the two-piece linear approximation, the constant-mobility model is valid up to the point when the maximum field near the drain exceeds ξ<sub>c</sub>. Conversely, Eq. 2 is valid up to a new V<sub>Dsat</sub> value which occurs earlier than the constant-mobility model, so the only task is to find the new V<sub>Dsat</sub> which is given by:
 
-![]()
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7BDsat%7D%20%3D%20L%5Cxi_c%20&plus;%20%5Cfrac%7BV_G-V_T%7D%7BM%7D%20-%20%5Csqrt%7B%28L%5Cxi_c%29%5E2%20&plus;%20%28%5Cfrac%7BV_G-V_T%7D%7BM%7D%29%5E2%7D)
 
 Since VDsat here is always smaller than (VG - VT)/M, the field-dependent mobility always gives a lower IDsat.
