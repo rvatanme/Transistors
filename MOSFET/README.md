@@ -107,3 +107,12 @@ M has a value slightly larger than unity and it approaches unity with thinner ox
 It can be seen here that in this saturation region, for constant mobility, the current is a square-law function according to Eq. 3, indicated by the increasing current steps between gate bias.
 
 Finally, the nonlinear region inbetween these two extreme cases can be described well by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cmu_nC_%7Box%7D%28V_G-V_T-%5Cfrac%7BMV_D%7D%7B2%7D%29V_D)
+
+Equation 1 for the inversion charge is an exact expression. An approximation of the following form, taking advantage of the definition of threshold voltage, can be made:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20C_%7Box%7D%28V_G-V_T-M%5CDelta%5Cpsi_i%28y%29%29)
+
+This simplified charge expression is helpful to analyze the conditions under field-dependent mobility and velocity saturation which is discussed next.
+
