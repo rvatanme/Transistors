@@ -198,3 +198,36 @@ where N' is the electron density per unit area, integrated over the depletion wi
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20N%27%28L%29%20%3D%20N%27%280%29exp%28-%5Cbeta%20V_D%29)
 
+By combining the above equations, the ID current is derived as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20%5Cfrac%7BZ%5Cmu_n%7D%7BL%5Cbeta%5E2%7D%5Csqrt%7B%5Cfrac%7BqN_A%5Cepsilon_s%7D%7B2%5Cpsi_s%7D%7Dn_%7Bp0%7Dexp%28%5Cbeta%20%5Cpsi_s%29)
+
+when VD >> kT/q. The above Eq. indicates that in the subthreshold region the drain current varies exponentially with ψs, and for drain voltage VD larger than = 3kT/q, the current becomes independent of VD. Next, in order to relate current to the gate bias, the relationship between VG and ψs is needed. From Chapter 4 on the MOS capacitor, we have the following relationship:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_G-V_%7BFB%7D%20%3D%20%5Cpsi_s%20&plus;%20%5Cfrac%7B%5Csqrt%7B2qN_A%5Cepsilon_s%5Cpsi_s%7D%7D%7BC_%7Box%7D%7D)
+
+This quadratic equation will not give a simple expression of ψs as a function of VG But once ψs is known from the abovr Eq., the subthreshold current can be calculated. The parameter to quantify how sharply the transistor is turned off by the gate voltage is called the subthreshold swing S (inverse of subthreshold slope), defined as the gate-voltage change needed to induce a drain-current change of one order of magnitude. First from the above equation, the relative change of VG and ψs is calculated to be:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7BdV_G%7D%7Bd%5Cpsi_s%7D%20%3D%201%20&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%5Csqrt%7B%5Cfrac%7B%7BqN_A%5Cepsilon_s%7D%7D%7B2%5Cpsi_s%7D%7D%3D%5Cfrac%7BC_%7Box%7D&plus;C_D%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%5C%5C%20S%20%3D%20ln%2810%29%5Cfrac%7BkT%7D%7Bq%7D%5Cfrac%7BC_%7Box%7D&plus;C_D%7D%7BC_%7Box%7D%7D)
+
+In the presence of a significant interface-trap density Dit, its associated capacitance Cit (= q2Dit) is in parallel with the depletion-layer capacitance CD. Therefore:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20S%20%28with%5C%3BD_%7Bit%7D%29%3D%20ln%2810%29%5Cfrac%7BkT%7D%7Bq%7D%5Cfrac%7BC_%7Box%7D&plus;C_D&plus;C_%7Bit%7D%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%5C%5C%20%3DS%28without%5C%3BD_%7Bit%7D%29%5Cfrac%7BC_%7Box%7D&plus;C_D&plus;C_%7Bit%7D%7D%7BC_%7Box%7D&plus;C_D%7D)
+
+If other device parameters such as doping and oxide thickness are known, by measuring the subthreshold swing, the interface-trap density can be obtained. This provides an attractive option in measuring Di, besides using the MOS capacitor in which ac measurements have to be made. In general, dc I-Vmeasurements are much easier to make than ac capacitance and conductance, provided a three-terminal transistor structure is available (substrate contact is not critical here).
+
+For a sharp subthreshold slope (small S), it is preferable to have low channel doping, thin oxide thickness, low interface-trap density, and low-temperature operation. When a substrate bias is applied, in addition to shifting the threshold voltage, it increases the value of ψs by VBS Consequently, the depletion-layer capacitance CD is reduced and therefore S is reduced.
+
+At and near the threshold voltage, the drain current does not turn off as sharply as the equation predicts. This is due to diffhion current which is the dominant current near and below threshold, and it has been ignored so far, as one of the assumptions made at the beginning of the Section. To consider the effect of the difision component, we refer to Fig. 7 for the nonequilibrium condition. The total drain current density including both drift and difision components is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20J_D%28x%2Cy%29%20%3D%20qn%5Cmu_n%5Cxi_y&plus;qD_n%5Cfrac%7Bdn%7D%7Bdy%7D%20%3D%20D_nn%28x%2Cy%29%5Cfrac%7BdE_%7BFn%7D%7D%7Bdy%7D)
+
+The drain current based on the gradual-channel approximation is:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3DZ%20%5Cint_%7B0%7D%5E%7Bx_i%7DJ_D%28x%2Cy%29dy%20%3D%20%5Cfrac%7BZD_n%7D%7BL%7D%5Cint_%7B0%7D%5E%7BL%7D%5Cfrac%7BdE_%7BFn%7D%7D%7Bdy%7D%5Cint_%7B0%7D%5E%7Bx_i%7Dn%28x%2Cy%29dxdy%20%5C%5C%5C%5C%5C%5C%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cfrac%7B%5Cmu_n%5Cepsilon_s%7D%7BL_D%7D%5Cint_%7B0%7D%5E%7BV_D%7D%5Cint_%7B%5Cpsi_B%7D%5E%7B%5Cpsi_s%7D%5Cfrac%7Bexp%28%5Cbeta%5Cpsi_p-%5Cbeta%5CDelta%5Cpsi_i%29%7D%7BF%28%5Cbeta%5Cpsi_p%2C%5CDelta%5Cpsi_i%2Cn_%7Bp0%7D/p_%7Bp0%7D%29%7Dd%5Cpsi_pd%5CDelta%5Cpsi_i)
+
+The gate voltage VG is related to the surface potential ψs by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_G-V_%7BFB%7D%20%3D%20-%5Cfrac%7BQ_s%7D%7BC_%7Box%7D%7D&plus;%5Cpsi_s%20%5C%5C%5C%5C%20%3D%5Cfrac%7B2%5Cepsilon_skT%7D%7BC_%7Box%7DqL_D%7DF%28%5Cbeta%5Cpsi_p%2C%5CDelta%5Cpsi_i%2Cn_%7Bp0%7D/p_%7Bp0%7D%29&plus;%5Cpsi_s)
+
+For a particular device with known physical dimensions and other device parameters, above equations can be calculated numerically to give accurate results for the entire range of drain voltage, from the linear region to the saturation region.
