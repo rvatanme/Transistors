@@ -161,4 +161,19 @@ The maximum value of ν<sub>eff</sub> according to classical thermal equilibrium
 
 Note that with a small inversion charge ν<sub>inj</sub> = ν<sub>th</sub>. Theoretical vinj as a function of the inversion charge is shown in the following figure. The maximum current, which is a product of Q<sub>n</sub>ν<sub>inj</sub>, gives the ultimate current drive of the ballistic MOSFET and is also plotted in the same figure.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/vinj_inver.png)
+
+The saturation current of the above equation can be rewritten as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7B8r_nZ%5Chbar%7D%7B3m%5E*%7D%7B%5Cfrac%7B%5B%28V_G-V_T%29C_%7Box%7D%5D%5E%7B3/2%7D%7D%7B%5Csqrt%7B2%5Cpi%20q%7D%7D%7D)
+
+where r<sub>n</sub> is the index of ballisticity (= ν<sub>eff</sub>/ν<sub>inj</sub>). In the extreme of ballistic transport, r<sub>n</sub> = 1, and it sets the ultimate current drive for L -> 0. The transconductance is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_m%20%3D%20%5Cfrac%7B4r_n%5Chbar%7D%7Bm%5E*%7D%5Csqrt%7B%5Cfrac%7B%28V_G-V_T%29C_%7Box%7D%7D%7B2%5Cpi%20q%7D%7D)
+
+It is seen here that both IDsat and gm are independent of channel length L. The index of ballisticity is also interpreted by back scattering R of channel carriers at the drain back to the source. Furthermore, since mobility is also a consequence of scattering, there should be some relationship between r<sub>n</sub> and the low-field mobility μ<sub>n</sub>. It has been shown that:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20r_n%20%3D%20%5Cfrac%7B%5Cnu_%7Beff%7D%7D%7B%5Cnu_%7Binj%7D%7D%20%3D%20%5Cfrac%7B1-R%7D%7B1&plus;R%7D%20%5C%5C%5C%5C%20%3D%20%5B%5Cfrac%7B1%7D%7B%5Cnu_%7Binj%7D%7D&plus;%5Cfrac%7B1%7D%7B%5Cmu_n%5Cxi%280%5E&plus;%29%7D%5D%5E%7B-1%7D)
+
+where ξ(0+) is the field at a potential kT down from the maximum toward the drain. It should be emphasized that in this model, at or near the maximum-potential point, the field is too low to cause ballistic transport, so ν<sub>inj</sub> sets the maximum current, even though a location near the drain can have ballistic transport. The high ballistic velocities near the drain cannot produce a higher current than vinj can support, but it helps to achieve this maximum value set by ν<sub>inj</sub> by rebalancing the whole system.
+It is interesting to compare the VG dependence of IDsat for different channel lengths. In the long-channel, constant-mobility regime, IDsat ∝ (VG - VT)^2. In the short-channel, saturation-velocity regime, IDsat ∝ (VG - VT). And in the limit of ballistic regime, IDsat ∝ (VG - VT)^3/2
