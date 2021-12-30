@@ -144,4 +144,8 @@ Velocity Saturation. Using either assumption described above, it is interesting 
 
 To compare models based on constant mobility and velocity saturation, we show I-V curves of identical devices in the following figure. Several observations can be made. First, IDSat and VDSat are both lowered by velocity saturation, while the linear regions remain similar. The gm (which is the current difference between VG steps) also becomes a constant, independent of VG. Finally the above equation shows an interesting phenomena that the saturation current no longer depends on the channel length.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Mob_I_V.png)
+
+Experimental data confirm that such simple theory is quite satisfactory. In reality, as above Fig indicates, the carrier velocity never reaches exactly us. Also the lateral field is not uniform throughout the channel. It is more difficult for the lower field near the source to reach ξ<sub>c</sub> and that presents a bottle-neck for the maximum current. A better agreement can often be reached by adding a pre-factor with a value of = 0.5-1.0 for the above equations.
+
+In ultra-short channel lengths whose dimensions are on the order of or shorter than the mean free path, channel carriers do not suffer from scattering. They can gain energy from the field without losing it to the lattice through scattering, and can acquire a velocity much higher than the saturation velocity. This effect is called ballistic transport (or velocity overshoot by some). 
