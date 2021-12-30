@@ -176,4 +176,25 @@ It is seen here that both IDsat and gm are independent of channel length L. The 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20r_n%20%3D%20%5Cfrac%7B%5Cnu_%7Beff%7D%7D%7B%5Cnu_%7Binj%7D%7D%20%3D%20%5Cfrac%7B1-R%7D%7B1&plus;R%7D%20%5C%5C%5C%5C%20%3D%20%5B%5Cfrac%7B1%7D%7B%5Cnu_%7Binj%7D%7D&plus;%5Cfrac%7B1%7D%7B%5Cmu_n%5Cxi%280%5E&plus;%29%7D%5D%5E%7B-1%7D)
 
 where ξ(0+) is the field at a potential kT down from the maximum toward the drain. It should be emphasized that in this model, at or near the maximum-potential point, the field is too low to cause ballistic transport, so ν<sub>inj</sub> sets the maximum current, even though a location near the drain can have ballistic transport. The high ballistic velocities near the drain cannot produce a higher current than vinj can support, but it helps to achieve this maximum value set by ν<sub>inj</sub> by rebalancing the whole system.
-It is interesting to compare the VG dependence of IDsat for different channel lengths. In the long-channel, constant-mobility regime, IDsat ∝ (VG - VT)^2. In the short-channel, saturation-velocity regime, IDsat ∝ (VG - VT). And in the limit of ballistic regime, IDsat ∝ (VG - VT)^3/2
+It is interesting to compare the VG dependence of IDsat for different channel lengths. In the long-channel, constant-mobility regime, IDsat ∝ (VG - VT)^2. In the short-channel, saturation-velocity regime, IDsat ∝ (VG - VT). And in the limit of ballistic regime, IDsat ∝ (VG - VT)^3/2.
+
+To account for the threshold shift from nonzero flat-band voltage whose main cause comes from fixed oxide charges Q<sub>inj</sub> and the work-hnction difference φ<sub>ms</sub> between the gate material and the semiconductor, we get:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_T%20%3DV_%7BFB%7D&plus;2%5Cpsi_B&plus;%5Cfrac%7B%5Csqrt%7B2qN_A%5Cepsilon_s%282%5Cpsi_B%29%7D%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20%3D%20%28%5Cphi_%7Bms%7D%20-%20%5Cfrac%7BQ_f%7D%7BC_%7Box%7D%7D%29&plus;2%5Cpsi_B&plus;%5Cfrac%7B%5Csqrt%7B2qN_A%5Cepsilon_s%282%5Cpsi_B%29%7D%7D%7BC_%7Box%7D%7D)
+
+Qualitatively, VT is the gate bias beyond flat-band just starting to induce an inversion charge sheet and is given by the sum of voltages across the semiconductor (2ψ<sub>B</sub>) and the oxide layer. The square-root term is the total depletion-layer charge. When a substrate bias is applied (negative for n-channel or p-substrate), the threshold voltage becomes:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_T%20%3DV_%7BFB%7D&plus;2%5Cpsi_B&plus;%5Cfrac%7B%5Csqrt%7B2qN_A%5Cepsilon_s%282%5Cpsi_B-V_%7BBS%7D%29%7D%7D%7BC_%7Box%7D%7D)
+
+In practice it is often necessary to minimize the threshold-voltage shift due to substrate bias. In these cases, low substrate doping and thin oxide thickness are preferred. To measure the threshold voltage, we use the linear region by applying a small drain bias (VD << VG, and plot ID versus VG, the the intercept would be VT + VD/2. 
+
+When the gate bias is below the threshold and the semiconductor surface is in weak inversion or depletion, the corresponding drain current is called the subthreshold current. The subthreshold region tells how sharply the current drops with gate bias and is particularly important for low-voltage, low-power applications, such as when the MOSFET is used as a switch in digital logic and memory applications. 
+
+In weak inversion and depletion, the electron charge is small and, thus, the drift current is low. The drain current is dominated by diffusion and is derived in the same way as the collector current in a bipolar transistor with homogeneous base doping. Considering the electron-density gradient in the channel, the diffusion current is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20-%20ZqD_n%5Cfrac%7BdN%27%28y%29%7D%7Bdy%7D%20%5Capprox%20ZqD_n%5Cfrac%7BN%27%280%29-N%27%28L%29%7D%7BL%7D%20%5C%5C%5C%5C%5C%5C%20N%27%280%29%20%3D%20%5Cint_%7B0%7D%5E%7BW_D%7D%20n%28x%29dx%20%3D%20n_%7Bp0%7D%5Cint_%7B%5Cpsi_s%7D%5E%7B0%7Dexp%28%5Cbeta%5Cpsi_p%29d%5Cpsi_p%20%5C%5C%5C%5C%20%5Capprox%20%5Cfrac%7B1%7D%7B%5Cbeta%7D%5Csqrt%7B%5Cfrac%7B%5Cepsilon_s%7D%7B2qN_A%5Cpsi_s%7D%7Dn_%7Bp0%7Dexp%28%5Cbeta%5Cpsi_p%29)
+
+where N' is the electron density per unit area, integrated over the depletion width. The electron density at the drain end is lowered exponentially by the drain bias:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20N%27%28L%29%20%3D%20N%27%280%29exp%28-%5Cbeta%20V_D%29)
+
