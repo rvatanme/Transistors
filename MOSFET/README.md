@@ -98,8 +98,12 @@ The pinch-off point occurs because the relative voltage between the gate and the
 
 By Substituing V<sub>Dsat</sub> in the equation 2, the saturation current I<sub>Dsat</sub> is obtained as:
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%7D%7B2ML%7D%5Cmu_nC_%7Box%7D%28V_G-V_T%29%5E2%20%5C%5C%5C%5C%20M%5Cequiv%201&plus;%5Cfrac%7BK%7D%7B2%5Csqrt%7B%5Cpsi_B%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20K%20%5Cequiv%20%5Cfrac%7B%5Csqrt%7B%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D)
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%7D%7B2ML%7D%5Cmu_nC_%7Box%7D%28V_G-V_T%29%5E2%20%5C%5C%5C%5C%20M%5Cequiv%201&plus;%5Cfrac%7BK%7D%7B2%5Csqrt%7B%5Cpsi_B%7D%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%20K%20%5Cequiv%20%5Cfrac%7B%5Csqrt%7B%5Cepsilon_sqN_A%7D%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BDsat%7D%20%3D%20%5Cfrac%7BV_G-V_T%7D%7BM%7D)
 
-M has a value slightly larger than unity and it approaches unity with thinner oxide and lower doping. Furthermore, a more convenient form for V<sub>Dsat</sub> can be expressed as:
+M has a value slightly larger than unity and it approaches unity with thinner oxide and lower doping. Furthermore, a more convenient form for V<sub>Dsat</sub> can be expressed as above. The transconductance in the saturation region is given by:
 
-![]()
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_m%20%3D%20%5Cfrac%7BdI_D%7D%7BdV_D%7D%7C_%7BV_D%20%3E%20V_%7BDsat%7D%7D%20%3D%20%5Cfrac%7BZ%7D%7BML%7D%5Cmu_nC_%7Box%7D%28V_G-V_T%29)
+
+It can be seen here that in this saturation region, for constant mobility, the current is a square-law function according to Eq. 27, indicated by the increasing current steps between gate bias shown in Fig. 9.
+
+Finally, the nonlinear region inbetween these two extreme cases can be described well by:
