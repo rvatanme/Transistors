@@ -260,6 +260,7 @@ MOSFET technology, ion implantation is used extensively to taylor the doping pro
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Doping_profile.png)
 
+### High-Low Profile: 
 We consider next the effect of nonuniform channel doping on device characteristics, especially on threshold voltage and depletion width which in turn affects subthreshold swing and the substrate-bias effect. Note that what is most important for determining VT is the doping profile within the depletion region. The profile outside the depletion is important for considerations of capacitance and substrate sensitivity, that is, dependence of the threshold voltage on the substrate reverse bias. With that in mind, the general equation for the threshold voltage is given by:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_T%20%3D%20V_%7BFB%7D%20&plus;%20%5Cpsi_s%20&plus;%20%5Cfrac%7BQ_n%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20%3D%20V_%7BFB%7D%20&plus;%202%5Cpsi_B%20&plus;%20%5Cfrac%7Bq%7D%7BC_%7Box%7D%7D%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7DN%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%20%284%29%20%5C%5C%5C%5C%5C%5C%20%5Cpsi_s%20%3D%202%5Cpsi_B%20%3D%20%5Cfrac%7Bq%7D%7B%5Cepsilon_s%7D%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7DxN%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%20%285%29)
@@ -283,4 +284,17 @@ The step-profile approach described above can give first-order results for the t
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20D_I%20%3D%20%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7D%5CDelta%20N%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%20x_c%20%3D%20%5Cfrac%7B1%7D%7BD_I%7D%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7Dx%5CDelta%20N%28x%29dx%20%5C%5C%5C%5C%5C%5C%20V_T%20%3D%20V_%7BFB%7D%20&plus;%202%5Cpsi_B%20&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%5Csqrt%7B2q%5Cepsilon_s%20N_B%282%5Cpsi_B-%5Cfrac%7Bqx_cD_I%7D%7B%5Cepsilon_s%7D%29%7D%20%5C%5C%5C%5C%20&plus;%5Cfrac%7BqD_I%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20W_%7BDm%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_B%7D%282%5Cpsi_B-%5Cfrac%7Bqx_cD_I%7D%7B%5Cepsilon_s%7D%29%7D)
 
 It is interesting to examine the dependence of the threshold voltage shift and depletion width on the centroid x<sub>c</sub> for a given dose D<sub>I</sub>. As x<sub>c</sub> increases, the dose becomes less effective in changing V<sub>T</sub> and the depletion width W<sub>Dm</sub> decreases also at the same time. Eventually x<sub>c</sub> meets the depletion edge, and then W<sub>Dm</sub> becomes clamped to and increases with the implant centroid
-x<sub>c</sub>. The condition for which x<sub>c</sub> starts to be equal to W<sub>Dm</sub> can be obtained from
+x<sub>c</sub>. The condition for which x<sub>c</sub> starts to be equal to W<sub>Dm</sub> can be obtained as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20D_I%28x%3DW_%7BDm%7D%29%20%3D%20%5Cfrac%7BN_B%28W_%7BDm%7D%5E2-x_c%5E2%29%7D%7B2x_c%7D)
+
+To consider the subthreshold swing and the substrate sensitivity, we have interpreted the subthreshold swing by comparing the gate-oxide capacitance
+COX to depletion capacitance CD. So, once the depletion width is known, the subthreshold swing can be calculated. For the high-low profile, the added doping decreases WDm, increases CD, and results in a larger (less steep) subthreshold swing. The substrate sensitivity can be calculated also by substituting 2ψ<sub>B</sub> with 2ψ<sub>B</sub> + VBS in calculating VT.
+
+### LOw-High Profile:
+Analysis of the low-high profile, also called the retrograde profile, is similar to the high-low case with a AN being subtracted from the background doping. The appropriate equations for the threshold voltage and depletion width become, with just a change of signs. The threshold voltage is, thus, decreased and the depletion width is increased by a dip at the surface doping.
+
+## Buried-Channel Device
+In the extreme case of the low-high profile, the surface doping can be of the opposite type of the substrate. When this happens, and if part of the surface doped layer is not fully depleted, that is, there exists some neutral region, current can conduct through this buried layer. We call this type of device a buried-channel device (shown in the following figure a). 
+
+![]()
