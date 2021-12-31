@@ -237,3 +237,17 @@ Because channel carriers are confined to a thin inversion layer, their drift vel
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%28%5Cxi_x%29_%7Beff%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cepsilon_s%7D%28Q_B&plus;%5Cfrac%7BQ_n%7D%7B2%7D%29)
 
 Physically it means an average inversion carrier experiences the fill effect of the depletion-layer charge Q<sub>B</sub> but only half of the inversion-layer charge Q<sub>n</sub>.
+
+Temperature affects device parameters and performance, in particular mobility, threshold voltage, and subthreshold characteristics. The effective mobility in inversion layer has a T<sup>-2</sup> power dependence on temperatures around 300 K at gate biases corresponding to strong inversion. This gives rise to higher current and transconductance at lower temperature.
+
+To derive the temperature dependence of the threshold voltage, we repeat the following expression:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_T%20%3D%20%28%5Cphi_%7Bms%7D%20-%20%5Cfrac%7BQ_f%7D%7BC_%7Box%7D%7D%29&plus;2%5Cpsi_B&plus;%5Cfrac%7B%5Csqrt%7B2qN_A%5Cepsilon_s%282%5Cpsi_B%29%7D%7D%7BC_%7Box%7D%7D)
+
+Because the work-function difference φ<sub>ms</sub> and the fixed oxide charges are essentially independent of temperature, differentiating the above equation with respect to temperature yields:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7BdV_T%7D%7BdT%7D%20%3D%20%5Cfrac%7Bd%5Cpsi_B%7D%7BdT%7D%282&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%5Csqrt%7B%5Cfrac%7B%5Cepsilon_sqN_A%7D%7B%5Cpsi_B%7D%7D%29%20%5C%5C%5C%5C%5C%5C%20%5Cpsi_B%20%3D%20%5Cfrac%7BkT%7D%7Bq%7Dln%28%5Cfrac%7BN_A%7D%7Bn_i%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20n_i%5E2%20%5Cpropto%20T%5E3exp%28%5Cfrac%7B-E_%7Bg0%7D%7D%7BkT%7D%29%20%5C%5C%5C%5C%5C%5C%20%5Cfrac%7Bd%5Cpsi_B%7D%7BdT%7D%20%5Capprox%20%5Cfrac%7B1%7D%7BT%7D%28%5Cpsi_B-%5Cfrac%7BE_%7Bg0%7D%7D%7B2q%7D%29)
+
+The following figure shows the results of such calculations at room temperature as a function of substrate doping for various values of oxide thickness. Note that depending on the oxide thickness, the quantity dVT/dT can increase or decrease with the substrate doping.
+
+![]()
