@@ -328,6 +328,14 @@ A buried-channel MOSFET is usually normally-on (depletion-mode), although theore
 In the buried-channel devices, the substrate-bias effect is more direct. It can be viewed as a bottom gate. The effects are calculated in the above equations if ψ<sub>bi</sub> is replaced with ψ<sub>bi</sub> - V<sub>BS</sub> (V<sub>BS</sub> is negative). In particular, V<sub>T</sub> (Eq. 6) and W<sub>Dn</sub> (Eq. 7) can be shifted with a substrate bias, to the extent that the transistor can be turned on and off and between depletion-mode and enhancement-mode.
 
 We now turn to the subthreshold current of buried-channel devices. At a sufficiently large negative gate bias, the channel will be pinched off, that is, when x<sub>x</sub> = W<sub>Ds</sub> + W<sub>Dn</sub> (below Fig. c). The conduction below the threshold voltage is due to the presence of a region of partially depleted electrons, wherein the current is carried primarily by difision of electrons. The resulting subthreshold (sub-pinch-off) current for a
-buried-channel MOSFET is, thus, directly analogous to the subthreshold current for a surface-channel MOSFET. The subthreshold current will vary exponentially with the gate voltage, and the subthreshold swing S is given by the capacitive divider ratio again of Eq. 60, except now different capacitances have to be used. From Fig. c the maximum electron concentration occurs at the location of x = xs - WDn. So CD of Eq. 60 should be replaced with the depletion capacitance of the substrate p-n junction.
+buried-channel MOSFET is, thus, directly analogous to the subthreshold current for a surface-channel MOSFET. The subthreshold current will vary exponentially with the gate voltage, and the subthreshold swing S is given by the capacitive divider ratio again of Eq. 60, except now different capacitances have to be used. From Fig. c the maximum electron concentration occurs at the location of x = xs - WDn. So CD of Eq. 60 should be replaced with the depletion capacitance of the substrate p-n junction [ε<sub>s</sub>/(WDn + WDp)], and C<sub>ox</sub> should be replaced with C<sub>ox</sub> in series with the surface depletion capacitance ε<sub>s</sub>/WDs. These substitutions give an expression of
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Buried_Band_Diag.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20S%20%3D%20ln%2810%29%5Cfrac%7BkT%7D%7Bq%7D%5B1&plus;%5Cfrac%7B%5Cepsilon_%7Box%7DW_%7BDs%7D&plus;%5Cepsilon_sd%7D%7B%5Cepsilon_%7Box%7D%28W_%7BDn%7D&plus;W_%7BDp%7D%29%7D%5D)
+
+where all depletion layers WDs, WDn, and WDp correspond to the condition at threshold (VG = VT). The subthreshold swing is usually larger than that of conventional surface-channel devices.
+
+The buried-channel device is expected to have higher carrier mobility than surface-channel devices since carriers are free of surface scattering and other surface effects. They are also less affected by the short-channel effects (to be discussed next) such as hot-carrier-induced reliability problems. On the other hand, since the net distance between the gate and the channel is further away and is gate-bias dependent, the transconductance is smaller and variable. Note that if the gate is replaced by a Schottky junction or a p-n junction, the device become a MESFET or a JFET correspondingly.
+
+
