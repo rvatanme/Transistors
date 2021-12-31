@@ -276,6 +276,13 @@ The depletion width can be obtained from Eq. 5, using ψ<sub>s</sub> = 2ψ<sub>B
 
 From these equations, we see that added surface doping increases V<sub>T</sub> and decreases W<sub>Dm</sub>. Notice that for the same dose, the V<sub>T</sub> shift is largest with the added doping closest to the surface. For the limiting case of a delta function of dose localized at the Si-SiO<sub>2</sub> interface (x<sub>s</sub> = 0), the threshold shift is simply qD<sub>I</sub>/C<sub>ox</sub>, where D<sub>I</sub> is the total dose ΔNx<sub>s</sub>. Such approach is called threshold adjust, which has the same effect as changing the work-function difference qφ<sub>ms</sub> or changing the total fixed oxide charge.
 
-The step-profile approach described above can give first-order results for the threshold voltage. To obtain a more accurate V<sub>T</sub>, we have to consider the actual doping profile, because the step width x<sub>s</sub> is not well defined for nonuniform doping. A schematic diagram for the nonuniform implanted doping N(x) is shown in the following Fig. For a typical case, the threshold voltage depends on the implanted dose D<sub>I</sub> and the centroid of the dose x<sub>s</sub>. Therefore, the actual implant can be replaced by a delta-function located at x = x<sub>s</sub> as shown;
+The step-profile approach described above can give first-order results for the threshold voltage. To obtain a more accurate V<sub>T</sub>, we have to consider the actual doping profile, because the step width x<sub>s</sub> is not well defined for nonuniform doping. A schematic diagram for the nonuniform implanted doping N(x) is shown in the following Fig. For a typical case, the threshold voltage depends on the implanted dose D<sub>I</sub> and the centroid of the dose x<sub>c</sub>. Therefore, the actual implant can be replaced by a delta-function located at x = x<sub>c</sub> as shown;
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Nonuniform_Doping.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20D_I%20%3D%20%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7D%5CDelta%20N%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%20x_c%20%3D%20%5Cfrac%7B1%7D%7BD_I%7D%5Cint_%7B0%7D%5E%7BW_%7BDm%7D%7Dx%5CDelta%20N%28x%29dx%20%5C%5C%5C%5C%5C%5C%20V_T%20%3D%20V_%7BFB%7D%20&plus;%202%5Cpsi_B%20&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%5Csqrt%7B2q%5Cepsilon_s%20N_B%282%5Cpsi_B-%5Cfrac%7Bqx_cD_I%7D%7B%5Cepsilon_s%7D%29%7D%20%5C%5C%5C%5C%20&plus;%5Cfrac%7BqD_I%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20W_%7BDm%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_B%7D%282%5Cpsi_B-%5Cfrac%7Bqx_cD_I%7D%7B%5Cepsilon_s%7D%29%7D)
+
+It is interesting to examine the dependence of the threshold voltage shift and depletion width on the centroid x<sub>c</sub> for a given dose DD<sub>I</sub>.
+
+
+)
