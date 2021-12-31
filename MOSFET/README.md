@@ -319,6 +319,10 @@ Given the channel charge, the drain current can be calculated in a way similar t
 
 More-exact solution of the drain current can be obtained by substituting the charge into ID integrangd Eq. The results, divided into different regimes of V, bias, are summarized in Table 1. These results are based on the long-channel constant-mobility model. Current saturation due to velocity saturation can be estimated to be = Qν<sub>s</sub>W.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Table_Buried_Current.png)
 
 A buried-channel MOSFET is usually normally-on (depletion-mode), although theoretically it can be made as a normally-off (enhancement-mode) device, by proper choice of metal work function, for example. Also for a given ND, the threshold voltage becomes more negative with increased buried-channel depth xs. However, because there exists a maximum depletion width in an MOS system, if the doping density ND or/and the buried-channel depth xs are sufficiently large, WDs can reach a maximum value without pinching off the channel. A limit on the channel profile thus exists, otherwise the transistor cannot be turned off. This condition is bound by a combination of xs and ND;
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20x_s%7C_%7Bmax%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_D%7D%7D%28%5Csqrt%7B2%5Cpsi_B%7D&plus;%5Csqrt%7B%5Cfrac%7BN_A%5Cpsi_%7Bbi%7D%7D%7BN_A&plus;N_D%7D%7D%29)
+
+In the buried-channel devices, the substrate-bias effect is more direct. It can be viewed as a bottom gate. The effects are calculated in the above equations if ψ<sub>bi</sub> is replaced with ψ<sub>bi</sub> - V<sub>BS</sub> (V<sub>BS</sub> is negative). In particular, V<sub>T</sub> and W<sub>Dn</sub> (Eq. 6) can be shifted with a substrate bias, to the extent that the transistor can be turned on and off and between depletion-mode and enhancement-mode.
