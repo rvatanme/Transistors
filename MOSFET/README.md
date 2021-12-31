@@ -231,3 +231,9 @@ The gate voltage VG is related to the surface potential ψs by:
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_G-V_%7BFB%7D%20%3D%20-%5Cfrac%7BQ_s%7D%7BC_%7Box%7D%7D&plus;%5Cpsi_s%20%5C%5C%5C%5C%20%3D%5Cfrac%7B2%5Cepsilon_skT%7D%7BC_%7Box%7DqL_D%7DF%28%5Cbeta%5Cpsi_p%2C%5CDelta%5Cpsi_i%2Cn_%7Bp0%7D/p_%7Bp0%7D%29&plus;%5Cpsi_s)
 
 For a particular device with known physical dimensions and other device parameters, above equations can be calculated numerically to give accurate results for the entire range of drain voltage, from the linear region to the saturation region.
+
+Because channel carriers are confined to a thin inversion layer, their drift velocity υ and mobility μ are expected to be influenced by the thickness of this inversion layer. Experimental measurements on Si inversion layers show that this low-field mobility, while independent of ξ<sub>y</sub> is a unique function of the transverse field ξ<sub>x</sub> that is perpendicular to the current. This dependence is not directly on the oxide thickness or doping density, but through their impact of ξ<sub>x</sub> in the inversion layer. The mobility is found to correlate well with a single parameter that is related to gX. At a given temperature, mobility decreases with an increasing effective transverse field, defined as the field averaged over the electron distribution in the inversion layer, given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%28%5Cxi_x%29_%7Beff%7D%20%3D%20%5Cfrac%7B1%7D%7B%5Cepsilon_s%7D%28Q_B&plus;%5Cfrac%7BQ_n%7D%7B2%7D%29)
+
+Physically it means an average inversion carrier experiences the fill effect of the depletion-layer charge Q<sub>B</sub> but only half of the inversion-layer charge Q<sub>n</sub>.
