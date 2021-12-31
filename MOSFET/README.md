@@ -326,3 +326,8 @@ A buried-channel MOSFET is usually normally-on (depletion-mode), although theore
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20x_s%7C_%7Bmax%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_D%7D%7D%28%5Csqrt%7B2%5Cpsi_B%7D&plus;%5Csqrt%7B%5Cfrac%7BN_A%5Cpsi_%7Bbi%7D%7D%7BN_A&plus;N_D%7D%7D%29)
 
 In the buried-channel devices, the substrate-bias effect is more direct. It can be viewed as a bottom gate. The effects are calculated in the above equations if ψ<sub>bi</sub> is replaced with ψ<sub>bi</sub> - V<sub>BS</sub> (V<sub>BS</sub> is negative). In particular, V<sub>T</sub> (Eq. 6) and W<sub>Dn</sub> (Eq. 7) can be shifted with a substrate bias, to the extent that the transistor can be turned on and off and between depletion-mode and enhancement-mode.
+
+We now turn to the subthreshold current of buried-channel devices. At a sufficiently large negative gate bias, the channel will be pinched off, that is, when x<sub>x</sub> = W<sub>Ds</sub> + W<sub>Dn</sub> (below Fig. c). The conduction below the threshold voltage is due to the presence of a region of partially depleted electrons, wherein the current is carried primarily by difision of electrons. The resulting subthreshold (sub-pinch-off) current for a
+buried-channel MOSFET is, thus, directly analogous to the subthreshold current for a surface-channel MOSFET. The subthreshold current will vary exponentially with the gate voltage, and the subthreshold swing S is given by the capacitive divider ratio again of Eq. 60, except now different capacitances have to be used. From Fig. c the maximum electron concentration occurs at the location of x = xs - WDn. So CD of Eq. 60 should be replaced with the depletion capacitance of the substrate p-n junction.
+
+![]()
