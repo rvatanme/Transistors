@@ -291,10 +291,17 @@ x<sub>c</sub>. The condition for which x<sub>c</sub> starts to be equal to W<sub
 To consider the subthreshold swing and the substrate sensitivity, we have interpreted the subthreshold swing by comparing the gate-oxide capacitance
 COX to depletion capacitance CD. So, once the depletion width is known, the subthreshold swing can be calculated. For the high-low profile, the added doping decreases WDm, increases CD, and results in a larger (less steep) subthreshold swing. The substrate sensitivity can be calculated also by substituting 2ψ<sub>B</sub> with 2ψ<sub>B</sub> + VBS in calculating VT.
 
-### LOw-High Profile:
+### Low-High Profile:
 Analysis of the low-high profile, also called the retrograde profile, is similar to the high-low case with a AN being subtracted from the background doping. The appropriate equations for the threshold voltage and depletion width become, with just a change of signs. The threshold voltage is, thus, decreased and the depletion width is increased by a dip at the surface doping.
 
 ## Buried-Channel Device
 In the extreme case of the low-high profile, the surface doping can be of the opposite type of the substrate. When this happens, and if part of the surface doped layer is not fully depleted, that is, there exists some neutral region, current can conduct through this buried layer. We call this type of device a buried-channel device (shown in the following figure a). 
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/burried_n_channel.png)
+
+The gate voltage can change the surface depletion layer, thus controlling the net opening of the channel thickness and controlling the current flow. With a large positive gate bias, the channel is fully open, and an addition surface inversion layer can be induced at the surface, similar to a regular surface channel, resulting in two channels in parallel.
+
+The net channel thickness is reduced from x<sub>s</sub> by the amounts of surface depletion W<sub>Ds</sub> and the bottom p-n junction depletion W<sub>Dn</sub>. The surface depletion as a function of V, is the same as Eq. 27 of Chapter 4, and is repeated and modified here as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20W_%7BDs%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_D%7D%28V_%7BFB%7D%5E*-V_G%29&plus;%5Cfrac%7B%5Cepsilon_s%5E2%7D%7BC_%7Box%7D%5E2%7D%7D-%5Cfrac%7B%5Cepsilon_s%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20V_%7BFB%7D%5E*%20%3D%20V_%7BFB%7D&plus;%5Cpsi_%7Bbi%7D%20%5C%5C%5C%5C%20W_%7BDn%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%5Cpsi_%7Bbi%7D%7D%7BqN_D%7D%28%5Cfrac%7BN_A%7D%7BN_A&plus;N_D%7D%29%7D)
+
