@@ -301,7 +301,18 @@ In the extreme case of the low-high profile, the surface doping can be of the op
 
 The gate voltage can change the surface depletion layer, thus controlling the net opening of the channel thickness and controlling the current flow. With a large positive gate bias, the channel is fully open, and an addition surface inversion layer can be induced at the surface, similar to a regular surface channel, resulting in two channels in parallel.
 
-The net channel thickness is reduced from x<sub>s</sub> by the amounts of surface depletion W<sub>Ds</sub> and the bottom p-n junction depletion W<sub>Dn</sub>. The surface depletion as a function of V, is the same as Eq. 27 of Chapter 4, and is repeated and modified here as:
+The net channel thickness is reduced from x<sub>s</sub> by the amounts of surface depletion W<sub>Ds</sub> and the bottom p-n junction depletion W<sub>Dn</sub>. The surface depletion as a function of V<sub>G</sub> is the same as Eq. 27 of Chapter 4, and is repeated and modified here as:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20W_%7BDs%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_D%7D%28V_%7BFB%7D%5E*-V_G%29&plus;%5Cfrac%7B%5Cepsilon_s%5E2%7D%7BC_%7Box%7D%5E2%7D%7D-%5Cfrac%7B%5Cepsilon_s%7D%7BC_%7Box%7D%7D%20%5C%5C%5C%5C%20V_%7BFB%7D%5E*%20%3D%20V_%7BFB%7D&plus;%5Cpsi_%7Bbi%7D%20%5C%5C%5C%5C%20W_%7BDn%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%5Cpsi_%7Bbi%7D%7D%7BqN_D%7D%28%5Cfrac%7BN_A%7D%7BN_A&plus;N_D%7D%29%7D)
 
+Of special interest is the threshold voltage V<sub>T</sub> at which gate bias the channel width is totally consumed by both depletion regions. Setting the following condition, the threshold voltage is obtained as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20x_s%20%3D%20W_%7BDs%7D%20&plus;%20W_%7BDn%7D%20%5C%5C%5C%5C%20V_T%20%3D%20V_%7BFB%7D%5E*-qN_Dx_s%28%5Cfrac%7Bx_s%7D%7B2%5Cepsilon_s%7D&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%29&plus;%28%5Cfrac%7Bx_s%7D%7B%5Cepsilon_s%7D&plus;%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%29%5Csqrt%7B%5Cfrac%7B2q%5Cepsilon_sN_DN_A%5Cpsi_%7Bbi%7D%7D%7BN_A&plus;N_D%7D%7D%20%5C%5C%5C%5C%20-%5Cfrac%7BN_A%5Cpsi_%7Bbi%7D%7D%7BN_A&plus;N_D%7D)
+
+In the case of non-zero channel dimensions being known, the channel charge can be calculated easily. Depending on the gate-bias range, we can have different amounts of bulk change Q<sub>B</sub> and surface inversion charge Q<sub>I</sub>. These are given as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q%20%3D%20Q_B%20%3D%20%28x_s-W_%7BDs%7D-W_%7BDn%7D%29N_D%20%5C%5C%20for%20%5C%3B%5C%3B%5C%3B%20V_T%3CV_G%3CV_%7BFB%7D%5E*%20%5C%5C%5C%5C%20Q%20%3D%20Q_B&plus;Q_I%20%3D%20%28x_s-W_%7BDn%7D%29N_D&plus;C_%7Box%7D%28V_G-V_%7BFB%7D%5E*%29%20%5C%5C%20for%20%5C%3B%5C%3B%5C%3B%20V_%7BFB%7D%5E*%3CV_G)
+
+Given the channel charge, the drain current can be calculated in a way similar to those previously derived. But compared to the surface-channel devices, the buried-channel MOSFET equations are more complicated since the coupling of the gate to the channel (or net gate capacitance) is now gate-bias dependent. Qualitative I- V characteristics are shown in the following figure.
+
+![]()
