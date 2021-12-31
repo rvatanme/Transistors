@@ -275,3 +275,7 @@ The depletion width can be obtained from Eq. 5, using ψ<sub>s</sub> = 2ψ<sub>B
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20W_%7BDm%7D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_B%7D%282%5Cpsi_B-%5Cfrac%7Bq%5CDelta%20Nx%5E2%7D%7B2%5Cepsilon_s%7D%29%7D)
 
 From these equations, we see that added surface doping increases V<sub>T</sub> and decreases W<sub>Dm</sub>. Notice that for the same dose, the V<sub>T</sub> shift is largest with the added doping closest to the surface. For the limiting case of a delta function of dose localized at the Si-SiO<sub>2</sub> interface (x<sub>s</sub> = 0), the threshold shift is simply qD<sub>I</sub>/C<sub>ox</sub>, where D<sub>I</sub> is the total dose ΔNx<sub>s</sub>. Such approach is called threshold adjust, which has the same effect as changing the work-function difference qφ<sub>ms</sub> or changing the total fixed oxide charge.
+
+The step-profile approach described above can give first-order results for the threshold voltage. To obtain a more accurate V<sub>T</sub>, we have to consider the actual doping profile, because the step width x<sub>s</sub> is not well defined for nonuniform doping. A schematic diagram for the nonuniform implanted doping N(x) is shown in the following Fig. For a typical case, the threshold voltage depends on the implanted dose D<sub>I</sub> and the centroid of the dose x<sub>s</sub>. Therefore, the actual implant can be replaced by a delta-function located at x = x<sub>s</sub> as shown;
+
+![]()
