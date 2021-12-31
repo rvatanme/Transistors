@@ -250,4 +250,12 @@ Because the work-function difference φ<sub>ms</sub> and the fixed oxide charges
 
 The following figure shows the results of such calculations at room temperature as a function of substrate doping for various values of oxide thickness. Note that depending on the oxide thickness, the quantity dVT/dT can increase or decrease with the substrate doping.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Thereshold_temp.png)
+
+As temperature decreases, the MOSFET characteristics improve, especially in the subthreshold region. The most-important improvement is the reduction of the subthreshold swing S, from 80 mV/decade at 296 K to 22 mV/decade at 77 K. Thus, the improvement in the subthreshold swing at 77 K is about a factor of four. This improvement comes mainly from the kT/q term in Eq. 60. Other improvements at 77 K include higher mobility, thus, higher current and transconductance, lower power consumption, lower junction leakage current, and lower metalline resistance. The major disadvantages are that the MOSFET must be immersed in a suitable inert coolant (e.g., liquid nitrogen), and that a low-temperature setup requires additional equipment and special care.
+
+## NOnuniform Doping and Buried-Channel Device
+So far, doping concentration in the channel is assumed to be constant. In practical devices, however, the doping is generally nonuniform because in modern
+MOSFET technology, ion implantation is used extensively to taylor the doping profile and improve the device performance for specific applications. For example, a lighter doping at deeper region reduces drain-substrate capacitance and also the substrate-bias effect. On the other hand, a lighter doping level near the Si-SiO, interface lowers the threshold voltage, reduces the field and improves mobility, and higher level at deeper region reduces punch-through between source and drain. These two general cases, namely highilow and low-high profiles, shown in the following figure, with their step-profile approximations for ease of analysis.
+
 ![]()
