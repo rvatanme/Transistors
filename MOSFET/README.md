@@ -315,4 +315,10 @@ In the case of non-zero channel dimensions being known, the channel charge can b
 
 Given the channel charge, the drain current can be calculated in a way similar to those previously derived. But compared to the surface-channel devices, the buried-channel MOSFET equations are more complicated since the coupling of the gate to the channel (or net gate capacitance) is now gate-bias dependent. Qualitative I- V characteristics are shown in the following figure.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/I_V_Buirried.png)
+
+More-exact solution of the drain current can be obtained by substituting the charge into ID integrangd Eq. The results, divided into different regimes of V, bias, are summarized in Table 1. These results are based on the long-channel constant-mobility model. Current saturation due to velocity saturation can be estimated to be = Qν<sub>s</sub>W.
+
 ![]()
+
+A buried-channel MOSFET is usually normally-on (depletion-mode), although theoretically it can be made as a normally-off (enhancement-mode) device, by proper choice of metal work function, for example. Also for a given ND, the threshold voltage becomes more negative with increased buried-channel depth xs. However, because there exists a maximum depletion width in an MOS system, if the doping density ND or/and the buried-channel depth xs are sufficiently large, WDs can reach a maximum value without pinching off the channel. A limit on the channel profile thus exists, otherwise the transistor cannot be turned off. This condition is bound by a combination of xs and ND;
