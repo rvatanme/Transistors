@@ -406,3 +406,8 @@ drain. The punch-through drain voltage and current (dominated by the space-charg
 where A is the cross-sectional area of the punch-through path. The space-charge-limited current increases with V<sub>D</sub><sup>2</sup> and is parallel to the inversion-layer current. The calculated points in the figure are from a 2-dimensional computer calculation incorporating the punch-through effect and field-dependent mobility effect.
 
 The DIBL effect on subthreshold current is shown in Fig. b, for various channel lengths. The device with a 7-um channel length shows long-channel behavior, that is, the subthreshold drain current is independent of drain voltage when VD > 3kT/q. For L = 3 um, there is a substantial dependence of current on VD, with a corresponding shift of VT (which is at the point of current departure of the I-V characteristic from the straight line). The subthreshold swing also increases. For an even shorter channel, L = 1.5 um, long-channel behavior is totally lost. The subthreshold swing becomes much worst and the device cannot be turned off any more.
+
+### Multiplication and Oxide Reliability
+We pointed out earlier that due to nonideal scaling, the internal electric fields in MOSFETs would increase with shorter channel lengths. In this section we discuss the anomalous currents associated with high fields, as well as their impacts. The following figure depicts all parasitic currents in addition to the main channel current. Note that the highest field occurs near the drain, and this is the location where most of the anomalous currents originate.
+
+![]()
