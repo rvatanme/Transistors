@@ -394,4 +394,4 @@ We have pointed out that when the source and drain depletion regions are a subst
 The origin of punch-through is the lowering of the barrier near the source, commonly referred to as DIBL (drain-induced barrier lowering). When the drain is close to the source, the drain bias can influence the barrier at the source end, such that the channel carrier concentration at that location is no longer fixed. This is demonstrated by the energy bands along the semiconductor surface, shown in the following figure. For a long-channel device, a drain bias can change the effective channel length, but the barrier at the source end remains constant. For a short-channel device, this same barrier is no
 longer fixed. The lowering of the source barrier causes an injection of extra carriers, thereby increasing the current substantially. This increase of current shows up in both above-threshold and subthreshold regimes.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/DIBL.png)
