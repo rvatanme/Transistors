@@ -399,7 +399,10 @@ longer fixed. The lowering of the source barrier causes an injection of extra ca
 An example of severe punch-through characteristics above threshold is shown in the following Fig. a. For this device, at VD = 0 the sum of ys and yD is 0.26 um which is larger than the channel length of 0.23 um. Therefore, the depletion region of the drain junction has reached the depletion region of the source junction. Over the drain bias range shown, the device is operated in punch-through condition. Under such a condition, majority carriers in the source region (electrons in this case) can be injected into the depleted channel region, where they will be swept by the field and collected at the
 drain. The punch-through drain voltage and current (dominated by the space-charge-limited current) can be estimated by the depletion approximation to be:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Punch_Current.png)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7Bpt%7D%20%5Capprox%20%5Cfrac%7BqN_A%28L-y_s%29%5E2%7D%7B2%5Cepsilon_s%7D-%5Cpsi_%7Bbi%7D%20%5C%5C%5C%5C%5C%5C%20I_D%20%5Capprox%20%5Cfrac%7B9%5Cepsilon_s%5Cmu_nAV_D%5E2%7D%7B8L%5E3%7D)
 
+where A is the cross-sectional area of the punch-through path. The space-charge-limited current increases with V<sub>D</sup><sub>2</sup> and is parallel to the inversion-layer current. The calculated points in the figure are from a 2-dimensional computer calculation incorporating the punch-through effect and field-dependent mobility effect.
+
+The DIBL effect on subthreshold current is shown in Fig. b, for various channel lengths. The device with a 7-um channel length shows long-channel behavior, that is, the subthreshold drain current is independent of drain voltage when VD > 3kT/q. For L = 3 um, there is a substantial dependence of current on VD, with a corresponding shift of VT (which is at the point of current departure of the I-V characteristic from the straight line). The subthreshold swing also increases. For an even shorter channel, L = 1.5 um, long-channel behavior is totally lost. The subthreshold swing becomes much worst and the device cannot be turned off any more.
