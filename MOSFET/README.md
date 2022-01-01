@@ -366,4 +366,12 @@ We have discussed the nonideal factors that hinder constant-field scaling, resul
 ### Charge Sharing from Source/Drain
 Analysis of the channel charge so far is 1-dimensional, that is, both the inversion charge and depletion charge is completely balanced by the charge on the gate, so they can be treated as charge density. Detailed 2-dimensional examination at the ends of the channel reveals that some of the depletion charge is balanced by the n+-source and drain, as shown in the following Fig a. Departure from long-channel behavior can be shown to happen by applying the charge conservation principle to the region bounded by the gate, the channel, and the source/drain. 
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Source_Drain_Sharing.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_M%27&plus;Q_n%27&plus;Q_B%27%20%3D%200%20%5C%5C%5C%5C%20V_T%20%3D%20V_%7BFB%7D&plus;2%5Cpsi_B&plus;%5Cfrac%7BQ_B%27%7D%7BC_%7Box%7DA%7D)
+
+where Q<sub>M</sub>' is the total charge on the gate, Q<sub>n</sub>' is the total inversion-layer charge, Q<sub>B</sub>' is the total ionized impurity in the depletion region, and A is the gate area ZxL. For long-channel devices, Q<sub>B</sub>'=qN<sub>A</sub>AW<sub>Dm</sub>, where W<sub>Dm</sub> is the maximum depletion-layer width. 
+
+For short-channel devices, the full effect of Q<sub>B</sub>' on the threshold voltage is reduced, because near the source and drain ends of the channel, some field lines originating from the bulk charges under the channel region terminate at the source or drain instead of the gate (Fig. 26a). Note that the horizontal depletion-layer widths yS and yD are smaller than the vertical depletion-layer widths WS and WD, respectively, because the transverse field strongly influences the potential distribution at the surface.
+
+
