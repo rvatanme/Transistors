@@ -380,5 +380,18 @@ The negative sign means VT is lowered and the transistor is easier to turn on. T
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5CDelta%20V_T%20%3D%20%3D%20-%5Cfrac%7BqN_AW_%7BDm%7Dr_j%7D%7BC_%7Box%7DL%7D%20%5C%5C%5C%5C%20%5Ctimes%5B%28%5Csqrt%7B1&plus;%5Cfrac%7B2y_s%7D%7Bj%7D%7D-1%29&plus;%28%5Csqrt%7B1&plus;%5Cfrac%7B2y_d%7D%7Bj%7D%7D-1%29%5D%20%5C%5C%5C%5C%5C%5C%20y_s%20%5Capprox%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_A%7D%28%5Cpsi_%7Bbi%7D-%5Cpsi_s-V_%7BBS%7D%29%7D%20%5C%5C%5C%5C%20y_s%20%5Capprox%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_A%7D%28%5Cpsi_%7Bbi%7D&plus;V_D-%5Cpsi_s-V_%7BBS%7D%29%7D)
 
-Note that the threshold voltage becomes a function of both L and VD.
+Note that the threshold voltage becomes a function of both L and VD. 
 
+The above figure a also shows that yD is a high-field region where carriers are swept out efficiently. ys is a transitional region where the electron concentration is higher than that in the main channel. So for consideration of the channel drift region, the effective channel length is more meaningful, given by: 
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20L_%7Beff%7D%20%3D%20L%27%20%3D%20L%20-%20y_s%20-%20y_D)
+
+This factor contributes to a drain-bias dependence of the effective channel length and partially accounts for the nonsaturating current with drain bias. Nevertheless, the change of channel length affects the current only linearly, whereas the barrier lowering caused by the drain bias, considered next, is much more pronounced since the current has an exponential dependence on the barrier.
+
+### Drain-Induced Barrier Lowering (DIBL)
+We have pointed out that when the source and drain depletion regions are a substantial fraction of the channel length, short-channel effects start to occur. In extreme cases when the sum of these depletion widths approaches the channel length (ys +yD ≈ L), more-serious effects will happen. This condition is commonly called punch-through. The net result is a large leakage current between the source and drain, and that this current is a strong function of the drain bias.
+
+The origin of punch-through is the lowering of the barrier near the source, commonly referred to as DIBL (drain-induced barrier lowering). When the drain is close to the source, the drain bias can influence the barrier at the source end, such that the channel carrier concentration at that location is no longer fixed. This is demonstrated by the energy bands along the semiconductor surface, shown in the following figure. For a long-channel device, a drain bias can change the effective channel length, but the barrier at the source end remains constant. For a short-channel device, this same barrier is no
+longer fixed. The lowering of the source barrier causes an injection of extra carriers, thereby increasing the current substantially. This increase of current shows up in both above-threshold and subthreshold regimes.
+
+![]()
