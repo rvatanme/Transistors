@@ -454,4 +454,6 @@ Details of the source/drain structures are shown in the above figure. Typically 
 
 It has been pointed out that the sharpness or gradient of the source/drain profile is critical to minimize the series resistance. We refer to the following figure to understand its origin. In practice the profile is never perfectly abrupt, and there exists a region of accumulation layer (of n-type) before current spreads into the bulk of the source/drain. This accumulation-layer resistance R<sub>ac</sub> is related to the transition distance before the doping reaches a critical level.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/parasitic_Resistance.png)
+
+
