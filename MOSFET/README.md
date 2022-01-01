@@ -338,4 +338,16 @@ where all depletion layers WDs, WDn, and WDp correspond to the condition at thre
 
 The buried-channel device is expected to have higher carrier mobility than surface-channel devices since carriers are free of surface scattering and other surface effects. They are also less affected by the short-channel effects (to be discussed next) such as hot-carrier-induced reliability problems. On the other hand, since the net distance between the gate and the channel is further away and is gate-bias dependent, the transconductance is smaller and variable. Note that if the gate is replaced by a Schottky junction or a p-n junction, the device become a MESFET or a JFET correspondingly.
 
+## Device Scaling and Short-Channel Effects
+1) As the channel length decreases, the depletion widths of the source and drain become comparable to the channel length and punch-through between the drain and source will eventually occur. This requires higher channel doping. A higher channel doping will increase the threshold voltage, and in order to control a reasonable threshold voltage, a thinner oxide is necessary.
 
+2) Even with the best scaling rules, as the channel length is reduced, departures from long-channel behavior are inevitable. These departures, the short-channel effects, arise as results of a two-dimensional potential distribution and high electric fields in the channel region. The potential distribution in the channel now depends on both the transverse field ξ<sub>x</sub> (controlled by the gate voltage and the back-substrate bias) and the longitudinal field ξ<sub>y</sub> (controlled by the drain bias). In other words, the potential distribution becomes two-dimensional, and the gradual-channel approximation (that is, ξ<sub>x</sub> >> ξ<sub>y</sub>) is no longer valid. This two-dimensional potential results in many forms of undesirable electrical behavior.
+
+3) As the electric field is increased, the channel mobility becomes field-dependent, and eventually velocity saturation occurs. When the field is increased further, carrier multiplication near the drain occurs, leading to substrate current and parasitic bipolar-transistor action. High fields also cause hot-carrier injection into the oxide leading to oxide charging and subsequent threshold-voltage shift and transconductance degradation.
+
+These aforementioned phenomena will cause short-channel effects which can be summarized as follows: (1) V<sub>T</sub> is not constant with L, (2) I<sub>D</sub> does not saturate with V<sub>D</sub> bias, both above and below threshold; (3) I<sub>D</sub> is not proportional to 1/L; and (4) device characteristics degrade with operation time.
+
+### Device Scaling
+The most-ideal scaling rule to avoid short-channel effects is simply to scale down all dimensions and voltages of a long-channel MOSFET so that the internal electric fields are kept the same, as shown in the following table and figure. The doping level is increased by K, and all voltages are reduced by K, leading to a reduction of the junction depletion width by about K. Note that the subthreshold swing S remains essentially the same since S is proportional to 1 + Cd/Cox, and both capacitances are scaled up by the same factor K.
+
+![]()
