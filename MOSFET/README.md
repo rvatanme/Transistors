@@ -375,3 +375,10 @@ where Q<sub>M</sub>' is the total charge on the gate, Q<sub>n</sub>' is the tota
 For short-channel devices, the full effect of Q<sub>B</sub>' on the threshold voltage is reduced, because near the source and drain ends of the channel, some field lines originating from the bulk charges under the channel region terminate at the source or drain instead of the gate (Fig. 26a). Note that the horizontal depletion-layer widths y<sub>S</sub> and y<sub>D</sub> (above fig a) are smaller than the vertical depletion-layer widths W<sub>S</sub> and W<sub>D</sub>, respectively, because the transverse field strongly influences the potential distribution at the surface.
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_B%27%20%3D%20ZqN_AW_%7BDm%7D%28%5Cfrac%7BL&plus;L%27%7D%7B2%7D%29%20%5C%5C%5C%5C%5C%5C%20L%27%20%3D%20L%20-2%28%5Csqrt%7Br_j%5E2&plus;2W_%7BDm%7Dr_j%7D%20-%20r_j%29%20%5C%5C%5C%5C%5C%5C%20%5CDelta%20V_T%20%3D%20%5Cfrac%7B1%7D%7BC_%7Box%7D%7D%28%5Cfrac%7BQ_B%27%7D%7BZL%7D-qN_AW_%7BDm%7D%29%20%5C%5C%5C%5C%20%3D%20-%5Cfrac%7BqN_AW_%7BDm%7D%7D%7BC_%7Box%7D%7D%281-%5Cfrac%7BL&plus;L%27%7D%7B2L%7D%29%20%5C%5C%5C%5C%20%3D%20-%5Cfrac%7BqN_AW_%7BDm%7Dr_j%7D%7BC_%7Box%7DL%7D%28%5Csqrt%7B1&plus;%5Cfrac%7B2W_%7BDm%7D%7D%7Bj%7D%7D-1%29)
+
+The negative sign means VT is lowered and the transistor is easier to turn on. To take into account the effect of the drain voltage and the substrate bias, Eq. 99 can be modified to read:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5CDelta%20V_T%20%3D%20%3D%20-%5Cfrac%7BqN_AW_%7BDm%7Dr_j%7D%7BC_%7Box%7DL%7D%20%5C%5C%5C%5C%20%5Ctimes%5B%28%5Csqrt%7B1&plus;%5Cfrac%7B2y_s%7D%7Bj%7D%7D-1%29&plus;%28%5Csqrt%7B1&plus;%5Cfrac%7B2y_d%7D%7Bj%7D%7D-1%29%5D%20%5C%5C%5C%5C%5C%5C%20y_s%20%5Capprox%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_A%7D%28%5Cpsi_%7Bbi%7D-%5Cpsi_s-V_%7BBS%7D%29%7D%20%5C%5C%5C%5C%20y_s%20%5Capprox%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_A%7D%28%5Cpsi_%7Bbi%7D&plus;V_D-%5Cpsi_s-V_%7BBS%7D%29%7D)
+
+Note that the threshold voltage becomes a function of both L and VD.
+
