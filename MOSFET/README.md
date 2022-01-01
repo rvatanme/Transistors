@@ -395,3 +395,11 @@ The origin of punch-through is the lowering of the barrier near the source, comm
 longer fixed. The lowering of the source barrier causes an injection of extra carriers, thereby increasing the current substantially. This increase of current shows up in both above-threshold and subthreshold regimes.
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/DIBL.png)
+
+An example of severe punch-through characteristics above threshold is shown in the following Fig. a. For this device, at VD = 0 the sum of ys and yD is 0.26 um which is larger than the channel length of 0.23 um. Therefore, the depletion region of the drain junction has reached the depletion region of the source junction. Over the drain bias range shown, the device is operated in punch-through condition. Under such a condition, majority carriers in the source region (electrons in this case) can be injected into the depleted channel region, where they will be swept by the field and collected at the
+drain. The punch-through drain voltage and current (dominated by the space-charge-limited current) can be estimated by the depletion approximation to be:
+
+![]()
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7Bpt%7D%20%5Capprox%20%5Cfrac%7BqN_A%28L-y_s%29%5E2%7D%7B2%5Cepsilon_s%7D-%5Cpsi_%7Bbi%7D%20%5C%5C%5C%5C%5C%5C%20I_D%20%5Capprox%20%5Cfrac%7B9%5Cepsilon_s%5Cmu_nAV_D%5E2%7D%7B8L%5E3%7D)
+
