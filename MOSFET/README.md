@@ -443,4 +443,15 @@ broken down here into separate parts: channel doping, gate stack, and source/dra
 ### Channel Doping Profile
 The following figure shows the schematic of a typical high-performance MOSFET structure based on planar technology. The channel doping profile has a peak level slightly below the semiconductor surface. Such a retrograde profile is achieved with ion implantation, often of multiple doses and energies. The low concentration at the surface has the advantages of higher mobility due to reduced normal field and low threshold voltage. The high peak concentration below the surface is to control punch-through and other short-channel effects. Lower concentration is typically below the junction depth. It reduces the junction capacitance as well as the substrate-bias effect on threshold voltage.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/channel_profile.png)
+
+### Gate Stack
+The gate stack consists of the gate dielectric and the gate contact material. The gate material has been polysilicon for a long time. The advantages of a
+poly-Si gate is (1) its compatibility with the silicon processing, and (2) its ability to withstand high-temperature anneal that is required after self-aligned source/drain implantation. (3) Another important factor is that the work function can be varied by doping it into n-type and p-type. Such flexibility is crucial for a symmetric CMOS technology. (1) One limitation of the poly-Si gate is its relatively high resistance. This does not result in penalty of dc characteristics since the gate terminates on the gate insulator. (2) Another shortcoming of poly-Si gate is the finite depletion width at the oxide interface. This reduces the effective gate capacitance and becomes more severe with thinner oxides. To circumvent the problems of resistance and depletion, gate materials of silicides and metals are obvious choices. Potential candidates are TiN, TaN, W, Mo, and NiSi.
+
+### Source/Drain Design
+Details of the source/drain structures are shown in the above figure. Typically the junction has two sections. The extension near the channel has shallower junction depth to minimize short-channel effects. Sometimes it is doped less heavily to reduce the lateral field for consideration of hot-carrier aging. For this purpose it is called a lightly doped drain (LDD). The deeper junction depth away from the channel helps to minimize the series resistance.
+
+It has been pointed out that the sharpness or gradient of the source/drain profile is critical to minimize the series resistance. We refer to the following figure to understand its origin. In practice the profile is never perfectly abrupt, and there exists a region of accumulation layer (of n-type) before current spreads into the bulk of the source/drain. This accumulation-layer resistance R<sub>ac</sub> is related to the transition distance before the doping reaches a critical level.
+
 ![]()
