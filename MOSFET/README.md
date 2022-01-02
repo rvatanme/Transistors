@@ -466,4 +466,8 @@ effectively be made zero to minimize the short-channel effects. n-p-n bipolar-tr
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Schottky_MOS.png)
 
+The figure above b-d show the working principle of a Schottky source/drain. At thermal equilibrium with VG = VD = 0, the barrier height of the metal to the p-substrate for holes is qφ<sub>B</sub> (e.g., 0.84 eV for an ErSi-Si contact). When the gate voltage is above threshold to invert the surface from p-type to n-type, the barrier height between the source and the inversion layer (electrons) is qφ<sub>B</sub> = 0.28 eV. Note that the source contact is reverse biased under operating conditions (Fig. d). For a 0.28-eV barrier, the thermionic-type reverse-saturation current density is of the order of 1E3 A/cm2 at
+room temperature. To increase current density, metals should be chosen to give the highest majority-carrier barrier such that the minority-carrier barrier height is minimized. Additional current due to tunneling through the barrier should help to improve the supply of channel carriers. At the present, making the structure on ap-type Si substrate for n-channel MOSFET is more difficult compared to p-channel device with n-substrate, because metals and silicides that give large barrier heights on p-type silicon are less common.
+
+The disadvantages of the Schottky sourceldrain are high series resistance due to the finite barrier height, and higher drain leakage current. Typical I-V curves show that current is starved at low-drain bias. Also note that as shown in the above Fig., the metal or silicide contact has to extend underneath the gate for continuity. This process is much more demanding than a junction source/drain which is done by self-aligned implantation and diffusion.
 
