@@ -456,4 +456,9 @@ It has been pointed out that the sharpness or gradient of the source/drain profi
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/parasitic_Resistance.png)
 
+A major milestone for source/drain design is the development of the silicide contact technology which started in the early 1990s. Unlike the metal contact, the silicide can be made self-aligned to the gate, as shown in Fig. 32, thus minimizing the sheet-resistance component (R<sub>sh</sub>) between the contact and the channel. In this way the silicide has become the metal contact because contact resistance between metal and silicide is very small. This self-aligned silicide process has been coined salicide. The salicide process is described as follows. After the gate definition, an insulator spacer
+is formed on the sides of the gate. A metal layer for silicidation is deposited uniformly, which at this stage is shorting the gate and the source/drain. After a thermal reaction at low temperature (≈ 450°C), the metal reacts with silicon to form silicide on the sourceldrain region. Silicide formation on the gate is optional depending on whether the gate is capped with an insulation layer as part of the gate stack. Metal over the spacer region and the field region (between transistors, not shown) remains metal since there is no exposed silicon for reaction. The metal is then removed with a selective chemical that etches metal only without etching silicide, thereby removing the shorting paths. Note that the silicide/silicon interface in Fig. 32 is slightly
+recessed. This is due to the consumption of silicon during silicide formation. Examples for salicides are CoSi2, NiSi2, TiSi2, and PtSi.
+
+### Schottky-Barrier Source/Drain
 
