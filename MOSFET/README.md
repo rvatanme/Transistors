@@ -523,4 +523,11 @@ So for high-frequency performance, the most-important device parameters are g<su
 ### Basic Circuit Blocks
 In this section we present the basic digital-circuit building blocks in both logic and memory circuits. The most-basic unit for a logic circuit is the inverter. Different configurations for MOSFET inverters are shown in Fig. 41. 
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/CMOS.png)
+
+By far the most common is
+the CMOS (complementary MOS) inverter where both n-channel andp-channel transistors are used. This logic consumes very low dc power because when the input is either high or low, one of the transistors in series is off so that there is very little steady-state current (subthreshold current) passing through them. In fact, this is one of the main advantages and applications of MOSFETs where the insulated gate can withstand input voltage of any polarity. Such an arrangement is much more dificult with bipolar transistors or MESFETs without putting a large resistor in front of the input. In an NMOS logic (Fig. 41b), the load of thep-channel transistor is replaced with a depletion-mode n-channel transistor. The advantage is a simpler technology since a p-channel device is not required at the expense of higher dc power. This depletion-mode device with the gate tied to the source is basically a two-terminal nonlinear resistor, which is an improvement compared to a simple resistor load shown in Fig. 41c.
+
+Two basic MOSFET memory cells, for SRAM (static random-access memory) and DRAM (dynamic random-assess memory) circuits, are shown in Fig. 42. The SRAM cell has two CMOS inverters connected back to back. It is a latch and a stable cell but it requires four transistors (six including controls for word line and bit line). The DRAM cell only requires one transistor and, thus, has very high memory density. Its memory information is stored as a charge across the capacitor. Since there is finite leakage of charge in the nonideal capacitor, the cell needs to be refreshed periodically, typically at a frequency of ≈ 100 Hz.
+
 ![]()
