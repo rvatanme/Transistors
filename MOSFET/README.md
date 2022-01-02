@@ -489,4 +489,5 @@ example is large-area display where an array of transistors is required to contr
 ### Three-Dimensional Structures
 In device scaling, the optimum design is with MOSFET built on a body of ultra-thin layer such that the body is fully depleted under the whole bias range. A design to achieve this more efficiently is to have a surround gate structure that encloses the body layer from at least two sides. Two examples of these 3-dimensional structures are shown in the following figure. They can be classified according to their current-flow pattern: the horizontal transistor and vertical transistor that both of them are difficult to fabricate. A new set of dificulties arise from the fact that the majority or all of the channel surface is on a vertical wall, for both of these structures. This fact presents great challenges in achieving a smooth channel surface from etching and growth or deposition of gate dielectrics on these surfaces. Formation of the source/drain junction is no longer trivial by means of ion implantation. Salicide formation will also be much more difficult. Whether one of these turns out to be the device choice in the hture remains to be seen.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/3D_device.png)
+
