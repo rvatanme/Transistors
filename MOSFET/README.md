@@ -530,4 +530,4 @@ the CMOS (complementary MOS) inverter where both n-channel andp-channel transist
 
 Two basic MOSFET memory cells, for SRAM (static random-access memory) and DRAM (dynamic random-assess memory) circuits, are shown in Fig. 42. The SRAM cell has two CMOS inverters connected back to back. It is a latch and a stable cell but it requires four transistors (six including controls for word line and bit line). The DRAM cell only requires one transistor and, thus, has very high memory density. Its memory information is stored as a charge across the capacitor. Since there is finite leakage of charge in the nonideal capacitor, the cell needs to be refreshed periodically, typically at a frequency of ≈ 100 Hz.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/SRAM_DRAM.png)
