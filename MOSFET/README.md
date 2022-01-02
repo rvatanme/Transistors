@@ -464,4 +464,6 @@ recessed. This is due to the consumption of silicon during silicide formation. E
 Instead of p-n junction, use of Schottky-barrier contacts for the source and drain of a MOSFET can result in some advantages in fabrication and performance. The following figure shows a schematic MOSFET structure with such Schottky source and drain.61 For a Schottky contact, the junction depth can
 effectively be made zero to minimize the short-channel effects. n-p-n bipolar-transistor action is also absent for undesirable effects such as bipolar breakdown and latch-up phenomenon in CMOS circuits. Eliminating high-temperature implant anneal can promote better quality in the oxides and better control of geometry. In addition, this structure can be made on semiconductors such as CdS where p-n junctions cannot be easily formed.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Schottky_MOS.png)
+
+
