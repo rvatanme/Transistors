@@ -491,3 +491,7 @@ In device scaling, the optimum design is with MOSFET built on a body of ultra-th
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/3D_device.png)
 
+### Power MOSFETs
+In general, power MOSFETs employ thicker oxides, deeper junctions, and have longer channel lengths. These generally post a penalty on device performance such as transconductance (g<sub>m</sub>) and speed (f<sub>T</sub>). Nevertheless, power applications from MOSFETs have been on the rise, for example, due to the increasing demand of cellular phones and cellular base stations which require extra-high voltage. We will present two power structures that are designed for RF power applications.
+
+DMOS ===> As the name implies, in the DMOS (double-diffbsed MOS) transistor shown in the following Fig. a the channel length is determined by the higher diffusion rate of the p-dopant (e.g., boron) compared to the n<sup>+</sup>-dopant (e.g., phosphorus) of the source.
