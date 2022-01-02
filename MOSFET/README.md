@@ -471,3 +471,7 @@ room temperature. To increase current density, metals should be chosen to give t
 
 The disadvantages of the Schottky sourceldrain are high series resistance due to the finite barrier height, and higher drain leakage current. Typical I-V curves show that current is starved at low-drain bias. Also note that as shown in the above Fig., the metal or silicide contact has to extend underneath the gate for continuity. This process is much more demanding than a junction source/drain which is done by self-aligned implantation and diffusion.
 
+### Raised Source/Drain
+An advanced design is the raised sourceldrain where a heavily doped epitaxial layer is grown over the sourceldrain regions (The following figure a). The purpose is to minimize junction depth to control short-channel effects. Note that an extension underneath the spacer is still needed for continuity. An alternative is the recessed-channel MOSFET where the junction depth rj is zero or negative (Fig. b). The drawback of the recessed-channel structure, especially for submicron devices, is the difficulty in controlling the contour and the oxide thickness at the corners where the threshold voltage is determined. Also, oxide charging may be worsened because more hot-carrier injection will occur.
+
+![]()
