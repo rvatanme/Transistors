@@ -474,4 +474,7 @@ The disadvantages of the Schottky sourceldrain are high series resistance due to
 ### Raised Source/Drain
 An advanced design is the raised sourceldrain where a heavily doped epitaxial layer is grown over the sourceldrain regions (The following figure a). The purpose is to minimize junction depth to control short-channel effects. Note that an extension underneath the spacer is still needed for continuity. An alternative is the recessed-channel MOSFET where the junction depth rj is zero or negative (Fig. b). The drawback of the recessed-channel structure, especially for submicron devices, is the difficulty in controlling the contour and the oxide thickness at the corners where the threshold voltage is determined. Also, oxide charging may be worsened because more hot-carrier injection will occur.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/deep_gate.png)
+
+### SOI and Thin-Film Transistor (TFT)
+
