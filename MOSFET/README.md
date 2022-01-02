@@ -505,6 +505,6 @@ LDMOS ===> The major difference of the LDMOS (laterally diffused MOS) transistor
 ### Equivalent Circuit and Microwave Performance
 The MOSFET is ideally a transconductance amplifier with an infinite input resistance and a current generator at the output. In practice, however, we have other nonideal circuit elements. An equivalent circuit is shown in the following figure for the common-source connection. 
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/equivalent_circuit.png)
 
 The gate resistance R<sub>G</sub> is associated with the gate contact material over the oxide. The input resistance R<sub>in</sub> is caused by tunneling current through the thin gate insulator, and it also includes any conductance through defects. This of course is a function of the oxide thickness. For a thermally grown silicon dioxide layer, this leakage current between the gate and the channel is negligibly small; thus, the input resistance is very high, one of the main advantages of a MOSFET. For oxides below a thickness of 5 nm, the tunneling current starts to become an important factor.
