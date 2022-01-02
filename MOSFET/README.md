@@ -505,6 +505,22 @@ LDMOS ===> The major difference of the LDMOS (laterally diffused MOS) transistor
 ### Equivalent Circuit and Microwave Performance
 The MOSFET is ideally a transconductance amplifier with an infinite input resistance and a current generator at the output. In practice, however, we have other nonideal circuit elements. An equivalent circuit is shown in the following figure for the common-source connection. 
 
-![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/equivalent_circuit.png)
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Equivalent_Circuit.png)
 
-The gate resistance R<sub>G</sub> is associated with the gate contact material over the oxide. The input resistance R<sub>in</sub> is caused by tunneling current through the thin gate insulator, and it also includes any conductance through defects. This of course is a function of the oxide thickness. For a thermally grown silicon dioxide layer, this leakage current between the gate and the channel is negligibly small; thus, the input resistance is very high, one of the main advantages of a MOSFET. For oxides below a thickness of 5 nm, the tunneling current starts to become an important factor.
+The gate resistance R<sub>G</sub> is associated with the gate contact material over the oxide. The input resistance R<sub>in</sub> is caused by tunneling current through the thin gate insulator, and it also includes any conductance through defects. This of course is a function of the oxide thickness. For a thermally grown silicon dioxide layer, this leakage current between the gate and the channel is negligibly small; thus, the input resistance is very high, one of the main advantages of a MOSFET. For oxides below a thickness of 5 nm, the tunneling current starts to become an important factor. The gate capacitance C<sub>G</sub>' (= C<sub>GS</sub>' + C<sub>DS</sub>') is mostly due to C<sub>ox</sub> multiplied by the active channel area ZxL. In practical devices, the gate extends somewhat above the source and drain regions, and these overlap capacitances add to the total C<sub>G</sub>'. This fringing
+effect is also an important contribution to the feedback capacitance C<sub>GD</sub>'. The drain output resistance R<sub>DS</sub> is due to the fact that the drain current does not truly saturate with the drain bias. This effect is especially pronounced for short-channel devices, as part of the short-channel effects discussed earlier. The output capacitance C<sub>DS</sub>' consists mostly of the two p-n junction capacitances connected in series through the semiconductor bulk.
+
+In the saturation region, VD and thus RD has little effect on the drain saturation current. The Rs affects the effective gate bias, and the extrinsic transconductance and the cutoff frequency f<sub>T</sub> is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_%7Bmx%7D%20%3D%20%5Cfrac%7Bg_m%7D%7B1&plus;R_sg_m%7D%20%5C%5C%5C%5C%5C%5C%20f_T%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%28C_G%27&plus;C_%7Bpar%7D%27%29%7D%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%28C_%7Box%7DZL&plus;C_%7Bpar%7D%27%29%7D)
+
+Another figure-of-merit for microwave performance is the maximum frequency of oscillation f<sub>max</sub>, the frequency at which the unilateral gain becomes unity. It is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_%7Bmax%7D%20%3D%20%5Csqrt%7B%5Cfrac%7Bf_T%7D%7B8%5Cpi%20R_GC_%7BGD%7D%27%7D%7D)
+
+So for high-frequency performance, the most-important device parameters are g<sub>m</sub>, R<sub>G</sub>, and all other parasitic capacitances.
+
+### Basic Circuit Blocks
+In this section we present the basic digital-circuit building blocks in both logic and memory circuits. The most-basic unit for a logic circuit is the inverter. Different configurations for MOSFET inverters are shown in Fig. 41. 
+
+![]()
