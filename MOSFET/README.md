@@ -675,5 +675,7 @@ By equating E<sub>ch</sub>(N<sub>i</sub> + 1) = E<sub>ch</sub>(N<sub>i</sub>), t
 We can now return to the SET and explain the two most-important phenomena: the Coulomb blockade and its voltage, and the Coulomb-blockade oscillations. For
 current to conduct from the source to drain, there are two junctions that electrons have to tunnel through, but there is only one junction that controls the current flow. Using the energy-band diagrams of the following Fig., if the bottleneck is at the junction between the source and the single-electron island, an electron will start to tunnel if that junction voltage exceeds q/2C<sub>Σ</sub>, corresponding to the criterion of and giving a minimum value of V<sub>Σ</sub> (V<sub>Cb</sub>)
 
+![]()
+
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7BV_DC_D%7D%7BC_%5CSigma%7D&plus;%5Cfrac%7BV_GC_G%7D%7BC_%5CSigma%7D%20%5Cgeqslant%20%5Cfrac%7Bq%7D%7B2C_%5CSigma%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BCb%7D%20%3D%20%5Cfrac%7Bq%7D%7B2C_D%7D-%5Cfrac%7BV_GC_G%7D%7BC_D%7D)
 
