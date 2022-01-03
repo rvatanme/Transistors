@@ -634,3 +634,7 @@ problem of the MNOS transistor is the continuous loss of charge through the thin
 SONOS Transistor ===> The SONOS (silicon-oxide-nitride-oxide-silicon) transistor is sometimes called the MONOS (metal-oxide-nitride-oxide-silicon) transistor. It is similar to an h4NOS transistor except that it has an additional blocking oxide layer placed between the gate and the nitride layer, forming an ON0 (oxide-nitride-oxide) stack. This top oxide layer is usually similar in thickness to the bottom oxide layer. The function of the blocking oxide is to prevent electron injection from the metal to the nitride layer during erase operation. As a result, a thinner nitride layer can be used, leading to lower programming voltage as well as better charge retention. The SONOS transistor now replaces the older MNOS configuration, but the operation
 principle remains the same.
 
+## Single Electron Transistor
+The structure of an SET is represented by the schematic circuit diagram in the following figure. It has a central single-electron island that has to be extremely small. The island is connected between the source and drain via capacitors through which tunneling occurs to conduct current. The third terminal is the insulated gate and its purpose is to control the current between the source and drain, similar to the case of an FET.
+
+![]()
