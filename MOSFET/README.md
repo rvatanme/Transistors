@@ -557,4 +557,21 @@ When the gate electrode of a conventional MOSFET is modified so that semipermane
 ### Floating-Gate Devices
 In a floating-gate memory device, charge is injected to the floating gate to change the threshold voltage. The two modes of programming are hot-carrier injection and Fowler-Nordheim tunneling. The following figure shows the mechanisms of hot-carrier injection. Near the drain, the lateral field is at its highest level. The channel carriers (electrons) acquire energy from the field and become hot carriers. When their energy is higher than the barrier of the Si/SiO2 interface, they can be injected to the floating gate. At the same time, the high field also induces impact ionization. These generated secondary hot electrons can also be injected to the floating gate. The hot-carrier injection currents give rise to the equivalence of gate current in a regular MOSFET, and is shown in the following Fig. This gate current peaks at VFG = VD where VFG is the potential of the floating gate.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Floating_Gate.png)
+
+Figure 45b shows the original method of hot-carrier injection using drain-substrate avalanche. In this scheme, the floating-gate potential is more negative such that hot holes are injected instead. This injection scheme is found to be less efficient and is no longer used in practice.
+
+Besides hot-carrier injection, electrons can be injected by tunneling. In this programming mode, the electric field across the bottom oxide layer is most critical. On application of a positive voltage VG to the control gate, an electric field is established in each of the two insulators (Fig. 44b). We have, from Gauss' law and Fowler-Nordheim tunneling transport, that:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cepsilon_1%5Cxi_1%20%3D%20%5Cepsilon_2%5Cxi_2%20&plus;%20Q%20%5C%5C%5C%5C%20V_G%20%3D%20V_1%20&plus;%20V_2%20%3D%20d_1%5Cepsilon_1%20&plus;%20d_2%5Cepsilon_2%20%5C%5C%5C%5C%20%5Cxi_1%20%3D%20%5Cfrac%7BV_G%7D%7Bd_1&plus;d_2%28%5Cepsilon_1/%5Cepsilon_2%29%7D%20&plus;%20%5Cfrac%7BQ%7D%7B%5Cepsilon_1&plus;%5Cepsilon_2%28d_1/d_2%29%7D%20%5C%5C%5C%5C%5C%5C%20J%3DC_4%5Cxi_1%5E2exp%28%5Cfrac%7B-%5Cxi_0%7D%7B%5Cxi_1%7D%29)
+
+where the subscripts 1 and 2 correspond to the bottom and top oxide layer respectively, Q (negative) is the stored charge on the floating gate and C4 and ξ0 are constants in terms of effective mass and barrier height. Using either hot-carrier injection or tunneling as programming mechanism, after charging, the total stored charge Q is equal to the integrated injection current since the gate is floating. This causes a shift of the threshold voltage by the amount:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5CDelta%20V_T%20%3D%20%5Cfrac%7B-d_2Q%7D%7B%5Cepsilon_2%7D)
+
+This threshold-voltage shift can be directly measured as shown in the ID-VG plot (the following fig). Alternately, the threshold-voltage shift can be measured from the drain conductance. The change in V , results in a change in the channel conductance gD of the MOSFET. For small drain voltages, the channel conductance of an n-channel MOSFET is given by:
+
 ![]()
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_D%20%3D%20%5Cfrac%7BI_D%7D%7BV_D%7D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cmu%20C_%7Box%7D%28V_G-V_T%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_G%3EV_T)
+
