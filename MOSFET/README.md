@@ -571,7 +571,12 @@ where the subscripts 1 and 2 correspond to the bottom and top oxide layer respec
 
 This threshold-voltage shift can be directly measured as shown in the ID-VG plot (the following fig). Alternately, the threshold-voltage shift can be measured from the drain conductance. The change in V , results in a change in the channel conductance gD of the MOSFET. For small drain voltages, the channel conductance of an n-channel MOSFET is given by:
 
-![]()
-
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_D%20%3D%20%5Cfrac%7BI_D%7D%7BV_D%7D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cmu%20C_%7Box%7D%28V_G-V_T%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_G%3EV_T)
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/I_V_Shift.png)
+
+After altering the charge on the floating gate by Q (negative charge), the go-VG plot shifts to the right by ΔVT. To erase the stored charge, a negative bias is put on the control gate or a positive bias on the sourceldrain. The process is the reverse of the tunneling process described above, and the stored electrons tunnel out of the floating gate to the substrate.
+
+The programming and erasing sequence of a floating-gate memory can be understood with the energy-band diagrams in the following figure. In the following Fig. b, electron injection can be due to hot carriers over the barrier or tunneling through the barrier. Figure c shows that the accumulated negative charge at the floating gate raises the threshold voltage compared to its initial condition in Fig. 47a. The erase is carried out by electron tunneling from the floating gate back to the substrate (Fig. d).
+
+![]()
