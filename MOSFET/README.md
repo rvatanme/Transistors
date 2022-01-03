@@ -646,4 +646,19 @@ The capacitors between the island and the source or drain are characterized by t
 The basic I-V characteristics of an SET are shown in the following Fig. First, Fig. a shows that at most values of V<sub>G</sub>, there is a knee V<sub>D</sub> below which current is very much suppressed. This threshold drain voltage, caused by Coulomb blockade, is explained later. Another important feature is that this Coulomb blockade can be varied by the gate voltage. At some values of V<sub>G</sub>, the Coulomb blockade totally vanishes. Shown
 in Fig. b, the cycle can be repeated many times and is called a Coulomb-blockade oscillation. This is very different from the gate control of a regular transistor, where the current can be turned on or off monotonically.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Coulomb_Blockade.png)
+
+To explain these characteristics, it is best to go back to the simplest structure: a tunneling capacitor as shown in Fig. 53b. Here the capacitor is charged by a small current source, so the junction voltage V<sub>j</sub> will increase until an electron can tunnel. The basis for the Coulomb blockade is that it requires a certain minimum V<sub>j</sub> before there is enough energy for an electron to tunnel. The minimum energy needed is q<sup>2</sup>/2C<sub>j</sub>, which will be the change of energy of the capacitor when an electron tunnels. This is also the same as the energy gained by the electron when tunneling across the capacitor of voltage V<sub>j</sub> giving:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7Bq%5E2%7D%7B2C_j%7D%20%3D%20qV_j)
+
+So V<sub>j</sub> has to reach q/2C<sub>j</sub> before an electron can tunnel. This threshold voltage is the basis for the Coulomb blockade. Alternatively, one can get the same answer by considering the charging energy (E<sub>ch</sub>) for transferring N<sub>i</sub> number of electrons:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20E_%7Bch%7D%20%3D%20%5Cfrac%7B%28Q_o-N_iq%29%5E2%7D%7B2C_j%7D%20-%20%5Cfrac%7BQ_o%5E2%7D%7B2C_j%7D%20%5C%5C%5C%5C%5C%5C%20%3D%20%5Cfrac%7BN_i%5E2q%5E2%7D%7B2C_j%7D%20-%20N_iqV_j)
+
+where Q<sub>o</sub> is the original charge before tunneling and is equal to V<sub>j</sub>/C<sub>j</sub>. The criterion, for switching to a different state is that E<sub>ch</sub> has to be negative and at minimum. Next, we consider a single-electron box where an island is placed between two capacitors, the same as the situation when the source and drain of an SET is tied together (Fig. 53c). As the gate voltage is increased, the island voltage (V<sub>I</sub>) is also increased accordingly, although scaled down by a factor of C<sub>G</sub>/C<sub>Σ</sub>. Similar to the case above, as soon as the tunneling junction gets above a voltage of q/2C<sub>Σ</sub> one electron starts to tunnel across it. Once an electron has tunneled to the center island, its potential drops by q/C<sub>Σ</sub>. Figure 55 shows the charging of the center island and its potential as a function of the gate voltage. It can be seen that the gate voltage at which multiple values of N<sub>i</sub> can coexist is at:
+
 ![]()
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_G%20%3D%20%5Cfrac%7Bq%7D%7BC_G%7D%28N_i&plus;%5Cfrac%7B1%7D%7B2%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%289%29)
+
