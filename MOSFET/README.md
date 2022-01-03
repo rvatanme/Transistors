@@ -658,7 +658,16 @@ So V<sub>j</sub> has to reach q/2C<sub>j</sub> before an electron can tunnel. Th
 
 where Q<sub>o</sub> is the original charge before tunneling and is equal to V<sub>j</sub>/C<sub>j</sub>. The criterion, for switching to a different state is that E<sub>ch</sub> has to be negative and at minimum. Next, we consider a single-electron box where an island is placed between two capacitors, the same as the situation when the source and drain of an SET is tied together (Fig. 53c). As the gate voltage is increased, the island voltage (V<sub>I</sub>) is also increased accordingly, although scaled down by a factor of C<sub>G</sub>/C<sub>Σ</sub>. Similar to the case above, as soon as the tunneling junction gets above a voltage of q/2C<sub>Σ</sub> one electron starts to tunnel across it. Once an electron has tunneled to the center island, its potential drops by q/C<sub>Σ</sub>. Figure 55 shows the charging of the center island and its potential as a function of the gate voltage. It can be seen that the gate voltage at which multiple values of N<sub>i</sub> can coexist is at:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/VG_Ni.png)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_G%20%3D%20%5Cfrac%7Bq%7D%7BC_G%7D%28N_i&plus;%5Cfrac%7B1%7D%7B2%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%289%29)
 
+This condition implies degeneracy: multiple Ni can exist without a change of energy, and one electron can tunnel freely to and from the island. One can imagine that for an SET, if a small bias is applied to the drain, electrons can tunnel from the source to the island freely and subsequently from the island to the drain. This corresponds to the condition of V<sub>G</sub> where the Coulomb blockade disappears in an SET.
+
+Alternatively, one can derive Eq. 9 by considering the charging energy of a single-electron box:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20E_%7Bch%7D%20%3D%20%5Cfrac%7BN_i%5E2q%5E2%7D%7B2C_%5CSigma%7D%20-%20%5Cfrac%7BN_iqV_GC_G%7D%7BC_%5CSigma%7D)
+
+By equating E<sub>ch</sub>(N<sub>i</sub> + 1) = E<sub>ch</sub>(N<sub>i</sub>), the condition of Eq. 9 can be reached. Another approach to understand this is to plot E<sub>ch</sub> vs. charge (N<sub>i</sub>q) for different V<sub>G</sub>, as shown in the following Fig. Remembering that N<sub>i</sub> takes on only integer values, there are only certain values of V<sub>G</sub> where the E<sub>ch</sub> minimum takes on two values of N<sub>i</sub>, a condition of degeneracy. This means that the system can switch between these two states easily without any energy barrier.
+
+![]()
