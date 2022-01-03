@@ -552,4 +552,7 @@ allows the aforementioned features, this would be the ideal memory.
 
 When the gate electrode of a conventional MOSFET is modified so that semipermanent charge storage inside the gate stack is possible, the new structure becomes a nonvolatile memory device. The two groups of nonvolatile memory devices are the floating-gate devices and the charge-trapping devices (the following Fig). In both types of devices, charges are injected from the silicon substrate across the first insulator and stored in the floating gate or at the nitride-oxide interface. The stored charge gives rise to a threshold-voltage shift, and the device is at a high-threshold state (programmed). For a well-designed memory device, the charge retention time can be over 100 years. To return to the low-threshold state (erased), a gate voltage or other means (such as ultraviolet light) can be applied to erase the stored charge.
 
-![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Memory_Classification.png)
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Nonvolatile_Memories.png)
+
+### Floating-Gate Devices
+In a floating-gate memory device, charge is injected to the floating gate to change the threshold voltage.
