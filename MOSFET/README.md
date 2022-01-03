@@ -687,9 +687,11 @@ Conversely, if the tunneling process is initiated by the island-drain junction, 
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_D%20-%20%28%5Cfrac%7BV_DC_D%7D%7BC_%5CSigma%7D&plus;%5Cfrac%7BV_GC_G%7D%7BC_%5CSigma%7D%29%20%5Cgeqslant%20%5Cfrac%7Bq%7D%7B2C_%5CSigma%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BCb%7D%20%3D%20%5Cfrac%7B%28q/2%29%20V_GC_G%7D%7BC_G&plus;C_S%7D%20%5C%5C%5C%5C%5C%5C%20%5Cfrac%7BdV_%7BCb%7D%7D%7BdV_G%7D%20%3D%20%5Cfrac%7BC_G%7D%7BC_G&plus;C_S%7D)
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Coulomb_Blockade_VG.png)
 
-Note that since the current contours follow closely the shape of the Coulomb-blockade diamonds,87 an SET has both positive and negative transconductance,
-depending on the V, range. This is a unique feature that is different from a regular
-transistor. From the two lines of Eqs. 135 and 138, an intercept of q/C, can be
-obtained which is the maximum Vcb
+Note that since the current contours follow closely the shape of the Coulomb-blockade diamonds, an SET has both positive and negative transconductance,
+depending on the V, range. This is a unique feature that is different from a regular transistor. From the the above equations, an intercept of q/C<sub>Σ</sub> can be obtained which is the maximum Vcb. 
+
+Alternatively, the Coulomb-blockade voltage can be obtained by setting the charging energy negative, either for the island-source junction or the island-drain junction as the current-limiting junction:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20E_%7Bch%7D%28N_i%3D1%29%3D%5Cfrac%7Bq%5E2%7D%7B2c_%5CSigma%7D-q%28%5Cfrac%7BV_DC_D%7D%7BC_%5CSigma%7D&plus;%5Cfrac%7BV_GC_G%7D%7BC_%5CSigma%7D%29%20%5Cleqslant%200%20%5C%5C%5C%5C%5C%5C%20E_%7Bch%7D%28N_i%3D1%29%3D%5Cfrac%7Bq%5E2%7D%7B2c_%5CSigma%7D-q%5BV_D%20-%20%28%5Cfrac%7BV_DC_D%7D%7BC_%5CSigma%7D&plus;%5Cfrac%7BV_GC_G%7D%7BC_%5CSigma%7D%29%5D%20%5C%5C%20%5Cleqslant%200)
