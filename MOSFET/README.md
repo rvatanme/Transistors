@@ -535,7 +535,7 @@ Two basic MOSFET memory cells, for SRAM (static random-access memory) and DRAM (
 ## NONVOLATILE MEMORY DEVICES
 Semiconductor memory devices are classified as shown in the following Fig. The first division is based on their ability to maintain their states when the power is disconnected. As the names imply, a volatile memory loses the content, but a nonvolatile memory does not need voltage to maintain the data.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Memory_Classification.png)
 
 Before getting into each type of nonvolatile semiconductor memory, we should first clarify the difference between a RAM and a ROM. A RAM (random-access
 memory) has an x-y address for each cell, which distinguishes it from other serial memories such as magnetic memory. Strictly speaking, a ROM (read-only memory) also has random-access capability since the addressing architecture is similar. In fact the read processes of the RAM and ROM are almost identical. More appropriately, a RAM is sometimes called a read-write memory. However, the nonvolatile ROM has long started to develop some extent of rewriting capability. So the main difference now between a RAM and a ROM is the ease and frequency of erasing and programming. A RAM has almost equal opportunity of rewrite and read. A ROM in general has much more frequent read than rewrite. It itself has a spectrum of rewriting capability, ranging from a pure ROM without any writing capability to a full-feature EEPROM. Because a ROM is smaller in size and more cost-effective than a RAM, it is used whenever frequent rewriting is not required. With this background, different types of nonvolatile memories are explained below:
@@ -552,4 +552,4 @@ allows the aforementioned features, this would be the ideal memory.
 
 When the gate electrode of a conventional MOSFET is modified so that semipermanent charge storage inside the gate stack is possible, the new structure becomes a nonvolatile memory device. The two groups of nonvolatile memory devices are the floating-gate devices and the charge-trapping devices (the following Fig). In both types of devices, charges are injected from the silicon substrate across the first insulator and stored in the floating gate or at the nitride-oxide interface. The stored charge gives rise to a threshold-voltage shift, and the device is at a high-threshold state (programmed). For a well-designed memory device, the charge retention time can be over 100 years. To return to the low-threshold state (erased), a gate voltage or other means (such as ultraviolet light) can be applied to erase the stored charge.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Memory_Classification.png)
