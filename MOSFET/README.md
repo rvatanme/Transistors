@@ -620,4 +620,8 @@ where ξox is the field in the oxide layer, and C5 and C6 are constants. The cur
 
 where ξn and εn are the electric field and permittivity in nitride, φB is the trap level below the conduction band (≈ 1.3 V), and C7 is a constant (3E-9 /Ω.cm). It is known that at the beginning of the programming process, modified Fowler-Nordheim tunneling is capable of a higher current, and current conduction is limited by Frenkel-Poole transport through the nitride layer. When the negative charge starts to build up, the oxide field decreases and the modified Fowler-Nordheim tunneling starts to limit the current. The threshold voltage as a hnction of programming pulse width is shown in the below fig. Initially, the threshold voltage changes linearly with time, followed by a logarithmic dependence, and finally it tends to saturate. This programming speed is largely affected by the choice of oxide thickness; a thinner oxide allows a shorter programming time. Programming speed has to be balanced with charge retention since too thin an oxide will allow the trapped charge to tunnel back to the silicon substrate.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/MNOS_Time.png)
+
+The total gate capacitance CG of the dual dielectrics is equal to the serial combination of their capacitances and the amount of trapped charge density Q near the nitride-oxide interface depends on the trapping efficiency of the nitride and is proportional to the integrated Frenkel-Poole current having passed through it. The final threshold-voltage shift is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20C_G%20%3D%20%5Cfrac%7B1%7D%7B%281/C_%7Box%7D%29&plus;%281/C_n%29%7D%20%3D%20%5Cfrac%7BC_%7Box%7DC_n%7D%7BC_%7Box%7D&plus;C_n%7D%20%5C%5C%5C%5C%5C%5C%20%5CDelta%20V_T%20%3D%20-%5Cfrac%7BQ%7D%7BC_n%7D)
