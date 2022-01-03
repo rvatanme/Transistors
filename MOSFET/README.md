@@ -670,4 +670,10 @@ Alternatively, one can derive Eq. 9 by considering the charging energy of a sing
 
 By equating E<sub>ch</sub>(N<sub>i</sub> + 1) = E<sub>ch</sub>(N<sub>i</sub>), the condition of Eq. 9 can be reached. Another approach to understand this is to plot E<sub>ch</sub> vs. charge (N<sub>i</sub>q) for different V<sub>G</sub>, as shown in the following Fig. Remembering that N<sub>i</sub> takes on only integer values, there are only certain values of V<sub>G</sub> where the E<sub>ch</sub> minimum takes on two values of N<sub>i</sub>, a condition of degeneracy. This means that the system can switch between these two states easily without any energy barrier.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Ech_Ni.png)
+
+We can now return to the SET and explain the two most-important phenomena: the Coulomb blockade and its voltage, and the Coulomb-blockade oscillations. For
+current to conduct from the source to drain, there are two junctions that electrons have to tunnel through, but there is only one junction that controls the current flow. Using the energy-band diagrams of the following Fig., if the bottleneck is at the junction between the source and the single-electron island, an electron will start to tunnel if that junction voltage exceeds q/2C<sub>Σ</sub>, corresponding to the criterion of and giving a minimum value of V<sub>Σ</sub> (V<sub>Cb</sub>)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7BV_DC_D%7D%7BC_%5CSigma%7D&plus;%5Cfrac%7BV_GC_G%7D%7BC_%5CSigma%7D%20%5Cgeqslant%20%5Cfrac%7Bq%7D%7B2C_%5CSigma%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BCb%7D%20%3D%20%5Cfrac%7Bq%7D%7B2C_D%7D-%5Cfrac%7BV_GC_G%7D%7BC_D%7D)
+
