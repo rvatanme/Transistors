@@ -579,4 +579,6 @@ After altering the charge on the floating gate by Q (negative charge), the go-VG
 
 The programming and erasing sequence of a floating-gate memory can be understood with the energy-band diagrams in the following figure. In the following Fig. b, electron injection can be due to hot carriers over the barrier or tunneling through the barrier. Figure c shows that the accumulated negative charge at the floating gate raises the threshold voltage compared to its initial condition in Fig. 47a. The erase is carried out by electron tunneling from the floating gate back to the substrate (Fig. d).
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Tunneling_Injection.png)
+
+
