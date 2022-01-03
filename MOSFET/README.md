@@ -581,4 +581,15 @@ The programming and erasing sequence of a floating-gate memory can be understood
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Tunneling_Injection.png)
 
+In both programming and erasing operations, it is important to modulate the floating-gate potential efficiently by the control-gate applied voltage. An important parameter in the floating-gate memory is the coupling ratio which determines the portion of the control-gate voltage that gets coupled to the floating gate capacitively. This coupling ratio is determined by the capacitance ratio:
 
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20R_%7BCG%7D%20%3D%20%5Cfrac%7BC_2%27%7D%7BC_1%27&plus;C_2%27%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_%7BFG%7D%20%3D%20R_%7BCG%7DV_G)
+
+where VFG is the potential of the floating gate and C1' and C2' are the net capacitances associated with the bottem and top insulator layers, respectively. Note that in practice, the areas of the control gate and the floating gate are not necessarily the same. More often than not, the top control gate wraps
+around the floating gate so the top capacitor has a larger area. In practical devices, the bottom layer has a tunnel oxide of = 80 A, while the top insulator stack typically has an equivalent oxide thickness of = 140 A. A larger top area makes up for the difference in capacitance per unit area, and the coupling ratio is typically around 0.5-0.6.
+
+In device structure, the first EPROM was developed using a heavily doped poly-silicon as the floating-gate material (Fig. 44a). The device uses drain-substrate avalanche shown in Fig. 45b and is known as floating-gate avalanche-injection MOS (FAMOS) memory. The polysilicon gate is embedded in oxide and is completely isolated. To inject charge into the floating gate (that is, to program), the drain junction is biased to avalanche breakdown, and holes in the avalanche plasma are injected from the drain region into the floating gate. To erase the FAMOS memory, ultraviolet light or x-ray is used. Electrical erasing cannot be used because the device has no external gate. 
+
+To enable electrical erase, the stacked-gate structure with double-level polysilicon gates has been in popular use (Fig. 44b). The external control gate makes electrical erasing possible and also improves the programming efficiency. An example of the programming transient based on hot-carrier injection is shown in the following Fig.
+
+![]()
