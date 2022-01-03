@@ -610,4 +610,13 @@ MNOS Transistors ===> As a memory device, in the MNOS (metal-nitride-oxide-silic
 
 The following figure shows the basic band diagrams for the programming and erasing operations. In the programming process, a large positive bias is applied to the gate. Current conduction is known to be due to electrons that are emitted from the substrate to the gate. The conduction mechanisms in the two dielectric layers are very different and have to be considered in series. The current through the oxide J,, is by tunneling. Notice that electrons tunnel through the trapezoidal oxide barrier, followed by a triangular barrier in the nitride. This form of tunneling has been identified as modified Fowler-Nordheim tunneling, as opposed to Fowler-Nordheim tunneling through a single triangular barrier. It has the following form of:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/MNOS_Band.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20J_%7Box%7D%20%3D%20C_5%5Cxi_%7Box%7D%5E2exp%28-%5Cfrac%7BC_6%7D%7B%5Cxi_%7Box%7D%7D%29)
+
+where ξox is the field in the oxide layer, and C5 and C6 are constants. The current through the nitride layer Jn is controlled by Frenkel-Poole transport, which has the form:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20J_%7Bn%7D%20%3D%20C_7%5Cxi_%7Bn%7Dexp%5B-%5Cfrac%7Bq%28%5Cphi_B-%5Csqrt%7Bq%5Cxi_n/%5Cpi%5Cepsilon_n%7D%29%7D%7BkT%7D%5D)
+
+where ξn and εn are the electric field and permittivity in nitride, φB is the trap level below the conduction band (≈ 1.3 V), and C7 is a constant (3E-9 /Ω.cm). It is known that at the beginning of the programming process, modified Fowler-Nordheim tunneling is capable of a higher current, and current conduction is limited by Frenkel-Poole transport through the nitride layer. When the negative charge starts to build up, the oxide field decreases and the modified Fowler-Nordheim tunneling starts to limit the current. The threshold voltage as a hnction of programming pulse width is shown in the above fig. Initially, the threshold voltage changes linearly with time, followed by a logarithmic dependence, and finally it tends to saturate. This program-
+ming speed is largely affected by the choice of oxide thickness; a thinner oxide allows a shorter programming time. Programming speed has to be balanced with charge retention since too thin an oxide will allow the trapped charge to tunnel back to the silicon substrate.
