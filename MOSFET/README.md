@@ -592,4 +592,9 @@ In device structure, the first EPROM was developed using a heavily doped poly-si
 
 To enable electrical erase, the stacked-gate structure with double-level polysilicon gates has been in popular use (Fig. 44b). The external control gate makes electrical erasing possible and also improves the programming efficiency. An example of the programming transient based on hot-carrier injection is shown in the following Fig.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Program_Time.png)
+
+In EEPROM circuits, it is more common to use tunneling as an injection mechanism for programming. A successful commercial device, called FLOTOX (floating-
+gate tunnel oxide) transistor, confines the tunneling process to a small area over the drain, as shown in the following Fig. Typical programming and erasing transients for the FLOTOX transistors are shown in the following Fig.
+
 ![]()
