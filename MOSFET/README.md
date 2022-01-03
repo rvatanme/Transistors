@@ -555,4 +555,6 @@ When the gate electrode of a conventional MOSFET is modified so that semipermane
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Nonvolatile_Memories.png)
 
 ### Floating-Gate Devices
-In a floating-gate memory device, charge is injected to the floating gate to change the threshold voltage.
+In a floating-gate memory device, charge is injected to the floating gate to change the threshold voltage. The two modes of programming are hot-carrier injection and Fowler-Nordheim tunneling. The following figure shows the mechanisms of hot-carrier injection. Near the drain, the lateral field is at its highest level. The channel carriers (electrons) acquire energy from the field and become hot carriers. When their energy is higher than the barrier of the Si/SiO2 interface, they can be injected to the floating gate. At the same time, the high field also induces impact ionization. These generated secondary hot electrons can also be injected to the floating gate. The hot-carrier injection currents give rise to the equivalence of gate current in a regular MOSFET, and is shown in the following Fig. This gate current peaks at VFG = VD where VFG is the potential of the floating gate.
+
+![]()
