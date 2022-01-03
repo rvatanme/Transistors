@@ -597,4 +597,17 @@ To enable electrical erase, the stacked-gate structure with double-level polysil
 In EEPROM circuits, it is more common to use tunneling as an injection mechanism for programming. A successful commercial device, called FLOTOX (floating-
 gate tunnel oxide) transistor, confines the tunneling process to a small area over the drain, as shown in the following Fig. Typical programming and erasing transients for the FLOTOX transistors are shown in the following Fig.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/FLTOX.png)
+
+After programming, by definition, a long retention time is required for nonvolatile memory operation. The retention time is defined as the time when the stored charge decreases to 50% of its initial value and is expressed by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20t_R%20%3D%20%5Cfrac%7Bln%282%29%7D%7B%5Cnu%20ln%28q%5Cphi_B/kT%29%7D)
+
+where ν is the dielectric relaxation frequency, and φB is the barrier height of the floating gate to oxide. The retention time is very sensitive to temperature. Typical retention times at 125°C and 170°C with φB = 1.7 V are found to be about 100 years and 1 year, respectively.
+
+### Charge-Trapping Devices
+MNOS Transistors ===> As a memory device, in the MNOS (metal-nitride-oxide-silicon) transistor, the silicon-nitride layer is used as an efficient material to trap electrons as current passes through the dielectric. Other insulators in place of the silicon-nitride film such as aluminum oxide, tantalum oxide, and titanium oxide have been used but are not as common. Electrons are trapped in the nitride layer close to the oxide-nitride interface. The function of the oxide is to provide a good interface to the semiconductor and to prevent back-tunneling of the injected charge for better charge retention. Its thickness has to be balanced between retention time and programming voltage and time.
+
+The following figure shows the basic band diagrams for the programming and erasing operations. In the programming process, a large positive bias is applied to the gate. Current conduction is known to be due to electrons that are emitted from the substrate to the gate. The conduction mechanisms in the two dielectric layers are very different and have to be considered in series. The current through the oxide J,, is by tunneling. Notice that electrons tunnel through the trapezoidal oxide barrier, followed by a triangular barrier in the nitride. This form of tunneling has been identified as modified Fowler-Nordheim tunneling, as opposed to Fowler-Nordheim tunneling through a single triangular barrier. It has the following form of:
+
 ![]()
