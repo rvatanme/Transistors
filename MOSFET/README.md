@@ -637,4 +637,13 @@ principle remains the same.
 ## Single Electron Transistor
 The structure of an SET is represented by the schematic circuit diagram in the following figure. It has a central single-electron island that has to be extremely small. The island is connected between the source and drain via capacitors through which tunneling occurs to conduct current. The third terminal is the insulated gate and its purpose is to control the current between the source and drain, similar to the case of an FET.
 
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/SET.png)
+
+The opportunity to observe quantization of charge comes directly from the small dimension of the single-electron island. The minimum energy needed to transport a single electron charge to and from the island is q<sup>2</sup>/2C<sub>Σ</sub>, where CΣ (= C<sub>S</sub>+C<sub>D</sub>+C<sub>G</sub>) is its total capacitance. This energy also must be much larger than the thermal energy (> 100kT) for experimental observation, requiring that at room temperature, C<sub>Σ</sub> to be on the order of aF (lE-18 F). This necessitates a single-electron island size less than 1-2 nm. It is also interesting to note that this effect does not require the island to be made of semiconductor materials and most reported results are based on metal dots.
+
+The capacitors between the island and the source or drain are characterized by the tunneling resistances R<sub>TS</sub> and R<sub>TD</sub>. These resistances need to be small (thin insulator layers) to conduct a reasonable amount of current. But they are bound in the lower limit by the Uncertainty principle that electrons have to be treated as particles being clearly on either side of the junction. This requires that R<sub>TS</sub> ≈ R<sub>TD</sub> > h/q<sup>2</sup> (≈ 25.8 kΩ).
+
+The basic I-V characteristics of an SET are shown in the following Fig. First, Fig. a shows that at most values of V<sub>G</sub>, there is a knee V<sub>D</sub> below which current is very much suppressed. This threshold drain voltage, caused by Coulomb blockade, is explained later. Another important feature is that this Coulomb blockade can be varied by the gate voltage. At some values of V<sub>G</sub>, the Coulomb blockade totally vanishes. Shown
+in Fig. b, the cycle can be repeated many times and is called a Coulomb-blockade oscillation. This is very different from the gate control of a regular transistor, where the current can be turned on or off monotonically.
+
 ![]()
