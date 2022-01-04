@@ -81,4 +81,5 @@ Comparing this to Eq. 2, this new result gives a current that is reduced by a fa
 
 Having gone through the three models of u - 8 relationships, it is informative to compare their results on the I-V characteristics. Here we use an example of one I-V curve for a fixed VG (=0) , and the other parameters are; ψP = 4V, ψbi = 1V, and ξ<sub>c</sub>L = 2V. The results are shown in the following fig. The values of the VDsat for the constant mobility, two-piece liner approximation, and the empirical formula are 3V, 1.3V, and 1.9 V respectively. Note that the curve for the two-piece-linear model lies on the constant-mobility curve until VDsat. The lowest current of the three curves corresponds to the empirical formula of Eq. 29 since at any field, the velocity is the lowest among the three models as shown in Fig. 4.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Constant_Peice_Emprical.png)
+
