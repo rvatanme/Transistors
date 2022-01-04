@@ -16,7 +16,13 @@ We can divide the characteristic into three regions: the linear region where the
 
 For deriving general I-V characteristic of JFET or MESFET, we assume that: 1) Channel doping is uniform; 2) The gradual-channel approximation is valid (ξ<sub>x</sub> << ξ<sub>y</sub>); 3) The depletion laye is abrupt; 4) The current gate is niglegeble. We start with the channel charge distribution which is related to the channel dimensions. The channel dimensions and its potential distributions under both gate and drain biases are shown in more details in the following Fig. 
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/JFET_Band_Diagram.png)
+
+Channel-Charge Distribution ===> For a uniformly doped n-channel, under the gradual-channel approximation, the depletion-layer width W, varies only gradually along the channel (x-direction), and one can solve the one-dimensional Poisson equation in the y-direction:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7Bd%5Cxi_y%7D%7Bdy%7D%20%3D%20-%5Cfrac%7Bd%5E2%5CDelta%20%5Cpsi_i%7D%7Bdy%5E2%7D%20%3D%20%5Cfrac%7BqN_D%7D%7B%5Cepsilon_s%7D%20%5C%5C%5C%5C%5C%5C%20W_D%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%28%5Cpsi_%7Bbi%7D%20-%20%5CDelta%20%5Cpsi_i%28x%29%20-%20V_G%29%7D%7BqN_D%7D%7D%20%5C%5C%5C%5C%5C%5C%20%5Cpsi_%7Bbi%7D%20%5Capprox%20%5Cfrac%7B1%7D%7Bq%7D%5BE_g%20-%20kTln%28%5Cfrac%7BN_C%7D%7BN_D%7D%29%5D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20for%5C%3BJFET%20%5C%5C%5C%5C%5C%5C%20%5Cpsi_%7Bbi%7D%20%3D%20%5Cphi_%7BBn%7D%20-%20%5Cfrac%7BkT%7D%7Bq%7Dln%28%5Cfrac%7BN_C%7D%7BN_D%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20for%5C%3BMESFET)
+
+The potential difference Δψ<sub>i</sub>(x) is the potential of the neutral channel [- <sub>i</sub>(x)/q] with respect to the source. So at the drain end, Δψ<sub>i</sub>(L) = V<sub>D</sub>. The depletion widths at the source and drain ends are given by:
+
 ![]()
-
-
 
