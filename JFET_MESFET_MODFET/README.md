@@ -83,3 +83,19 @@ Having gone through the three models of u - 8 relationships, it is informative t
 
 ![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Constant_Peice_Emprical.png)
 
+Velocity Saturation ===> One limiting case is the saturation-velocity model which is expected to be valid in the limit of very short gates where L << VD/ξ<sub>c</sub>. In this assumption, the carriers travel with us in the whole region under the gate, and are totally independent of the low-field mobility. Starting from Eq. 1, the saturation current is simply given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20ZQ_n%5Cnu_s%20%3D%20Zq%28a-W_%7BDs%7D%29N_D%5Cnu_s)
+
+which is reduced from that of the constant-mobility model given by G<sub>i</sub>ψ<sub>P</sub>/3. The choice of depletion width at the source WDs, rather than at the drain is apparent as we discuss details of the carrier-density and velocity profiles in the next section (Dipole-Layer Formation). This equation shows an interesting feature that the saturation current is now totally independent of the channel length. The transconductance is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_m%20%3D%20%5Cfrac%7BdI_%7BDsat%7D%7D%7BdV_G%7D%20%3D%20-ZqN_D%5Cnu_s%5Cfrac%7BdW_%7BDs%7D%7D%7BdV_G%7D%20%3D%20%5Cfrac%7BZ%5Cepsilon_s%5Cnu_s%7D%7BW_%7BDs%7D%7D)
+
+Since ε<sub>s</sub>/WDS is the gate-source capacitance C<sub>GS</sub> this equation reduces to the familiar FET equation:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_m%20%3D%20ZC_%7BGS%7D%5Cnu%20_s)
+
+This equation also has the interesting feature that gm is constant and totally independent of gate bias as well as channel length. Olutput characteristics of constant mobility and velocity saturation are compared in the following Fig. Note that the saturation current and saturation voltage are lower under velocity saturation, but the linear regions remain similar. The constant gm under velocity saturation is indicated by the equal spacing of the I-V curves under different VG. As shown, this velocity-saturation limit provides very simple derivations and results, thus giving a good insight of the short-channel
+limit. In fact, the simple formulae can fit quite well to the state-of-the-art short channel devices.
+
+![]()
