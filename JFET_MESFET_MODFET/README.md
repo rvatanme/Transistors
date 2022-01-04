@@ -14,5 +14,9 @@ channel region. Most JFETs and MESFETs are of depletion mode, i.e., normally-on 
 
 We can divide the characteristic into three regions: the linear region where the drain voltage is small and ID is proportional to VD; the nonlinear region; and the saturation region where the current remains essentially constant and is independent of VD. As the gate bias becomes more negative, both the saturation current IDsat and the corresponding saturation voltage VDsat decrease. 
 
-For deriving general I-V characteristic of JFET or MESFET, we assume that: 1) Channel doping is uniform; 2) The gradual-channel approximation is valid (ξ<sub>x</sub> << ξ<sub>y</sub>); 3) The depletion laye is abrupt; 4) The current gate is niglegeble. 
+For deriving general I-V characteristic of JFET or MESFET, we assume that: 1) Channel doping is uniform; 2) The gradual-channel approximation is valid (ξ<sub>x</sub> << ξ<sub>y</sub>); 3) The depletion laye is abrupt; 4) The current gate is niglegeble. We start with the channel charge distribution which is related to the channel dimensions. The channel dimensions and its potential distributions under both gate and drain biases are shown in more details in the following Fig. 
+
+![]()
+
+
 
