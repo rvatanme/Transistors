@@ -98,4 +98,6 @@ Since ε<sub>s</sub>/WDS is the gate-source capacitance C<sub>GS</sub> this equa
 This equation also has the interesting feature that gm is constant and totally independent of gate bias as well as channel length. Olutput characteristics of constant mobility and velocity saturation are compared in the following Fig. Note that the saturation current and saturation voltage are lower under velocity saturation, but the linear regions remain similar. The constant gm under velocity saturation is indicated by the equal spacing of the I-V curves under different VG. As shown, this velocity-saturation limit provides very simple derivations and results, thus giving a good insight of the short-channel
 limit. In fact, the simple formulae can fit quite well to the state-of-the-art short channel devices.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Constant_Saturation.png)
+
+
