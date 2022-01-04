@@ -57,4 +57,12 @@ It is seen here that the forms of above equations are similar to that of MOSFET 
 
 Velocity-Field Relationship ===> For long-channel devices, the field is low enough that the carrier velocity is treated as being proportional to the field, i.e., constant mobility. For FETs with short channels, significant discrepancies are encountered between experiment and basic theory. One main reason for the discrepancies is the higher internal field for short channels. The following figure shows the qualitative dependence of the drift velocity versus electric field for silicon. At low fields the drift velocity increases linearly with the field, and the slope corresponds to a constant mobility. At higher fields, the carrier velocity deviates from a linear dependence. It becomes lower than simple extrapolation from the low-field slope, and eventually saturates to a value called saturation velocity νs. So for short-channel devices, these effects have to be taken into account. For silicon the drift velocity approaches its saturation value of lE7 cm/s at fields above 5E4 V/cm. For some semiconductors such as GaAs and InP, the drift velocity first reaches a peak value and then decreases toward a saturation velocity.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Drift_Velocity_E.png)
+
+In this section, we will examine two simple u-E relationships. The first is the two-piece linear approximation shown in the above figure. The second is an empirical formula which has a smooth transition between the constant-mobility regime to the saturation-velocity regime, given as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cnu%28%5Cxi_x%29%20%3D%20%5Cfrac%7B%5Cmu%5Cxi_x%7D%7B1&plus;%28%5Cmu%5Cxi_x/%5Cnu_s%29%7D%20%3D%20%5Cfrac%7B%5Cmu%5Cxi_x%7D%7B1&plus;%28%5Cxi_x/%5Cxi_c%29%7D)
+
+As seen, both relationships contain an important parameter, the critical field ξ<sub>c</sub>
+
+Field-Dependent Mobility: Two-Piece Linear Approximation ===> We first discuss velocity saturation based on the two-piece linear approximation. Note that in this model, the constant-mobility results (i.e., Eq. 2) are valid up to the point where the maximum field, which is at the drain end, reaches the critical field. Once at that VDsat, which is lower than the VDsat of the constant-mobility model, the current saturates at a new and lowered ZDsat. So the main task is to calculate this new VDsat. 
