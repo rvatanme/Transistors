@@ -67,4 +67,8 @@ As seen, both relationships contain an important parameter, the critical field �
 
 Field-Dependent Mobility: Two-Piece Linear Approximation ===> We first discuss velocity saturation based on the two-piece linear approximation. Note that in this model, the constant-mobility results (i.e., Eq. 2) are valid up to the point where the maximum field, which is at the drain end, reaches the critical field. Once at that VDsat, which is lower than the VDsat of the constant-mobility model, the current saturates at a new and lowered IDsat. So the main task is to calculate this new VDsat. We start with Eq. 1 (and substitute ν = μξ ) which contains the relationship between field and current. Setting ξ=ξ<sub>c</sub> and ID=IDsat, we have:
 
-![]()
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20Zq%5Cmu%20N_D%20%5Cxi%20_c%5Ba-%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%28%5Cpsi_%7Bbi%7D&plus;V_%7BDsat%7D-V_G%29%7D%7BqN_D%7D%7D%5D%20%5C%5C%5C%5C%5C%5C%20%5Cxi_cL%20%3D%20%5Cfrac%7BV_%7BDsat%7D%20-%20%5B2/%283%5Csqrt%7B%5Cpsi_P%7D%29%5D%5B%28%5Cpsi_%7Bbi%7D&plus;V_%7BDsat%7D-V_G%29%5E%7B3/2%7D-%28%5Cpsi_%7Bbi%7D-V_G%29%5E%7B3/2%7D%5D%7D%7B1-%5Csqrt%7B%28%5Cpsi_%7Bbi%7D&plus;V_%7BDsat%7D-V_G%29/%5Cpsi_P%7D%7D)
+
+Visual examination of this equation indicates that current saturates as VD approaches ξ<sub>c</sub>L , or VD/L ≈ ξ<sub>c</sub>. Once VDsat is known, IDsat can be calculated from Eq. 2 of the constant-mobility model. One also finds that since VDsat is lower than the value from the constant-mobility model, current saturation occurs before the channel is pinched off.
+
+Field-Dependent Mobility: Empirical Formula ===> 
