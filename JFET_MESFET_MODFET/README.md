@@ -9,4 +9,4 @@ As shown in the following figure, both JFET and MESFET consist of a conductive c
 the other as the drain. When a positive voltage V<sub>D</sub> is applied to the drain with respect to the source, electrons flow from source to drain. Hence the source acts as the origin of the carriers and the drain as the sink. The third electrode, the gate, forms a rectifying junction and controls the net opening of the channel by varying the depletion width. The rectifying gate is ap-n junction in the JFET and is a Schottky-barrier junction in a MESFET. The device is basically a voltage-controlled resistor, and its resistance can be controlled by varying the width of the depletion layer extending into the
 channel region.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/JFET_MESFET.png)
