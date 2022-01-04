@@ -26,3 +26,35 @@ The potential difference Δψ<sub>i</sub>(x) is the potential of the neutral cha
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20W_%7BDs%7D%20%3D%20W_D%280%29%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%28%5Cpsi_%7Bbi%7D%20-%20V_G%29%7D%7BqN_D%7D%7D%20%5C%5C%5C%5C%5C%5C%20W_%7BDd%7D%20%3D%20W_D%28L%29%20%3D%20%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%28%5Cpsi_%7Bbi%7D%20&plus;V_D%20-%20V_G%29%7D%7BqN_D%7D%7D)
 
+The maximum value of gate bias applied to increase the current is limited to V<sub>G</sub> = ψ<sub>bi</sub> which corresponds to the condition of W<sub>Ds</sub> = 0. This flat-band condition in practice is not achievable due to the excessive forward current of the gate junction. The maximum value of W<sub>Dd</sub> is equal to a, and the corresponding total band bending is called the pinch-offpotential, defined as: 
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_P%20%5Cequiv%20%5Cfrac%7BqN_Da%5E2%7D%7B2%5Cepsilon_s%7D)
+
+The channel charge density, which is responsible for the current conduction, is proportional to the net channel opening, given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_n%28x%29%20%3D%20qN_D%28a-W_D%28x%29%29%20%5C%5C%5C%5C%20I_D%28x%29%20%3D%20ZQ_n%28x%29%5Cnu%28x%29%20%5C%5C%5C%5C%20I_D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cint_%7B0%7D%5E%7BL%7DQ_n%28x%29%5Cnu%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%281%29)
+
+Equation 1 requires knowledge of the carrier velocity under an applied field, so the ν-ξ relationship is critical. we find that current saturation can
+originate from two very different mechanisms. The first is due to channel pinch-off when the net channel is totally pinched off by the depletion width. This is called long-channel behavior, and found to be modelled well simply by a constant mobility. The second possible mechanism, especially true for short-channel devices, is that the field is high enough such that mobility is no longer constant and eventual the velocity rises to a constant value called saturation velocity. This occurs before the channel is pinched off.
+
+Constant Mobility ===> With constant mobility and ξ(x)=dΔψ<sub>i</sub>(x)/dx the following equation is obtained for I<sub>D</sub> in different regiems:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20G_i%5C%7B%7BV_D%20-%20%5Cfrac%7B2%7D%7B3%20%5Csqrt%7B%5Cpsi_P%7D%7D%5B%28%5Cpsi_%7Bbi%7D&plus;V_D-V_G%29%5E%7B3/2%7D-%28%5Cpsi_%7Bbi%7D-V_G%29%5E%7B3/2%7D%5D%7D%5C%7D%20%5C%5C%5C%5C%5C%5C%20G_i%20%3D%20%5Cfrac%7BZq%5Cmu%20N_Da%7D%7BL%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%282%29)
+
+where G<sub>i</sub> is the full channel conductance when W<sub>D</sub> = 0. In the linear region, VD << VG and VD << ψ<sub>bi</sub>, above equation is reduced to:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDlin%7D%20%3D%20G_i%281-%5Csqrt%7B%5Cfrac%7B%5Cpsi_%7Bbi%7D-V_G%7D%7B%5Cpsi_P%7D%7D%29V_D%20%5C%5C%5C%5C%5C%5C%20I_%7BDlin%7D%20%3D%20%5Cfrac%7BG_i%7D%7B2%5Cpsi_P%7D%28V_G-V_T%29V_D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_G%20%5Capprox%20V_T%20%5C%5C%5C%5C%5C%5C%20V_T%20%3D%20%5Cpsi_%7Bbi%7D%20-%20%5Cpsi_P)
+
+When the drain bias continues to increase, the current according to Eq. 2 goes through the nonlinear region. It reaches a peak and actually drops beyond that point. The drop of current is not physical, but it corresponds to a pinch-off condition when W<sub>Dd</sub> = a. The V<sub>D</sub> at the onset of this condition can be shown to occur at:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7BDsat%7D%20%3D%20%5Cpsi_P%20-%20%5Cpsi_%7Bbi%7D%20&plus;%20V_G%20%3D%20V_G%20-%20V_T%20%5C%5C%5C%5C%20I_%7BDsat%7D%20%3D%20G_i%5B%5Cfrac%7B%5Cpsi_P%7D%7B3%7D%20-%20%28%5Cpsi_%7Bbi%7D-V_G%29%281-%5Cfrac%7B2%7D%7B3%7D%5Csqrt%7B%5Cfrac%7B%5Cpsi_%7Bbi%7D-V_G%7D%7B%5Cpsi_P%7D%7D%29%5D%20%5C%5C%5C%5C%5C%5C%20g_m%20%5Cequiv%20%5Cfrac%7BdI_%7BDsat%7D%7D%7BdV_G%7D%20%3D%20G_i%281-%5Csqrt%7B%5Cfrac%7B%5Cpsi_%7Bbi%7D-V_G%7D%7B%5Cpsi_P%7D%7D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20%283%29)
+
+Qualitatively, for drain bias higher than VDsat, the pinch-off point starts to migrate toward the source. However, the potential at the pinch-off point remains to be VDsat, independent of VD. The field within the drift region thus remains fairly constant, giving rise to current saturation. Practical devices show that IDsat does not saturate completely with VD. This is due to the reduction in the effective channel length, which is measured between the source and the pinch-off point. Equation 17 can also be simplified using Taylor's expansion around VG = VT:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%5Capprox%20%5Cfrac%7BG_i%7D%7B4%5Cpsi_P%7D%28V_G-V_T%29%5E2%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_G%20%5Capprox%20V_T%20%5C%5C%5C%5C%5C%5C%20g_m%20%3D%20%5Cfrac%7BG_i%7D%7B2%5Cpsi_P%7D%28V_G-V_T%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20V_G%20%5Capprox%20V_T)
+
+It is seen here that the forms of above equations are similar to that of MOSFET only near the threshold, i.e., VG = VT. This stems from the fact that the gate capacitance (or depletion width) is gate-bias dependent in JFET and MESFET, while that in the MOSFET (gate dielectric) is fixed. In other words, in a MOSFET the channel charge is linearly dependent on VG, while that is not true for a JFET or MESFET. 
+
+Velocity-Field Relationship ===> For long-channel devices, the field is low enough that the carrier velocity is treated as being proportional to the field, i.e., constant mobility. For FETs with short channels, significant discrepancies are encountered between experiment and basic theory. One main reason for the discrepancies is the higher internal field for short channels. The following figure shows the qualitative dependence of the drift velocity versus electric field for silicon. At low fields the drift velocity increases linearly with the field, and the slope corresponds to a constant mobility. At higher fields, the carrier velocity deviates from a linear dependence. It becomes lower than simple extrapolation from the low-field slope, and eventually saturates to a value called saturation velocity νs. So for short-channel devices, these effects have to be taken into account. For silicon the drift velocity approaches its saturation value of lE7 cm/s at fields above 5E4 V/cm. For some semiconductors such as GaAs and InP, the drift velocity first reaches a peak value and then decreases toward a saturation velocity.
+
+![]()
