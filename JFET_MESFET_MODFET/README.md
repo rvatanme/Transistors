@@ -71,4 +71,10 @@ Field-Dependent Mobility: Two-Piece Linear Approximation ===> We first discuss v
 
 Visual examination of this equation indicates that current saturates as VD approaches ξ<sub>c</sub>L , or VD/L ≈ ξ<sub>c</sub>. Once VDsat is known, IDsat can be calculated from Eq. 2 of the constant-mobility model. One also finds that since VDsat is lower than the value from the constant-mobility model, current saturation occurs before the channel is pinched off.
 
-Field-Dependent Mobility: Empirical Formula ===> 
+Field-Dependent Mobility: Empirical Formula ===> We next derive the current equation based on the empirical formula given in the above. Substituting this into Eq. 1 and integrating from x = 0 to L , we obtain:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20%5Cfrac%7BG_i%7D%7B1&plus;%28V_D/%5Cxi_cL%29%7D%5C%7B%7BV_D%20-%20%5Cfrac%7B2%7D%7B3%20%5Csqrt%7B%5Cpsi_P%7D%7D%5B%28%5Cpsi_%7Bbi%7D&plus;V_D-V_G%29%5E%7B3/2%7D-%28%5Cpsi_%7Bbi%7D-V_G%29%5E%7B3/2%7D%5D%7D%5C%7D)
+
+Comparing this to Eq. 2, this new result gives a current that is reduced by a factor of (1 + VD/ξ<sub>c</sub>L) from that of the constant-mobility model. In order to obtain VDsat, we seek the current peak from the above equation by setting dID/dVD = 0. This yields a transcendental equation for VDsat. Solutions of VDsat have been calculated and plotted in the following Fig., for various values of ξ<sub>c</sub>L. The top curve (ξ<sub>c</sub>L = ∞) becomes the limit of the constant-mobility model. Note that with decreasing ξ<sub>c</sub>L the saturation of drain current is reached at smaller values of drain voltage.
+
+![]()
