@@ -65,4 +65,6 @@ In this section, we will examine two simple u-E relationships. The first is the 
 
 As seen, both relationships contain an important parameter, the critical field ξ<sub>c</sub>
 
-Field-Dependent Mobility: Two-Piece Linear Approximation ===> We first discuss velocity saturation based on the two-piece linear approximation. Note that in this model, the constant-mobility results (i.e., Eq. 2) are valid up to the point where the maximum field, which is at the drain end, reaches the critical field. Once at that VDsat, which is lower than the VDsat of the constant-mobility model, the current saturates at a new and lowered ZDsat. So the main task is to calculate this new VDsat. 
+Field-Dependent Mobility: Two-Piece Linear Approximation ===> We first discuss velocity saturation based on the two-piece linear approximation. Note that in this model, the constant-mobility results (i.e., Eq. 2) are valid up to the point where the maximum field, which is at the drain end, reaches the critical field. Once at that VDsat, which is lower than the VDsat of the constant-mobility model, the current saturates at a new and lowered IDsat. So the main task is to calculate this new VDsat. We start with Eq. 1 (and substitute ν = μξ ) which contains the relationship between field and current. Setting ξ=ξ<sub>c</sub> and ID=IDsat, we have:
+
+![]()
