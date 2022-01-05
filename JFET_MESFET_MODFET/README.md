@@ -152,4 +152,11 @@ in which the doping profile has little effect on the transfer characteristics. A
 
 Experimental results have confirmed that FETs with graded channel doping or step dopings have improved linearity.
 
-Enhancement-Mode Devices ===>
+Enhancement-Mode Devices ===> Buried-channel FETs are usually normally-on devices. The basic current-voltage characteristics of normally-on and normally-off devices are similar, except for the value of the threshold voltage. For high-speed low-power applications, the normally-off (or enhancement-mode) device is very attractive. A normally-off device is one that does not have a conductive channel at VG = 0; that is, the built-in potential ψ<sub>bi</sub> of the gate junction is suficient to totally deplete the channel region. Mathematically, normally-off device has a positive VT:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_%7Bbi%7D%20%3E%20%5Cpsi_%7BP%7D%20%3E%20%5Cfrac%7BqN_Da%5E2%7D%7B2%5Cepsilon_s%7D)
+
+### Microwave Performance
+Small-Signal Equivalent Circuit ===> Field-effect transistors, especially GaAs MESFETs, are useful for low-noise amplification, high-efficiency power generation, and high-speed logic applications. We shall first consider the small-signal equivalent circuit of a MESFET or JFET. A small-signal lumped-element circuit for operation in the saturation region in common-source configuration is shown in the follwing Fig.
+
+![]()
