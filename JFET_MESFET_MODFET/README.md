@@ -209,7 +209,7 @@ The state-of-the-art power-frequency performance of GaAs FETs is shown in the fo
 
 Noise Behavior ===> The MESFET and JFET are low-noise devices, because only majority carriers participate in their operations, and these carriers transport through the channel in the bulk and free of surface or interface scattering. However, in practical devices, extrinsic resistances are unavoidable, and these parasitic resistances are mainly responsible for the noise behavior.
 
-The equivalent circuit used for noise analysis is shown in in the following Fig. Noise sources i<sub>ng</sub>, i<sub>nd</sub>, e<sub>ng</sub>, and e<sub>ns</sub> represent the induced gate noise, induced drain noise, thermal
-noises of the gate resistance R, and source resistance R,, respectively. The e, and Z,
-are the signal source voltage and source impedance. The circuit within the dashed
-lines corresponds to the intrinsic FET.
+The equivalent circuit used for noise analysis is shown in in the following Fig. Noise sources i<sub>ng</sub>, i<sub>nd</sub>, e<sub>ng</sub>, and e<sub>ns</sub> represent the induced gate noise, induced drain noise, thermal noises of the gate resistance R<sub>G</sub> and source resistance R<sub>S</sub>, respectively. The e<sub>s</sub> and Z<sub>s</sub> are the signal source voltage and source impedance. The circuit within the dashed
+lines corresponds to the intrinsic FET. 
+
+![]()
