@@ -181,4 +181,23 @@ Based on unity gain, one can use the derivation discussed in Section 5.3.1 for a
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_T%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%20C_%7Bin%7D%27%7D%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%20%28C_%7BG%7D%27&plus;C_%7Bpar%7D%27%29%7D)
 
+Here C<sub>in</sub>' is the total input capacitance, and C<sub>G</sub>' is the sum of C<sub>GS</sub>' and C<sub>GD</sub>'. For an ideal case of zero input parasitics ( C<sub>par</sub>' = 0), we obtain:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_T%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%20C_%7BG%7D%27%7D%20%3D%20%5Cfrac%7B%5Cnu%7D%7B2%5Cpi%20L%7D)
+
+This equation has the physical meaning that f<sub>T</sub> is related to the ratio L/ν which happens to be the transit time for a carrier to travel from source to drain. The drift velocity ν is equal to the saturation velocity ν<sub>s</sub> for short channels, and for a 1-um gate length, the transit time is of the order of 10 ps. In practice, the parasitic input capacitance C<sub>par</sub>' is a fraction of C<sub>G</sub>', so f<sub>T</sub> is slightly below its theoretical maximum value.
+
+The speed limitations of FETs are also dependent on device geometry and material properties. In the device geometry, the most-important parameter is the gate length L. Decreasing L will decrease the total gate capacitance [ C<sub>G</sub>' ∝ (Z x L )] and increase the transconductance (before velocity saturation); consequently, f<sub>T</sub> improves. As for the carrier transport, since the internal field varies in magnitude along the channel, drift velocities in all field strength are critical. These include the low-field mobility, saturation velocity in high field, and for some materials, peak velocity in medium field in the presence of the transferred-electron effect. In Si and GaAs, electrons have a higher low-field mobility than holes have. Therefore only n-channel FETs are used in microwave applications. The low-field mobility in GaAs is about five times higher than that of silicon, therefore the frequency f<sub>T</sub> is expected to be higher in GaAs. For the same gate length, InP is expected to have even higher f<sub>T</sub> than GaAs because of its higher peak velocity. In any case, for these materials, FETs with gate lengths 0.5 pm or less will have f<sub>T</sub> in excess of 30 GHz.
+
+Maximum Frequency of Oscillation ===> The f<sub>max</sub> is defined as the frequency at which the unilateral gain is unity. For the small input-to-output resistance ratio r<sub>1</sub>, f<sub>max</sub> is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_%7Bmax%7D%20%5Capprox%20%5Csqrt%7B%5Cfrac%7Bf_T%7D%7B8%5Cpi%20R_G%20C_%7BGD%7D%27%7D%7D%20%5C%5C%5C%5C%5C%5C%20r_1%20%5Cequiv%20%5Cfrac%7BR_G&plus;R_%7Bch%7D&plus;R_S%7D%7BR_%7BDS%7D%7D)
+
+At f<sub>max</sub>, unity power gain is reached. To maximize f<sub>max</sub> the frequency f<sub>T</sub> and the resistance ratio R<sub>ch</sub>/R<sub>DS</sub> must be optimized in the intrinsic FET. In addition, the extrinsic resistances R<sub>G</sub> and R<sub>S</sub> and the feedback capacitance C<sub>GD</sub>' must also be minimized.
+
+Power-Frequency Limitations ===> For power applications, both high voltage and high current are required. These, however, demand device designs that are in conflict with one another, and in addition, they also compromise the speed, so a trade-off has to be considered. For high current, the total channel dose (N<sub>D</sub>xa) has to be high. To maintain high breakdown voltage, N<sub>D</sub> cannot be too high and L cannot be too small. For a high f<sub>T</sub>, L has to be minimized and as a consequence, N<sub>D</sub> has to increase. The last constraint comes about because of the following.
+
+For a gate electrode to have adequate control of the current transport across the channel, the gate length must be somewhat larger than the channel depth, that is L/a > π. So to reduce L, the channel depth a has to be reduced at the same time, which implies a higher doping level to maintain a reasonable current. Because of this, some scaling rules have been proposed. These include constant LN<sub>D</sub> scaling, constant L<sup>1/2</sup>N<sub>D</sub>
+scaling, and constant L<sup>2</sup>N<sub>D</sub> scalling. In practical Si and GaAs MESFETs, the highest doping level is about 5E17 /cm3 because of breakdown phenomena. Using the simple velocity-saturation estimate of I<sub>Dsat</sub>/Z = qN<sub>D</sub>μν<sub>s</sub>, and ν<sub>s</sub> of 1E7 cm/s , to
+maintain a current of 3 A/cm, this doping level limits the minimum gate length to about 0.1 pm, with a corresponding maximum f<sub>T</sub> of the order of 100 GHz.
 
