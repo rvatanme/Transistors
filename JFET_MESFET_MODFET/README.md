@@ -224,4 +224,6 @@ where C1 is a constant of value 2.5 s/F. Clearly for low-noise performance, one 
 ### Device Structure
 The schematic diagrams of high-performance MESFETs are shown in the following Fig. The MESFET structures fall into two major categories: the ion-implanted planar structure and the recessed-channel (or recessed-gate) structure. All devices have a semiinsulating (SI) substrate for compound semiconductors such as GaAs.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MESFET_Structure.png)
+
+
