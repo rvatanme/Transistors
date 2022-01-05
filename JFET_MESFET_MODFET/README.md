@@ -159,4 +159,6 @@ Enhancement-Mode Devices ===> Buried-channel FETs are usually normally-on device
 ### Microwave Performance
 Small-Signal Equivalent Circuit ===> Field-effect transistors, especially GaAs MESFETs, are useful for low-noise amplification, high-efficiency power generation, and high-speed logic applications. We shall first consider the small-signal equivalent circuit of a MESFET or JFET. A small-signal lumped-element circuit for operation in the saturation region in common-source configuration is shown in the follwing Fig.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Microwave_Equi_Circuit.png)
+
+In the intrisic FET, 
