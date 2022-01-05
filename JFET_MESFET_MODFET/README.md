@@ -177,4 +177,8 @@ The source and drain series resistances, which cannot be modulated by the gate v
 
 Cutoff Frequency ===> For a measure of the high-speed capability, the cutoff frequency f<sub>T</sub> and the maximum frequency of oscillation f<sub>max</sub> are commonly used. The f<sub>T</sub> is defined as the frequency of unity gain, at which the small-signal input gate current is equal to the drain current of the intrinsic FET. The f<sub>max</sub> is the maximum frequency at which the device can provide power gain. The f<sub>T</sub> is a more appropriate figure-of-merit for digital circuits where speed is the primary concern, and f<sub>max</sub> is more relevant for analog-circuit applications.
 
+Based on unity gain, one can use the derivation discussed in Section 5.3.1 for an expression:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_T%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%20C_%7Bin%7D%27%7D%20%3D%20%5Cfrac%7Bg_m%7D%7B2%5Cpi%20%28C_%7BG%7D%27&plus;C_%7Bpar%7D%27%29%7D)
+
 
