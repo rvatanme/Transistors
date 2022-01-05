@@ -201,3 +201,8 @@ For a gate electrode to have adequate control of the current transport across th
 scaling, and constant L<sup>2</sup>N<sub>D</sub> scalling. In practical Si and GaAs MESFETs, the highest doping level is about 5E17 /cm3 because of breakdown phenomena. Using the simple velocity-saturation estimate of I<sub>Dsat</sub>/Z = qN<sub>D</sub>μν<sub>s</sub>, and ν<sub>s</sub> of 1E7 cm/s , to
 maintain a current of 3 A/cm, this doping level limits the minimum gate length to about 0.1 pm, with a corresponding maximum f<sub>T</sub> of the order of 100 GHz.
 
+In high-power operation, the device temperature increases. This increase causes a reduction of the mobility and saturation velocity, since the mobility varies as [T(K)]<sup>-2</sup> and velocity as [T(K)]<sup>-1</sup>. Therefore, the FET has negative temperature coefficient and will be thermally stable under high-power operation.
+
+The state-of-the-art power-frequency performance of GaAs FETs is shown in the following Fig. A higher frequency range can be reached with MODFETs, at the expense of lower power. With further miniaturization to submicron dimensions, and with improved designs and reduction of parasitics, FETs of higher powers operated at higher frequencies can be made. Also with semiconductor materials of higher band-gaps such as Sic and GaN, the curve can be shifted upward. For GaN devices, the curve can be higher by more than tenfold in power.
+
+![]()
