@@ -212,4 +212,16 @@ Noise Behavior ===> The MESFET and JFET are low-noise devices, because only majo
 The equivalent circuit used for noise analysis is shown in in the following Fig. Noise sources i<sub>ng</sub>, i<sub>nd</sub>, e<sub>ng</sub>, and e<sub>ns</sub> represent the induced gate noise, induced drain noise, thermal noises of the gate resistance R<sub>G</sub> and source resistance R<sub>S</sub>, respectively. The e<sub>s</sub> and Z<sub>s</sub> are the signal source voltage and source impedance. The circuit within the dashed
 lines corresponds to the intrinsic FET. 
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Noise_equivalent.png)
+
+The noise figure is defined as the ratio of the total noise power to the noise power generated from the source impedance alone. So the noise figure depends also on the circuitry external to the device. There is an important parameter called the minimum noisefigure which is obtained with both the source impedance and load impedance being optimized for noise performance. This minimum noise figure for a practical device has been obtained from the equivalent
+circuit to be:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20f_%7Bmin%7D%20%5Capprox%201%20&plus;%202%20%5Cpi%20C_1fC_%7BGS%7D%27%5Csqrt%7B%5Cfrac%7BR_G&plus;R_S%7D%7Bg_m%7D%7D)
+
+where C1 is a constant of value 2.5 s/F. Clearly for low-noise performance, one should minimize the parasitic gate resistance and source resistance. At a given frequency, the noise decreases with decreasing gate length (C<sub>GS</sub>' ∝ Z x L). We should be reminded that RG and gm are proportional to the device width Z, while Rs is inversely proportional to Z. This leads to decreasing noise with decreasing channel width. The graded-channel FET (Fig. 11) has been found to yield less noise (1 to 3 dB lower) than uniformly doped devices having the same geometry. This difference in noise is related to gm. The reduction of gm for a graded-channel FET gives superior noise performance.
+
+### Device Structure
+The schematic diagrams of high-performance MESFETs are shown in the following Fig. The MESFET structures fall into two major categories: the ion-implanted planar structure and the recessed-channel (or recessed-gate) structure. All devices have a semiinsulating (SI) substrate for compound semiconductors such as GaAs.
+
 ![]()
