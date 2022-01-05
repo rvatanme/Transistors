@@ -119,4 +119,30 @@ Unlike a MOSFET where the heavily doped source and drain overlap the gate at the
 source/drain contacts (or heavily doped regions under the contacts). For breakdown consideration, this gate-drain distance L<sub>GD</sub> is critical. In this gap the doping level is the same as the channel. If surface traps are present in this gate-drain spacing, they can deplete part of the channel doping and affect the field distribution. In certain cases they can improve the breakdown voltage. Two-dimensional simulations in the following fig displays the field distribution as a function of surface potential created by surface traps. Without surface traps (ψ<sub>s</sub> = 0), the field is highest at the gate
 edge where breakdown occurs. In this particular example, with a surface potential of 0.65 V, the field at the gate edge is reduced, thereby increasing the breakdown voltage. Using a one-dimensional analysis, the field at the gate edge can be shown to be:
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/VBD_Surface_Traps.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cxi%28L%29%20%3D%20%5Cfrac%7BqN_D%7D%7B%5Cepsilon_s%7D%5Csqrt%7B%5Cfrac%7B2%5Cepsilon_s%7D%7BqN_D%7D%28%5Cpsi_%7Bbi%7D&plus;V_D-V_G%29-%5Cfrac%7BN_%7Bst%7D%27%7D%7BN_D%7DL_%7BGD%7D%5E2%7D)
+
+where N<sub>st</sub>' is the surface-trap density. Since GaAs lacks a common passivation layer such as SiO, for silicon, the breakdown in GaAs MESFETs are less controllable and have different breakdown behavior compared to Si JFETs.
+
+One factor for a reduced breakdown voltage in MESFETs is due to tunneling current associated with the Schottky-barrier gate contact. At high fields, this tunneling current is from thermionic-field emission which has a temperature dependence. The gate current can initiate avalanche multiplication and induces lower drain breakdown voltage. Another factor is that GaAs MESFETs usually have higher current and transconductance than Si devices due to higher mobility. The higher channel current can initiate avalanche at a lower voltage, or produce the temperature effects which trigger earlier breakdown as discussed.
+
+The breakdown voltage can be improved by extending the region between the gate and the drain. Furthermore, to maximize its function, the field distribution
+should be made as uniform as possible. One technique is to introduce a doping gradient in the lateral direction. Another, called RESURF (reduced surface field) is to have a p-layer underneath such that at high drain bias, this n-layer is fully depleted.
+
+### Arbitrary Doping and Enhancement Mode
+Arbitrary Doping Profile. For an arbitrary doping profile in the channel region, the net potential variation inside the depletion width is related to the doping. In the linear region, where the drift velocity is always in the constant-mobility regime due to the small field or drain bias, the ID of JFET with any arbitrary doping is deriven as the form of:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDlin%7D%20%3D%20%5Cfrac%7BZ%5Cmu%7D%7BL%7D%5BQ%28a%29-Q%28W_%7BDs%7D%29%5DV_D)
+
+In the saturation region, we first consider the case where saturation is caused by pinch-off (WDd = a) as opposed to velocity saturation. In this case, the ID and gm are given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%5Cmu%20q%7D%7B%5Cepsilon_sL%7D%5Cint_%7BW_%7BDs%7D%7D%5E%7Ba%7D%5BQ%28a%29-Q%28W_%7BD%7D%29%5DW_DN_DdW_D%20%5C%5C%5C%5C%5C%5C%20g_m%20%3D%20%5Cfrac%7BZ%5Cmu%7D%7BL%7D%5BQ%28a%29-Q%28W_%7BDs%7D%29%5D)
+
+which shows that g, is equal to the conductance of the rectangular section of the semiconductor extending from y = WDs to a. For short-channel devices where velocity saturation determines current saturation, the drain current and gm are simply given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20Z%5Cnu_s%5BQ%28a%29-Q%28W_%7BDs%7D%29%5D%20%5C%5C%5C%5C%5C%5C%20g_m%20%3D%20%5Cfrac%7BZ%5Cnu_s%5Cepsilon_s%7D%7BW_%7BDs%7D%7D)
+
+In real applications, it is often preferable to have good linearity, i.e., constant gm, meaning IDsat changes linearly with VG. Linearity of the transfer characteristics is approached by those profiles in which the depletion depth WD(VG) changes very little as a function of the gate voltage. The transfer characteristics for various doping profiles are shown in the following Fig. Note that both types of nonuniform dopings achieve linearity as the appropriate variable parameter is taken to its limit, which has a delta doping at x = a.
+
 ![]()
