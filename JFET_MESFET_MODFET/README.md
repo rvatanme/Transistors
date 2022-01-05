@@ -205,4 +205,5 @@ In high-power operation, the device temperature increases. This increase causes 
 
 The state-of-the-art power-frequency performance of GaAs FETs is shown in the following Fig. A higher frequency range can be reached with MODFETs, at the expense of lower power. With further miniaturization to submicron dimensions, and with improved designs and reduction of parasitics, FETs of higher powers operated at higher frequencies can be made. Also with semiconductor materials of higher band-gaps such as Sic and GaN, the curve can be shifted upward. For GaN devices, the curve can be higher by more than tenfold in power.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/High_Power_Frequency.png)
+
