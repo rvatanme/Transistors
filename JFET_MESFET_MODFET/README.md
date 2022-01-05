@@ -105,4 +105,5 @@ resistance effect in modeling the I- V characteristics analytically would be ver
 
 Dipole-Layer Formation ===> Below the saturation drain bias VDsat, the potential along the channel increases from zero at the source to VD at the drain. Thus, the gate contact becomes increasingly reverse-biased with respect to the channel, and the depletion width becomes wider as we proceed from source to drain. The resulting decrease in channel opening b must be compensated by an increase in electric field and electron velocity to maintain a constant current throughout the channel. As VD is increased further to VDsat, the electrons reach the saturation velocity at the drain end of the gate (following fig a). The channel is constricted to the smallest cross section b1 under the gate. The electric field reaches the critical value ξ<sub>c</sub> at this point, and , ID starts to saturate. The electron density n(x), however, remains equal to the doping density ND as long as the field does not exceed the critical value ξ<sub>c</sub>.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Dipole_Layer.png)
+
