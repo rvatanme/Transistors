@@ -143,6 +143,13 @@ which shows that g, is equal to the conductance of the rectangular section of th
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20Z%5Cnu_s%5BQ%28a%29-Q%28W_%7BDs%7D%29%5D%20%5C%5C%5C%5C%5C%5C%20g_m%20%3D%20%5Cfrac%7BZ%5Cnu_s%5Cepsilon_s%7D%7BW_%7BDs%7D%7D)
 
-In real applications, it is often preferable to have good linearity, i.e., constant gm, meaning IDsat changes linearly with VG. Linearity of the transfer characteristics is approached by those profiles in which the depletion depth WD(VG) changes very little as a function of the gate voltage. The transfer characteristics for various doping profiles are shown in the following Fig. Note that both types of nonuniform dopings achieve linearity as the appropriate variable parameter is taken to its limit, which has a delta doping at x = a.
+In real applications, it is often preferable to have good linearity, i.e., constant gm, meaning IDsat changes linearly with VG. Linearity of the transfer characteristics is approached by those profiles in which the depletion depth WD(VG) changes very little as a function of the gate voltage. The transfer characteristics for various doping profiles are shown in the following Fig. Note that both types of nonuniform dopings achieve linearity as the appropriate variable parameter is taken to its limit, which has a delta doping at x = a. The results shown are quite different from the constant-mobility case,
+in which the doping profile has little effect on the transfer characteristics. Although the above equation implies a reduction of gm for lower gate voltage, the important quantity gm/C<sub>GS</sub> remains unaffected, where , C<sub>GS</sub> is the gate-source capacitance. This is because C<sub>GS</sub> = ε<sub>s</sub>/WDs and the above equation gives:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/ID_Doping.png)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7Bg_m%7D%7BC_%7BGS%7D%7D%20%3D%20Z%5Cnu_s%20%3D%20constant)
+
+Experimental results have confirmed that FETs with graded channel doping or step dopings have improved linearity.
+
+Enhancement-Mode Devices ===>
