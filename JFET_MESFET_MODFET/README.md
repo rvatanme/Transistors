@@ -161,4 +161,20 @@ Small-Signal Equivalent Circuit ===> Field-effect transistors, especially GaAs M
 
 ![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Microwave_Equi_Circuit.png)
 
-In the intrisic FET, 
+In the intrisic FET, the elements C<sub>GS</sub>'+C<sub>GD</sub>' are the total gate-channel capacitance (= C<sub>G</sub>'). R<sub>ch</sub> is the channel resistance; R<sub>DS</sub> is the output resistance which reflects the nonsaturating drain current with drain bias. The extrinsic (parasitic) elements include the source and drain series resistances R<sub>S</sub> and R<sub>D</sub>, the gate resistance R<sub>G</sub>, the parasitic input capacitance C<sub>par</sub>' and output (drain-source) capacitance C<sub>DS</sub>'. The leakage current in the gate-to-channel junction can be expressed as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_G%20%3D%20I_0%5Bexp%28%5Cfrac%7BqV_G%7D%7BnkT%7D%29%20-%201%5D)
+
+where n is the diode ideality factor (1 < n < 2) and I0 is the saturation current. The input resistance is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20R_%7Bin%7D%20%5Cequiv%20%28%5Cfrac%7BdI_G%7D%7BdV_G%7D%29%5E%7B-1%7D%20%3D%20%5Cfrac%7BnkT%7D%7Bq%28I_0&plus;I_G%29%7D)
+
+As I, approaches zero, the input resistance at room temperature is about 250 MR for I<sub>G</sub> = 1E-10 A. It becomes even higher for negative gate bias (negative VG). The FET obviously has a very high input resistance, even though it is not as ideal as in a MOSFET which has an insulating gate.
+
+The source and drain series resistances, which cannot be modulated by the gate voltage, will introduce an IR drop between the gate and the source and drain contacts. These IR drops will reduce the drain conductance as well as the transconductance. The internal effective voltages VD and VG should then be replaced by [V<sub>D</sub>-I<sub>D</sub>(R<sub>S</sub>+R<sub>D</sub>)] and (V<sub>G</sub> - IR<sub>S</sub>), respectively. In the linear region, the resistances R<sub>S</sub> and R<sub>D</sub> are in series, adding to the total measured drain-source resistance (R<sub>S</sub>+R<sub>D</sub>+R<sub>ch</sub>). In the saturation region, the drain resistance R<sub>D</sub> will cause an increase of the drain voltage at which current saturation occurs. Beyond that voltage V<sub>D</sub> > V<sub>Dsat</sub>, the magnitude of V<sub>D</sub> has no effect on the drain current. By the same token, the measured transconductance in the saturation region is affected only by the source resistance. Thus R<sub>D</sub> has no further effect on gm, and the measured extrinsic transconductance is equal to:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20g_%7Bmx%7D%20%3D%20%5Cfrac%7Bg_m%7D%7B1&plus;R_Sg_m%7D)
+
+Cutoff Frequency ===> For a measure of the high-speed capability, the cutoff frequency f<sub>T</sub> and the maximum frequency of oscillation f<sub>max</sub> are commonly used. The f<sub>T</sub> is defined as the frequency of unity gain, at which the small-signal input gate current is equal to the drain current of the intrinsic FET. The f<sub>max</sub> is the maximum frequency at which the device can provide power gain. The f<sub>T</sub> is a more appropriate figure-of-merit for digital circuits where speed is the primary concern, and f<sub>max</sub> is more relevant for analog-circuit applications.
+
+
