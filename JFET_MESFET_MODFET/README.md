@@ -252,7 +252,17 @@ This is the principle of modulation doping such that carriers from the doped bar
 ### I-V Characteristics
 Based on the principle of modulation doping, the impurities within the barrier layer are completely ionized and carriers depleted away. Referring to the energy-band diagrams of the following Fig., the potential variation within the depleted region is given by:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET_Band_Diagram.png)
 
-![]()
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_P%20%3D%20%5Cfrac%7Bq%7D%7B%5Cepsilon_s%7D%5Cint_0%5E%7By0%7D%20N_D%28y%29ydy)
+
+for a general doping profile. For uniform doping, this built-in potential becomes:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_P%20%3D%20%5Cfrac%7BqN_Dy_0%5E2%7D%7B2%5Cepsilon_s%7D)
+
+For a planar-doped charge sheet n<sub>sh</sub> located at a distance of y<sub>1</sub> from the gate, this expression yields:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_P%20%3D%20%5Cfrac%7Bqn_%7Bsh%7Dy_1%7D%7B%5Cepsilon_s%7D)
+
+The advantage here, compared to the uniformly doped AlGaAs layer, is the reduction of traps that are believed to be responsible for the anomalous behavior of current collapse at low temperature. The close proximity of dopants to the channel also gives a lower threshold voltage.
 
