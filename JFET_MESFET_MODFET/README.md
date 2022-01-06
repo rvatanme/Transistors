@@ -243,7 +243,7 @@ The main advantage of modulation doping is the superior mobility. This phenomeno
 ![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/HEMT_JEFET_MESFET.png)
 
 ### Basic Device Structure
-The most-common heterojunctions for the MODFETs are the AlGaAs/GaAs, AlGaAdInGaAs, and InAlAs/InGaAs heterointerfaces. A basic MODFET structure based on the AlGaAs/GaAs system is shown in the following Fig. It is seen here that the barrier layer AlGaAs under the gate is doped, while the channel layer GaAs is undoped.
+The most-common heterojunctions for the MODFETs are the AlGaAs/GaAs, AlGaAs/InGaAs, and InAlAs/InGaAs heterointerfaces. A basic MODFET structure based on the AlGaAs/GaAs system is shown in the following Fig. It is seen here that the barrier layer AlGaAs under the gate is doped, while the channel layer GaAs is undoped.
 
 ![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET.png)
 
@@ -265,4 +265,41 @@ For a planar-doped charge sheet n<sub>sh</sub> located at a distance of y<sub>1<
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cpsi_P%20%3D%20%5Cfrac%7Bqn_%7Bsh%7Dy_1%7D%7B%5Cepsilon_s%7D)
 
 The advantage here, compared to the uniformly doped AlGaAs layer, is the reduction of traps that are believed to be responsible for the anomalous behavior of current collapse at low temperature. The close proximity of dopants to the channel also gives a lower threshold voltage.
+
+Like any other field-effect transistor, an important parameter is the threshold voltage, the gate bias at which the channel starts to form between the source and drain. From the above Fig., first-order approximation shows that this occurs when the Fermi level E<sub>F</sub> at the GaAs surface coincides with the conduction-band edge E,. This corresponds to the bias condition of:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_T%20%5Capprox%20%5Cphi_%7BBn%7D%20-%20%5Cpsi_P%20-%20%5Cfrac%7B%5CDelta%20E_C%7D%7Bq%7D)
+
+It can be seen here that by choosing the doping profile and barrier height, VT can be varied between positive and negative values. The example shown in the above Fig. has a positive VD and the transistor is called an enhancement-mode (normally-off) device, as opposed to a depletion-mode (normally-on) device. Once the threshold voltage is known, the rest of the analysis in deriving the I-V characteristics are similar to that for the MOSFETs. With gate voltage larger than the threshold voltage, the charge sheet in the channel induced by the gate is capacitively coupled and is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_n%20%3D%20C_o%28V_G%20-%20V_T%29%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20C_o%20%3D%20%5Cfrac%7B%5Cepsilon_s%7D%7By_0&plus;%5CDelta%20y%7D)
+
+where Δy is the channel thickness of the two-dimensional electron gas, estimated to be around 8 nm. When a drain bias is applied, the channel has a variable potential with distance and its value with respect to the source is designated as Δψ(x). It varies along the channel from 0 at the source to V, at the drain. The channel charge as a function of position becomes:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_n%20%3D%20C_o%28V_G%20-%20V_T%20-%20%5CDelta%20%5Cpsi%28x%29%29%20%5C%5C%5C%5C%20I_D%28x%29%20%3D%20ZQ_n%28x%29%5Cnu%28x%29%20%5C%5C%5C%5C%20I_D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cint_%7B0%7D%5E%7BL%7DQ_n%28x%29%5Cnu%28x%29dx%20%5C%3B%5C%3B%5C%3B%5C%3B%20%285%29)
+
+As for the other FETs, we derive the current equations with different assumptions on the velocity-field relationships.
+
+#### Constant MObility
+With constant mobility, the drift velocity and drain current are simply given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cnu%28x%29%20%3D%20%5Cmu%20%5Cxi%28x%29%20%3D%20%5Cmu%20%5Cfrac%7Bd%5CDelta%20%5Cpsi%7D%7Bdx%7D%20%5C%5C%5C%5C%5C%5C%20I_D%20%3D%20%5Cfrac%7BZ%5Cmu%20C_o%7D%7BL%7D%5B%28V_G-V_T%29V_D%20-%20%5Cfrac%7BV_D%5E2%7D%7B2%7D%5D)
+
+In the linear region where VD << ( VG - VT), the above equation is reduced to an ohmic relationship:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%20%3D%20%5Cfrac%7BZ%5Cmu%20C_o%28V_G-V_T%29V_D%7D%7BL%7D)
+
+At high VD, Qn(L) at the drain is reduced to zero, corresponding to the pinch-off condition, and current saturates with VD. This gives a saturation drain bias, a saturation drain current and the transconductance of:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_D%20%3D%20V_G%20-%20V_T%20%5C%5C%5C%5C%5C%5C%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%5Cmu%20C_o%7D%7B2L%7D%20%28V_G-V_T%29%5E2%20%5C%5C%5C%5C%5C%5C%20g_m%20%5Cequiv%20%5Cfrac%7BdI_%7BDsat%7D%7D%7BdV_G%7D%20%3D%20%5Cfrac%7BZ%5Cmu%20C_o%7D%7BL%7D%20%28V_G-V_T%29)
+
+#### Field-Dependent Mobility
+In state-of-the-art devices, current becomes saturated with VD before the pinch-off condition occurs, due to the fact that carrier drift velocity no longer is linearly proportional to the electric field. In other words, in high fields, the mobility becomes field dependent. For devices with high mobilities such as MODFETs, this phenomenon is more severe. The following figure shows the electron velocity-field relationship where a two-piece linear approximation is also shown with a critical field ξ<sub>c</sub>. Low-field electron mobilities reported for the AlGaAs/GaAs heterointerface are typically = 1E4 cm2/V.s at 300 K, = 2E5 cm2/V.s at 77 K, and = 2E6 cm2/V.s at 4 K. The mobility enhancement at low temperatures in a MODFET is very pronounced as discussed before. But the improvement of νs at low temperatures is much less, ranging from 30 to 100%. High mobility also implies low ξ<sub>c</sub>, and the drain bias needed to drive the device towards velocity saturation is reduced. From the MOSFET equations, we set M = 1 since the channel doping is very light. Equations of the MOSFET become:
+
+![]()
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZC_o%5Cmu%7D%7BL%7D%28V_G-V_T-%5Cfrac%7BV_%7BDsat%7D%7D%7B2%7D%29V_%7BDsat%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BDsat%7D%20%3D%20L%5Cxi%20_c%20&plus;%20%28V_G-V_T%29%20-%20%5Csqrt%7B%28L%5Cxi%20_c%29%5E2%20&plus;%20%28V_G-V_T%29%5E2%7D)
+
+
+
 
