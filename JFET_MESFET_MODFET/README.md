@@ -329,5 +329,6 @@ Another material system for MODFET that has attracted increased interest recentl
 The following figure shows the inverted MODFET structure where the gate is placed over the channel layer rather than the barrier layer which is now grown
 over the substrate directly.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET_Super.png)
 
+In modulation doping, the high-Eg, layer thickness determines the built-in potential ψ<sub>P</sub> and preferably cannot be too thin. The channel layer does not have this restriction and can be thinner than the barrier layer. This gives a higher gate capacitance and thus higher transconductance and f<sub>T</sub>. Another advantage is improved source and drain contact resistance since the contacts do not have to go through the high-E, layer. The quantum-well MODFET, sometimes called a double-heterojunction MODFET, is shown in Fig. 24b. Because there are two parallel heterointerfaces, the maximum charge sheet and current are doubled. Another advantage is that the channel is sandwiched by two barriers, and the carriers have better confinement. Multiple-quantum-well structures also have been fabricated based on this principle. In the superlattice MODFET, the superlattice is used as the barrier layer (Fig. 24c). Within the superlattice, the narrow-Eg layers are doped while the wider-Eg layers are undoped. This structure eliminates traps in the AlGaAs layer, and also the parallel conduction path within this doped AlGaAs layer.
