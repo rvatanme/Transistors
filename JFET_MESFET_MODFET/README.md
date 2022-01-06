@@ -235,9 +235,17 @@ For superior microwave performance, the gate can be made into the shape of a T-g
 
 The JFET structures are similar to those of the MESFET, with the additional step of ap-n junction formed underneath the gate contact by ion implantation. JFETs are more suitable for power applications and seldom used in state-of-the-art high-frequency applications. Part of the reason is that the channel length from ap-n junction is more different to control and miniaturize compared to a metal gate. One common inherent shortcoming of both the MESFET and JFET is that the heavily doped source and drain regions cannot overlap the gate as in the case of a MOSFET.
 
-### MODFET
+## MODFET
 The modulation-doped field-effect transistor (MODFET) is also known as the high-electron-mobility transistor (HEMT), two-dimensional electron-gas field-effect transistor (TEGFET), and selectively doped heterojunction transistor (SDHT). Sometimes it is simply referred to by the generic name HFET (heterojunction field-effect transistor). The unique feature of the MODFET is the heterostructure, in which the wide-energy-gap material is doped and carriers diffuse to the undoped narrow-bandgap layer at which heterointerface the channel is formed. The net result of this modulation doping is that channel carriers in the undoped heterointerface are spatially separated from the doped region and have high mobilities because there is no impurity scattering. The development of MBE and MOCVD technologies in the 1970s made heterostructures, quantum wells, and superlattices practical and more accessible for MODFETs.
 
-The main advantage of modulation doping is the superior mobility. This phenomenon is demonstrated in the following figure which compares mobilities in the bulk, relevant for MESFETs and JFETs, to that in the modulation-doped channel. It is seen here that since in a MESFET or JFET the channel has to be doped to a reasonably high level (> 1E17 /cm3), the modulation-doped channel has much higher mobilities at all temperatures.
+The main advantage of modulation doping is the superior mobility. This phenomenon is demonstrated in the following figure which compares mobilities in the bulk, relevant for MESFETs and JFETs, to that in the modulation-doped channel. It is seen here that since in a MESFET or JFET the channel has to be doped to a reasonably high level (> 1E17 /cm3), the modulation-doped channel has much higher mobilities at all temperatures. The modulation-doped channel does not suffer from impurity scattering which dominates at low temperatures. This benefit stems from the screening effect of a two-dimensional electron gas, where its conduction path is confined to a small cross-section which is smaller than 10 nm with high volume density.
+
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/HEMT_JEFET_MESFET.png)
+
+### Basic Device Structure
+The most-common heterojunctions for the MODFETs are the AlGaAs/GaAs, AlGaAdInGaAs, and InAlAs/InGaAs heterointerfaces. A basic MODFET structure based on the AlGaAs/GaAs system is shown in the following Fig. It is seen here that the barrier layer AlGaAs under the gate is doped, while the channel layer GaAs is undoped.
 
 ![]()
+
+#### Structure
+
