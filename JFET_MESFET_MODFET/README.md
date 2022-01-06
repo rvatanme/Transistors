@@ -296,10 +296,21 @@ At high VD, Qn(L) at the drain is reduced to zero, corresponding to the pinch-of
 #### Field-Dependent Mobility
 In state-of-the-art devices, current becomes saturated with VD before the pinch-off condition occurs, due to the fact that carrier drift velocity no longer is linearly proportional to the electric field. In other words, in high fields, the mobility becomes field dependent. For devices with high mobilities such as MODFETs, this phenomenon is more severe. The following figure shows the electron velocity-field relationship where a two-piece linear approximation is also shown with a critical field ξ<sub>c</sub>. Low-field electron mobilities reported for the AlGaAs/GaAs heterointerface are typically = 1E4 cm2/V.s at 300 K, = 2E5 cm2/V.s at 77 K, and = 2E6 cm2/V.s at 4 K. The mobility enhancement at low temperatures in a MODFET is very pronounced as discussed before. But the improvement of νs at low temperatures is much less, ranging from 30 to 100%. High mobility also implies low ξ<sub>c</sub>, and the drain bias needed to drive the device towards velocity saturation is reduced. From the MOSFET equations, we set M = 1 since the channel doping is very light. Equations of the MOSFET become:
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET_velocity_field.png)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZC_o%5Cmu%7D%7BL%7D%28V_G-V_T-%5Cfrac%7BV_%7BDsat%7D%7D%7B2%7D%29V_%7BDsat%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BDsat%7D%20%3D%20L%5Cxi%20_c%20&plus;%20%28V_G-V_T%29%20-%20%5Csqrt%7B%28L%5Cxi%20_c%29%5E2%20&plus;%20%28V_G-V_T%29%5E2%7D)
 
+#### Velocity Saturation
+In the case of short-channel devices, complete velocity saturation is approached and simpler equations can be used. The saturation current in this
+regime becomes:
 
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20ZQ_n%5Cnu_s%20%3D%20ZC_o%28V_G-V_T%29%5Cnu_s%20%5C%5C%5C%5C%20g_m%20%5Cequiv%20%5Cfrac%7BdI_%7BDsat%7D%7D%7BdV_G%7D%20%3D%20ZC_o%5Cnu_s)
+
+Notice that in this extreme case IDsat, is independent of L and gm is independent of L and VG.
+
+#### Equivalent Circuit and Microwave Performance
+For discussions on small-signal equivalent circuit, f<sub>T</sub>, f<sub>max</sub>, and noise, we can follow the analysis either in MOSFET or MESFET/JFET in the earlier part of this chapter. From the equivalent circuit, in the presence of parasitic source resistance, the extrinsic transconductance g<sub>mx</sub>, the cutoff frequency f<sub>T</sub>, the maximum frequency of oscillation f<sub>max</sub>, and the minimum noise figure F<sub>min</sub> are given exactly with the same equation used for JFET and MESFET.
+
+The speed of MODFETs is higher than that of MESFETs, due to the higher mobilities. Even though the saturation velocities of these devices are comparable, higher mobility pushes the device toward the performance limit of complete velocity saturation. So for the same channel length, higher mobility always gives somewhat higher current and transconductance. Some examples of analog applications are low-noise small-signal amplifiers, power amplifiers, oscillators, and mixers. For digital applications, there are high-speed logic and RAM circuits. MODFET also has superior noise performance compared to other FETs. This improved noise property comes from higher current and transconductance.
 
 
