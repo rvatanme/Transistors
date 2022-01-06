@@ -245,7 +245,14 @@ The main advantage of modulation doping is the superior mobility. This phenomeno
 ### Basic Device Structure
 The most-common heterojunctions for the MODFETs are the AlGaAs/GaAs, AlGaAdInGaAs, and InAlAs/InGaAs heterointerfaces. A basic MODFET structure based on the AlGaAs/GaAs system is shown in the following Fig. It is seen here that the barrier layer AlGaAs under the gate is doped, while the channel layer GaAs is undoped.
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET.png)
+
+This is the principle of modulation doping such that carriers from the doped barrier layer are transferred to reside at the heterointerface and are away from the doped region to avoid impurity scattering. The doped barrier layer is typically around 30-nm thick. Very often, a δ-doped charge sheet is used within the barrier layer and placed close to the channel interface, instead of uniform doping. The top layer of n<sup>+</sup>-GaAs is for better source and drain ohmic contacts. These contacts are made from alloys containing Ge, such as AuGe. Similar to MESFETs, the metal gate is sometimes made into the shape of a T-gate to reduce the gate resistance. Most MODFETs reported are n-channel devices for higher electron mobility.
+
+### I-V Characteristics
+Based on the principle of modulation doping, the impurities within the barrier layer are completely ionized and carriers depleted away. Referring to the energy-band diagrams of the following Fig., the potential variation within the depleted region is given by:
+
 ![]()
 
-#### Structure
+![]()
 
