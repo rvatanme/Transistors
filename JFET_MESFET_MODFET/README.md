@@ -320,4 +320,14 @@ The major development effort for MODFETs has been on a channel material that can
 
 Introduction of indium in InGaAs causes lattice mismatch to the GaAs substrate. However, growth of good-quality heteroepitaxial layer is still possible provided the epitaxial-layer thickness is under the so-called critical thickness, in which condition the epitaxial layer is under strain. Such technique yields a pseudomorphic InGaAs channel layer and the device is called pseudomorphic MODFET (P-MODFET or P-HEMT). The following figure summarizes the In% range for conventional MODFETs and P-MODFETs, on both GaAs and InP substrates. On GaAs substrate, P-MODFETs can accommodate a maximum of 35% indium. On InP substrate, an unstrained conventional MODFET starts with 53% In, and its P-MODFETs can contain as high as 80% In. So MODFET performance on InP substrate is always higher. The penalty is the higher cost of the InP substrate. In addition, an InP substrate is more susceptible to breakage during processing, and the wafer size is also smaller. These contribute to even higher cost. In general, P-MODFETs are sensitive to changes in strain during processing. Thermal budget has to be minimized to prevent relaxation of the pseudomorphic layer and introduction of dislocations that reduce the carrier mobility. 
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/MODFET_advanced_structure.png)
+
+Yet another approach, depicted in Fig. 23c, is the latest innovation to obtain high In% on GaAs substrate. In this scheme, a thick buffer layer of graded composition is grown on the GaAs substrate. This thick buffer layer serves to transform the lattice constant gradually, from that of the GaAs substrate to whatever required for the subsequent growth of the InGaAs channel layer. In doing so, all the dislocations are contained within the buffer layer. The InGaAs channel layer is unstrained and dislocation-free. Such technique has permitted indium as high as 80%. The resultant MODFET is called metamorphic MODFET (M-MODFET).
+
+Another material system for MODFET that has attracted increased interest recently is based on the AlGaN/GaN heterojunction. GaN has high energy gap (3.4 eV) and is attractive for power applications because of a low ionization coefficient and thus high breakdown voltage. One interesting feature of the AlGaN/GaN system is the additional carriers coming from the effects of spontaneous polarization and piezoelectric polarization, apart from the modulation doping, resulting in higher current capability. In some cases, the AlGaN barrier layer is undoped and excess carrier concentration relies on these polarization effects.
+
+The following figure shows the inverted MODFET structure where the gate is placed over the channel layer rather than the barrier layer which is now grown
+over the substrate directly.
+
 ![]()
+
