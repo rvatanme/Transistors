@@ -123,3 +123,9 @@ The silvaco input file is as following:
     quit
 
 Here, doped regions is defined by Gaussian distribution. The "peak" value specifies the y coordination of the Gaussian peak where expands along a line from x.left to x.right. If the x.left or x.right is not given, they are assumed to be 0 or the device scale in the x direction. The "conc" value specifies the doping concentration in the peak location. The "char" value gives the rate of doping drop from the "conc" in the y (vertical) direction. The lower "char", the faster doping drop rate. The doping drops off laterally can be specified by "RATIO.LATERAL". The lower "RATIO.LATERAL", the faster laterally doping drop rate. If a Gaussian profile is being added to an area that was already defined with the opposite dopant type, you can use the "JUNCTION" parameter to specify the position of the junction depth instead of specifying the standard deviation using the "CHARACTERISTIC" parameter. 
+
+If you specify the PRINT option within the MODELS statement, the details of material parameters and constants and mobility models will be specified at the start of the run-time output. This is a useful way of checking what parameters values and models are being applied in the simulation. We recommend that you always specify MODELS PRINT in input files.
+
+The "conmob" is the concentration dependent model where the software looks up table valid at 300K for Si and GaAs only and uses simple power law temperature dependence. The "fldmob" is the field dependent mobility model and the model is required to to model any type of velocity saturation effect. The "consrh" is the concentration dependent lifetime carrier and is recommended for Si. The "auger" model is the direct transition of three carriers and important at high current densities.
+
+
