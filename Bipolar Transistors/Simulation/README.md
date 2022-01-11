@@ -122,4 +122,4 @@ The silvaco input file is as following:
     # PROGRAM TERMINATION
     quit
 
-Reza is a great guy.
+Here, doped regions is defined by Gaussian distribution. The "peak" value specifies the y coordination of the Gaussian peak where expands along a line from x.left to x.right. If the x.left or x.right is not given, they are assumed to be 0 or the device scale in the x direction. The "conc" value specifies the doping concentration in the peak location. The "char" value gives the rate of doping drop from the "conc" in the y (vertical) direction. The lower "char", the faster doping drop rate. The doping drops off laterally can be specified by "RATIO.LATERAL". The lower "RATIO.LATERAL", the faster laterally doping drop rate. If a Gaussian profile is being added to an area that was already defined with the opposite dopant type, you can use the "JUNCTION" parameter to specify the position of the junction depth instead of specifying the standard deviation using the "CHARACTERISTIC" parameter. 
