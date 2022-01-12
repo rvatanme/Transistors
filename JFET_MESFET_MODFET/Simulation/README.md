@@ -97,3 +97,6 @@ The input silvaco file is as following:
 Polarization in wurtzite materials is characterized by two components, spontaneous polarization Psp and piezoelectric polarization. Therefore, the total polarization is the sum of the both polarization. The Psp is specified on the MATERIAL statement and specifies the total spontaneous polarization.  
 
 To enable the polarization model, specify POLARIZATION in the REGION statement for the region for which you wish to characterize polarization effects. Typically, this will be a quantum well layer or active layer.
+
+The polarization enters into the simulation as a positive and negative fixed charges appearing at the top (most negative Y coordinate) and bottom (most positive Y coordinate) of the layer in question. By default, the positive charge is added at the bottom and the negative charge is added at the top. You can modify the sign and magnitude of this charge by specifying POLAR.SCALE in the REGION statement. This parameter is multiplied by the polarization determined by Equation 3-506 to obtain the applied charge. The default value for POLAR.SCALE is 1.0.
+
