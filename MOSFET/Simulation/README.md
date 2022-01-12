@@ -1,2 +1,4 @@
 # Simulation of MOSFET
-Here, we are attending to simulate a MOSFET with different characteristics of MOSFETs. 
+Here, we are attending to simulate the following MOSFET with different characteristics. 
+
+![]()
