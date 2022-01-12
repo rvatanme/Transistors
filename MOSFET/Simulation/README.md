@@ -70,10 +70,10 @@ The following silvaco input file was used to simulate the device.
              -abs(ave(v."drain"))/2.0)
     save outf=mos2ex14_1.str
 
-   log outf=IdVd_1.log
-   solve vdrain=0 vfinal=3 vstep=0.05 name=drain
-   save outf=mosfet_1.str
+    log outf=IdVd_1.log
+    solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+    save outf=mosfet_1.str
 
-   quit
+    quit
 
 I'm sure that I can find a job in a hightech company.
