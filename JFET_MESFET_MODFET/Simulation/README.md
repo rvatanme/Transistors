@@ -94,4 +94,4 @@ The input silvaco file is as following:
 
     quit
 
-I will find a job in very near future. 
+Polarization in wurtzite materials is characterized by two components, spontaneous polarization Psp and piezoelectric polarization. Therefore, the total polarization is the sum of the both polarization. The Psp is specified on the MATERIAL statement and specifies the total spontaneous polarization.  
