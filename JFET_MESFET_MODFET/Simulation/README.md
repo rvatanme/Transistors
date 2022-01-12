@@ -95,3 +95,5 @@ The input silvaco file is as following:
     quit
 
 Polarization in wurtzite materials is characterized by two components, spontaneous polarization Psp and piezoelectric polarization. Therefore, the total polarization is the sum of the both polarization. The Psp is specified on the MATERIAL statement and specifies the total spontaneous polarization.  
+
+To enable the polarization model, specify POLARIZATION in the REGION statement for the region for which you wish to characterize polarization effects. Typically, this will be a quantum well layer or active layer.
