@@ -76,4 +76,4 @@ The following silvaco input file was used to simulate the device.
 
     quit
 
-I'm sure that I can find a job in a hightech company.
+In the above example, one can see that there is difference between "electro" and "contact" syntax. In the "electro" syntax, only the location and name of an electrode are specified. But in the "contact" syntax (if there is any), the properties such as workfunction, the material, etc. are determined for a given electrode. 
