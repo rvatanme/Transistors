@@ -100,3 +100,7 @@ To enable the polarization model, specify POLARIZATION in the REGION statement f
 
 The polarization enters into the simulation as a positive and negative fixed charges appearing at the top (most negative Y coordinate) and bottom (most positive Y coordinate) of the layer in question. By default, the positive charge is added at the bottom and the negative charge is added at the top. You can modify the sign and magnitude of this charge by specifying POLAR.SCALE in the REGION statement. This parameter is multiplied by the polarization determined by Equation 3-506 to obtain the applied charge. The default value for POLAR.SCALE is 1.0.
 
+If you want to also include piezoelectric polarization, you can also specify the CALC.STRAIN parameter. If you specify CALC.STRAIN, the simulator will
+automatically calculate strain from the lattice mismatch and will calculate the piezoelectric polarization and apply it to the region. You can also specify the value of the STRAIN parameter, which specifies the axial strain in the region. With STRAIN and POLARIZATION set, the simulator will apply a piezoelectric polarization calculated using the strain value assigned by the STRAIN parameter.
+
+The albrct.n enable the Albrecht mobility model (see Chapter 5: “Blaze: Compound Material 2D Simulator”, “The Albrecht Model” Section on page 5-38).
