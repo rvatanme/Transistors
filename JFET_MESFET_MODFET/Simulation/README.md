@@ -2,7 +2,7 @@
 
 Here, the following HEMT device is simulated using Silvaco software.
 
-![](https://github.com/rvatanme/Transistors/commit/e5dcf381828e65247923a244d19f9515ea83b153)
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/hemt_str.png)
 
 The input silvaco file is as following:
 
