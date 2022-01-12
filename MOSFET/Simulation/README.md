@@ -77,3 +77,5 @@ The following silvaco input file was used to simulate the device.
     quit
 
 In the above example, one can see that there is difference between "electro" and "contact" syntax. In the "electro" syntax, only the location and name of an electrode are specified. But in the "contact" syntax (if there is any), the properties such as workfunction, the material, etc. are determined for a given electrode. 
+
+In the model section, the "cvt" is Lombardi model that include commpletr effect of N (doping concentration), T and both parallel and vertical electric field effects on carrier mobility and is good for non-polar materials. 
