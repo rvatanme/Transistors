@@ -79,3 +79,9 @@ The following silvaco input file was used to simulate the device.
 In the above example, one can see that there is difference between "electro" and "contact" syntax. In the "electro" syntax, only the location and name of an electrode are specified. But in the "contact" syntax (if there is any), the properties such as workfunction, the material, etc. are determined for a given electrode. 
 
 In the model section, the "cvt" is Lombardi model that include commpletr effect of N (doping concentration), T and both parallel and vertical electric field effects on carrier mobility and is good for non-polar materials. 
+
+The isothermal drift diffusion model requires the solution of three equations for potential, electron concentration, and hole concentration. Specifying GUMMEL or NEWTON alone will produce simple Gummel or Newton solutions. Generally, the GUMMEL method is useful where the system of equations is weakly coupled but has only linear convergence. The NEWTON method is useful when the system of equations is strongly coupled and has quadratic convergence. For almost all cases, the NEWTON method is preferred and it is the default. Specifying:
+
+METHOD GUMMEL NEWTON
+
+will cause the solver to start with GUMMEL iterations. Then, switch to NEWTON if convergence is not achieved. This is a robust but a more time consuming way of obtaining solutions for any device. This method, however, is highly recommended for all simulations with floating regions such as SOI transistors. A floating region is defined as an area of doping, which is separated from all electrodes by a pn junction.
