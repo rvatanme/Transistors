@@ -90,4 +90,6 @@ The "extract" syntax extracts the threshold voltage of the MOSFET by calculating
 
 The following drain current vs voltage drain for two different gate voltages were obtained from runnening the above silvaco input file.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Simulation/Id-mosfet.png)
+
+
