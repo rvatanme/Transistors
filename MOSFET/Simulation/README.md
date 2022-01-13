@@ -87,3 +87,7 @@ METHOD GUMMEL NEWTON
 will cause the solver to start with GUMMEL iterations. Then, switch to NEWTON if convergence is not achieved. This is a robust but a more time consuming way of obtaining solutions for any device. This method, however, is highly recommended for all simulations with floating regions such as SOI transistors. A floating region is defined as an area of doping, which is separated from all electrodes by a pn junction.
 
 The "extract" syntax extracts the threshold voltage of the MOSFET by calculating the maximum slope of the Id/Vg curve, finding the intercept with the X axis and then subtracting half of the applied drain bias. By default, the extract results is saved in the results.final file. 
+
+The following drain current vs voltage drain for two different gate voltages were obtained from runnening the above silvaco input file.
+
+![]()
