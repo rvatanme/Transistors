@@ -105,7 +105,10 @@ automatically calculate strain from the lattice mismatch and will calculate the 
 
 The albrct.n enable the Albrecht mobility model (see Chapter 5: “Blaze: Compound Material 2D Simulator”, “The Albrecht Model” Section on page 5-38).
 
-For MESFET simulation, the following silvaco input file is used:
+For MESFET simulation, the following silvaco input file was used:
+
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/MESFET_str.png)
+
 
     # (c) Silvaco Inc., 2021
     go atlas
