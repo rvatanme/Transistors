@@ -72,7 +72,13 @@ The following silvaco input file was used to simulate the device.
 
     log outf=IdVd_1.log
     solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+    tonyplot IdVd_1.log
     save outf=mosfet_1.str
+
+    solve vgate=2.5
+    log outf=IdVd_2.log
+    solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+    tonyplot IdVd_2.log
 
     quit
 
@@ -92,4 +98,4 @@ The following drain current vs voltage drain for two different gate voltages wer
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/Simulation/Id-mosfet.png)
 
-
+As seen, here CVT model for electron mobility and constant life time (srh) was used for the simulation.
