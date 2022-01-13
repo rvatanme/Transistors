@@ -104,3 +104,82 @@ If you want to also include piezoelectric polarization, you can also specify the
 automatically calculate strain from the lattice mismatch and will calculate the piezoelectric polarization and apply it to the region. You can also specify the value of the STRAIN parameter, which specifies the axial strain in the region. With STRAIN and POLARIZATION set, the simulator will apply a piezoelectric polarization calculated using the strain value assigned by the STRAIN parameter.
 
 The albrct.n enable the Albrecht mobility model (see Chapter 5: “Blaze: Compound Material 2D Simulator”, “The Albrecht Model” Section on page 5-38).
+
+For MESFET simulation, the following silvaco input file is used:
+
+    # (c) Silvaco Inc., 2021
+    go atlas
+    title GaAs MESFET Simulation with EB and DD models
+    #
+    # SECTION 1: Mesh spectification
+    #
+    # Define the mesh
+    #
+    mesh  space.mult=2.0
+    # 
+    x.mesh loc=0.00 spac=0.02
+    x.mesh loc=0.2 spac=0.01
+    x.mesh loc=0.4 spac=0.01
+    x.mesh loc=0.6 spac=0.02
+    #
+    y.mesh loc=0.00 spac=0.005
+    y.mesh loc=0.2 spac=0.02
+    y.mesh loc=1 spac=0.1
+    #
+    # SECTION 2: Structure and models spectifications
+    #
+    region     num=1  material=GaAs
+    #
+    elec       num=1  name=source x.min=0.0 y.min=0.0 x.max=0.1 y.max=0.
+    elec       num=2  name=drain  x.min=0.5 y.min=0.0 x.max=0.6 y.max=0. 
+    elec       num=3  name=gate   x.min=0.2 length=0.2
+    #
+    doping uniform conc=1.e15 p.type
+    doping uniform conc=1.e17 n.type y.min=0 y.max=0.12
+    doping uniform conc=5.e18  n.type x.left=0.  x.right=0.1 y.min=0 y.max=0.05
+    doping uniform conc=5.e18  n.type x.left=0.5 x.right=0.6 y.min=0 y.max=0.05
+    #
+    contact num=3 work=4.87
+    #
+    ######################################
+    #            DD calculation          #
+    ######################################
+    #
+    contact num=3 work=4.87
+    models   print  conmob fldmob evsatmod=1  
+    material taurel.el=1.e-12 taumob.el=1.e-12 vsat=1.e7
+    #
+    # SECTION 3: Initial solution
+    #
+    solve init
+    save outf=mesfetex03.str
+    #
+    tonyplot  mesfetex03.str -set mesfetex03_0.set
+    #
+    # SECTION 4: Id-Vd characteristics
+    # 
+    method newton  maxtrap=6
+    #
+    output e.velocity
+    #
+    probe n.mob max dir=0  name="mux"
+    probe n.mob max dir=90 name="muy"
+    log outf=mesfetex03_1.log 
+    #
+    solve vdrain=0.0 vstep=0.05 vfinal=0.5  name=drain 
+    method newton
+    solve  vdrain=0.6 vstep=0.1 vfinal=2 name=drain 
+    save outf=mesfetex03_1.str
+
+    solve vgate=0.2
+    log outf=mesfetex03_2.log
+    solve vdrain=0.0 vstep=0.05 vfinal=0.5  name=drain 
+    method newton
+    solve  vdrain=0.6 vstep=0.1 vfinal=2 name=drain 
+    save outf=mesfetex03_2.str
+    #
+    tonyplot  mesfetex03_1.log -overlay mesfetex03_2.log  -set mesfetex03_log.set
+    #
+    quit
+
+Quittttttttttt
