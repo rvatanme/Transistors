@@ -1,4 +1,4 @@
-# Simulation of HEMT
+# Simulation of HEMT/MESFET/JFET
 
 Here, the following HEMT device is simulated using Silvaco software.
 
@@ -185,4 +185,6 @@ For MESFET simulation, the following silvaco input file was used:
     #
     quit
 
-Quittttttttttt
+Setting EVSATMOD=1 implements the GaAs carrier temperature dependent mobility model. VSATN and VSATP are the saturation velocities for electrons and holes, and TAUSN and TAUSP correspond to the electron energy relaxation times (TAUREL.EL and TAUREL.HO). The TAUMOB.EL and TAUMOB.HO parameters can be set on the energy balance MODELS statement and have the default values. The Energy Balance Transport Model allows the carrier mobility to be related to the carrier energy. This has been achieved through the homogeneous steady state energy balance relationship that pertains in the saturated velocity limit.  VSAT is the saturation velocities. 
+
+OUTPUT allows you to specify the data that will be stored in standard structure format files. The e.velocity Specifies that the total electron velocity will be included in the standard structure file.
