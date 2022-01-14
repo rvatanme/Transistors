@@ -197,4 +197,79 @@ The following IV curve for mesfet is obtained form running the mentioned silvaco
 
 The following JFET is simulated using below Silvaco input.
 
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/JFET_str.png)
+
+
+    # (c) Silvaco Inc., 2021
+    go atlas
+    #
+    # SECTION 1: Mesh spectification
+    #
+    # Define the mesh
+    #
+    mesh  space.mult=2.0
+    # 
+    x.mesh loc=0.00 spac=0.02
+    x.mesh loc=0.4 spac=0.01
+    x.mesh loc=0.8 spac=0.01
+    x.mesh loc=1.2 spac=0.02
+    #
+    y.mesh loc=0.00 spac=0.005
+    y.mesh loc=0.2 spac=0.02
+    y.mesh loc=2 spac=0.1
+    #
+    # SECTION 2: Structure and models spectifications
+    #
+    region     num=1  material=Si
+    #
+    elec       num=1  name=source x.min=0.0 y.min=0.0 x.max=0.1 y.max=0.
+    elec       num=2  name=drain  x.min=1.1 y.min=0.0 x.max=1.2 y.max=0. 
+    elec       num=3  name=gate   x.min=0.5 length=0.2
+    #
+    doping uniform conc=1.e15 p.type
+    doping uniform conc=1.e16 n.type y.min=0 y.max=1.0
+    doping uniform conc=1.e20 p.type x.min=0.5 x.max=0.7 y.min=0 y.max=0.05
+    doping uniform conc=5.e18  n.type x.left=0.  x.right=0.1 y.min=0 y.max=0.05
+    doping uniform conc=5.e18  n.type x.left=1.1 x.right=1.2 y.min=0 y.max=0.05
+    #
+    #
+    ######################################
+    #            DD calculation          #
+    ######################################
+    #
+
+    models cvt srh  print  
+ 
+    method newton gummel carriers=1 electron
+    solve init
+
+    solve vgate=-0.5
+    save outf=jfet01_0.str
+    tonyplot jfet01_0.str
+
+    solve vgate=0.0
+    save outf=jfet01_1.str
+    #tonyplot jfet01_1.str
+
+    solve vgate=0.5
+    save outf=jfet01_2.str
+    #tonyplot jfet01_2.str
+
+    solve vgate=-0.5
+    method gummel newton carriers=1 electron
+    log outf=jfet01_1.log
+    solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+
+    solve vgate=0.5
+    method gummel newton carriers=1 electron
+   log outf=jfet01_2.log
+   solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+
+   #
+   tonyplot  jfet01_1.log -overlay jfet01_2.log
+   #
+   quit
+   
+The following IV curve for JFET was obtained from running above the input file.
+
 ![]()
