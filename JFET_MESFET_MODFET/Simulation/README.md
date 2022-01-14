@@ -193,5 +193,5 @@ PROBE allows you to output the value of several distributed quantities to the lo
 
 The following IV curve for mesfet is obtained form running the mentioned silvaco input file.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/mesfet_IV.png)
 
