@@ -272,4 +272,4 @@ The following JFET is simulated using below Silvaco input.
    
 The following IV curve for JFET was obtained from running above the input file.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/IV_JFET.png)
