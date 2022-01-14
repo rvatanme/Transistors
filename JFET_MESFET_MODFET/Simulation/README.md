@@ -188,3 +188,10 @@ For MESFET simulation, the following silvaco input file was used:
 Setting EVSATMOD=1 implements the GaAs carrier temperature dependent mobility model. VSATN and VSATP are the saturation velocities for electrons and holes, and TAUSN and TAUSP correspond to the electron energy relaxation times (TAUREL.EL and TAUREL.HO). The TAUMOB.EL and TAUMOB.HO parameters can be set on the energy balance MODELS statement and have the default values. The Energy Balance Transport Model allows the carrier mobility to be related to the carrier energy. This has been achieved through the homogeneous steady state energy balance relationship that pertains in the saturated velocity limit.  VSAT is the saturation velocities. 
 
 OUTPUT allows you to specify the data that will be stored in standard structure format files. The e.velocity Specifies that the total electron velocity will be included in the standard structure file.
+
+PROBE allows you to output the value of several distributed quantities to the log file. The value at a specified location or the minimum, maximum, or integrated value within a specified area of the device will be saved to the log file at each bias or time point. PROBE is the most accurate way to determine the value of many parameters calculated by ATLAS. Parameters stored on node points in the structure files for TonyPlot are often interpolated and subject to noise. The n.mob specifies that the probe will operate on the electron mobility. The DIR [direction x(0),y(90),z] parameter should also be specified if N.MOB is used.
+
+The following IV curve for mesfet is obtained form running the mentioned silvaco input file.
+
+![]()
+
