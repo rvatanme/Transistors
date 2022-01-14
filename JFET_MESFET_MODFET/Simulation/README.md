@@ -265,10 +265,10 @@ The following JFET is simulated using below Silvaco input.
    log outf=jfet01_2.log
    solve vdrain=0 vfinal=3 vstep=0.05 name=drain
 
-   #
-   tonyplot  jfet01_1.log -overlay jfet01_2.log
-   #
-   quit
+    #
+    tonyplot  jfet01_1.log -overlay jfet01_2.log
+    #
+    quit
    
 The following IV curve for JFET was obtained from running above the input file.
 
