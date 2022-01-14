@@ -262,8 +262,8 @@ The following JFET is simulated using below Silvaco input.
 
     solve vgate=0.5
     method gummel newton carriers=1 electron
-   log outf=jfet01_2.log
-   solve vdrain=0 vfinal=3 vstep=0.05 name=drain
+    log outf=jfet01_2.log
+    solve vdrain=0 vfinal=3 vstep=0.05 name=drain
 
     #
     tonyplot  jfet01_1.log -overlay jfet01_2.log
