@@ -195,3 +195,6 @@ The following IV curve for mesfet is obtained form running the mentioned silvaco
 
 ![](https://github.com/rvatanme/Transistors/blob/main/JFET_MESFET_MODFET/Simulation/mesfet_IV.png)
 
+The following JFET is simulated using below Silvaco input.
+
+![]()
