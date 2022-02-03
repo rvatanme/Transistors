@@ -143,4 +143,4 @@ The following Gummel plot was obtained while the voltage of the emittor and coll
 
 Then using current boundary condition for the base lead, the following Ic-VCE was obtained by keeping the emittor voltage 0V and sweeping the voltage of collector from 0 to 5V.
 
-![]()
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/Ic_VEC.png)
