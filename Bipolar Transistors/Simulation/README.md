@@ -1,7 +1,7 @@
 # Simulation of a BJT 
 The following NPN BJT was simulated using Silvaco.
 
-![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/bjt_str.png)
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/Gummel_Plot.png)
 
 The silvaco input file is as following:
 
