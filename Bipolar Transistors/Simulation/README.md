@@ -1,7 +1,7 @@
 # Simulation of a BJT 
 The following NPN BJT was simulated using Silvaco.
 
-![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/Gummel_Plot.png)
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/NPN_BJT.png)
 
 The silvaco input file is as following:
 
@@ -138,3 +138,9 @@ The Newton-Richardson Method is a variant of the Newton iteration that calculate
 The "NAME" parameter is required from ramping the base voltage and the electrode name is case-sensitive.
 
 The following Gummel plot was obtained while the voltage of the emittor and collector were kept 0V and 2V, respectively and the voltage of the base was sweept from 0.3V to 1V by 0.05V step.   
+
+![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/Gummel_Plot.png)
+
+Then using current boundary condition for the base lead, the following Ic-VCE was obtained by keeping the emittor voltage 0V and sweeping the voltage of collector from 0 to 5V.
+
+![]()
