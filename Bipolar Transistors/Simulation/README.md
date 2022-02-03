@@ -1,5 +1,5 @@
 # Simulation of a BJT 
-The following BJT is simulated using Silvaco.
+The following NPN BJT was simulated using Silvaco.
 
 ![](https://github.com/rvatanme/Transistors/blob/main/Bipolar%20Transistors/Simulation/bjt_str.png)
 
@@ -135,4 +135,6 @@ statement. The current boundary conditions are described by the Kirkhoff relatio
 
 The Newton-Richardson Method is a variant of the Newton iteration that calculates a new version of the coefficient matrix only when slowing convergence demonstrates that this is necessary. An automated Newton-Richardson method is available in ATLAS, and improves performance significantly on most problems. To enable the automated Newton-Richardson Method, specify the "AUTONR" parameter of the METHOD statement.
 
-The "NAME" parameter is required from ramping the base voltage and the electrode name is case-sensitive. 
+The "NAME" parameter is required from ramping the base voltage and the electrode name is case-sensitive.
+
+The following Gummel plot was obtained while the voltage of the emittor and collector were kept 0V and 2V, respectively and the voltage of the base was sweept from 0.3V to 1V by 0.05V step.   
