@@ -37,7 +37,7 @@ The following figure shows a comparison of the charge distribution and energy-ba
 
 Since the concentration of carrier under non-equilibrium condition is govern by quasi-Fermi levels, two following assumptions are considered in order to derive the characteristics of the surface space charge; (1) the majority-carrier quasi-Fermi level E<sub>Fp</sub> is the same as that of the substrate and it does not vary with distance from the bulk to the surface (constant with x), and (2) the minority-carrier quasi-Fermi level E<sub>Fn</sub> is lowered by the drain bias by an amount dependent on the y-position. Based on these assumptions, the one-dimensional Poisson equation for the surface space-charge region at the drain end is given by:
 
-![](https://latex.codecogs.com/svg.latex?%5CLARGE%20p%3Dn_iexp%28%5Cfrac%7BE_i-E_%7BFp%7D%7D%7BkT%7D%29%20%5C%5C%5C%5C%5C%5C%20n%3Dn_iexp%28%5Cfrac%7BE_%7BFn%7D-E_i%7D%7BkT%7D%29)
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20p%3Dn_iexp%28%5Cfrac%7BE_i-E_%7BFp%7D%7D%7BkT%7D%29%20%5C%5C%5C%5C%20n%3Dn_iexp%28%5Cfrac%7BE_%7BFn%7D-E_i%7D%7BkT%7D%29)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cfrac%7Bd%5E2%5Cpsi_p%7D%7Bdx%5E2%7D%20%3D%20%5Cfrac%7Bq%7D%7B%5Cepsilon_s%7D%28N_A-p&plus;n%29%20%5C%5C%5C%5C%20p%3DN_Aexp%28-%5Cbeta%20%5Cpsi_p%29%20%5C%5C%5C%5C%20n%3Dn_%7Bp0%7Dexp%28%5Cbeta%20%5Cpsi_p%20-%20%5Cbeta%20V_D%29%20%5C%3B%5C%3B%5C%3B%5C%3B%20%5Cbeta%20%5Cequiv%20q/kT)
 
