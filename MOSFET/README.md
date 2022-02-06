@@ -148,12 +148,14 @@ To derive the I-V characteristics it is important to know the ν-ξ relationship
 
 ![](https://github.com/rvatanme/Transistors/blob/main/MOSFET/nu_xi_rela.png)
 
-### Field-Dependent Mobility: Two-Piece Linear Approximation
+#### Field-Dependent Mobility: Two-Piece Linear Approximation
 In the two-piece linear approximation, the constant-mobility model is valid up to the point when the maximum field near the drain exceeds ξ<sub>c</sub>. Conversely, Eq. 2 is valid up to a new V<sub>Dsat</sub> value which occurs earlier than the constant-mobility model, so the only task is to find the new V<sub>Dsat</sub> which is given by:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20C_%7Box%7D%28V_G-V_T-M%5CDelta%5Cpsi_i%28y%29%29)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%28y%29%3DZ%7CQ_n%28y%29%7C%5Cnu%28y%29)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%28y%29%3DZC_%7Box%7D%5Cmu_n%5Cxi%20%28V_G-V_T-M%5CDelta%20%5Cpsi_i%29%20%5C%5C%5C%5C%20I_%7BDsat%7D%3DZC_%7Box%7D%5Cmu_n%5Cxi_c%20%28V_G-V_T-M%5CDelta%20V_%7BDsat%7D%29)
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7BDsat%7D%20%3D%20L%5Cxi_c%20&plus;%20%5Cfrac%7BV_G-V_T%7D%7BM%7D%20-%20%5Csqrt%7B%28L%5Cxi_c%29%5E2%20&plus;%20%28%5Cfrac%7BV_G-V_T%7D%7BM%7D%29%5E2%7D%20%5C%5C%5C%5C%5C%5C%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZC_%7Box%7D%5Cmu_n%7D%7BL%7D%28V_G-V_T-%5Cfrac%7BMV_%7BDsat%7D%7D%7B2%7D%29V_%7BDsat%7D)
 
