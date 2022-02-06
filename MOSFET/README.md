@@ -153,15 +153,28 @@ In the two-piece linear approximation, the constant-mobility model is valid up t
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20C_%7Box%7D%28V_G-V_T-M%5CDelta%5Cpsi_i%28y%29%29)
 
+
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%28y%29%3DZ%7CQ_n%28y%29%7C%5Cnu%28y%29)
+
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%28y%29%3DZC_%7Box%7D%5Cmu_n%5Cxi%20%28V_G-V_T-M%5CDelta%20%5Cpsi_i%29%20%5C%5C%5C%5C%20I_%7BDsat%7D%3DZC_%7Box%7D%5Cmu_n%5Cxi_c%20%28V_G-V_T-M%5CDelta%20V_%7BDsat%7D%29)
 
+Here we need one more equation to solve for two unknowns. Using the following equations, we obtain an expression similar to linear region of IV curve given as:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%28y%29%7C%20%3D%20C_%7Box%7D%28V_G-V_T-M%5CDelta%5Cpsi_i%28y%29%29)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_D%3D%5Cfrac%7BZ%7D%7BL%7D%5Cint_0%5EL%7CQ_n%28y%29%7C%5Cnu%28y%29dy)
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%3D%5Cfrac%7BZC_%7Box%7D%5Cmu_n%7D%7BL%7D%28V_G-V_T-%5Cfrac%7BMV_%7BDsat%7D%7D%7B2%7D%29V_%7BDsat%7D)
+
+By solving for V<sub>Dsat</sub>, we get:
+
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20V_%7BDsat%7D%20%3D%20L%5Cxi_c%20&plus;%20%5Cfrac%7BV_G-V_T%7D%7BM%7D%20-%20%5Csqrt%7B%28L%5Cxi_c%29%5E2%20&plus;%20%28%5Cfrac%7BV_G-V_T%7D%7BM%7D%29%5E2%7D%20%5C%5C%5C%5C%5C%5C%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZC_%7Box%7D%5Cmu_n%7D%7BL%7D%28V_G-V_T-%5Cfrac%7BMV_%7BDsat%7D%7D%7B2%7D%29V_%7BDsat%7D)
 
-Since VDsat here is always smaller than (VG - VT)/M, the field-dependent mobility always gives a lower I<sub>Dsat</sub>.
+Since V<sub>Dsat</sub> here is always smaller than (V<sub>G</sub> - V<sub>T</sub>)/M, the field-dependent mobility always gives a lower I<sub>Dsat</sub>.
 
-Field-Dependent Mobility: Empirical Formula. Next we consider the ν-ξ relationship of Eq. 4 with n = 1. Substituting this into I<sub>D</sub> integral equation gives:
+#### Field-Dependent Mobility: Empirical Formula. 
+Next we consider the ν-ξ relationship of Eq. 4 with n = 1. Substituting this into I<sub>D</sub> integral equation gives:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BD%7D%20%3D%20%5Cfrac%7BZC_%7Box%7D%5Cmu_n%5Cxi_c%7D%7BL%5Cxi_c&plus;V_D%7D%28V_G-V_T-%5Cfrac%7BMV_%7BD%7D%7D%7B2%7D%29V_%7BD%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BDsat%7D%20%3D%20L%5Cxi_c%5B%5Csqrt%7B1&plus;%5Cfrac%7B2%28V_G-V_T%29%7D%7BML%5Cxi_c%7D%7D-1%5D)
 
