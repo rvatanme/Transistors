@@ -173,14 +173,15 @@ By solving for V<sub>Dsat</sub>, we get:
 
 Since V<sub>Dsat</sub> here is always smaller than (V<sub>G</sub> - V<sub>T</sub>)/M, the field-dependent mobility always gives a lower I<sub>Dsat</sub>.
 
-#### Field-Dependent Mobility: Empirical Formula. 
+#### Field-Dependent Mobility: Empirical Formula 
 Next we consider the ν-ξ relationship of Eq. 4 with n = 1. Substituting this into I<sub>D</sub> integral equation gives:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BD%7D%20%3D%20%5Cfrac%7BZC_%7Box%7D%5Cmu_n%5Cxi_c%7D%7BL%5Cxi_c&plus;V_D%7D%28V_G-V_T-%5Cfrac%7BMV_%7BD%7D%7D%7B2%7D%29V_%7BD%7D%20%5C%5C%5C%5C%5C%5C%20V_%7BDsat%7D%20%3D%20L%5Cxi_c%5B%5Csqrt%7B1&plus;%5Cfrac%7B2%28V_G-V_T%29%7D%7BML%5Cxi_c%7D%7D-1%5D)
 
 V<sub>Dsat</sub>, has been obtained by setting dI/dV = 0. Again, once V<sub>Dsat</sub> is known, I<sub>Dsat</sub>, can be calculated from the above equation. 
 
-Velocity Saturation. Using either assumption described above, it is interesting and insightful to look at the extreme case of short-channel devices where velocity saturation completely limits the current flow. In such case we set ν = ν<sub>s</sub>, and consequently Q<sub>n</sub> has to be fixed for current continuity, and is approximated to be (VG - VT)Cox. Then ID integrand equation becomes:
+#### Velocity Saturation. 
+Using either assumption described above, it is interesting and insightful to look at the extreme case of short-channel devices where velocity saturation completely limits the current flow. In such case we set ν = ν<sub>s</sub>, and consequently Q<sub>n</sub> has to be fixed for current continuity, and is approximated to be (VG - VT)Cox. Then ID integrand equation becomes:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20I_%7BDsat%7D%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%5Cint_%7B0%7D%5E%7BL%7D%7CQ_n%28y%29%7C%5Cnu%28y%29dy%20%3D%20%5Cfrac%7BZ%7D%7BL%7D%7CQ_n%7C%5Cnu_sL%20%5C%5C%5C%5C%5C%5C%20%3DZ%28V_G-V_T%29C_%7Box%7D%5Cnu_s%20%5C%5C%5C%5C%20g_m%5Cequiv%20%5Cfrac%7BdI_%7BDsat%7D%7D%7BdV_G%7D%20%3D%20ZC_%7Box%7D%5Cnu_s)
 
