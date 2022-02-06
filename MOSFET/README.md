@@ -45,7 +45,23 @@ Conceptually the charge due to minority carriers within the inversion layer, is 
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%7C%20%3D%20q%5Cint_%7B0%7D%5E%7Bx_i%7Dn%28x%29dx%20%3D%20q%5Cint_%7B%5Cpsi_s%7D%5E%7B%5Cpsi_B%7D%20%5Cfrac%7Bn%28%5Cpsi_p%29d%5Cpsi_p%7D%7Bd%5Cpsi_p/dx%7D%20%5C%5C%5C%5C%5C%5C%20q%5Cint_%7B%5Cpsi_s%7D%5E%7B%5Cpsi_p%7D%5Cfrac%7Bn_%7Bp0%7Dexp%28%5Cbeta%5Cpsi_p-%5Cbeta%20V_D%29d%5Cpsi_p%7D%7B%28%5Csqrt2kT/qL_D%29F%28%5Cbeta%5Cpsi_p%2CV_D%2Cn_%7Bp0%7D/p_%7Bp0%7D%29%7D%20%5C%5C%5C%5C%5C%5C%20F%28%5Cbeta%5Cpsi_p%2CV_D%2Cn_%7Bp0%7D/p_%7Bp0%7D%29%5Cequiv%20%5C%5C%5C%5C%20%5Csqrt%7Bexp%28-%5Cbeta%5Cpsi_p%29&plus;%5Cbeta%5Cpsi_p-1&plus;%5Cfrac%7Bn_%7Bp0%7D%7D%7Bp_%7Bp0%7D%7Dexp%28-%5Cbeta%20V_D%29%5Bexp%28%5Cbeta%5Cpsi_p%29-%5Cbeta%5Cpsi_pexp%28%5Cbeta%20V_D%29&plus;1%5D%7D)
 
-where x<sub>i</sub> denotes the point at which qψ<sub>p</sub>(x) = E<sub>Fn</sub> - E<sub>i</sub>(x) = qψ<sub>B</sub>. For the practical doping ranges in silicon, the value ofx, is quite small, of the order of 3 to 30 nm. After some mathematical simplification, the inversion charge Q<sub>s</sub> at the drain end as a function of surface potential can be given by:
+where x<sub>i</sub> denotes the point at which qψ<sub>p</sub>(x) = E<sub>Fn</sub> - E<sub>i</sub>(x) = qψ<sub>B</sub>. For the practical doping ranges in silicon, the value of x, is quite small, of the order of 3 to 30 nm. The above equation is the exact formulation, but can only be evaluated numerically. To get an analytical solution we follow the same approach as in MOS analysis. The surface electric field in the x-direction at the drain end is given by: 
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%5Cxi_s%3D-%5Cfrac%7Bd%5Cpsi_p%7D%7Bdx%7D%7C_%7Bx%3D0%7D%3D%5Cpm%20%5Cfrac%7B%5Csqrt2%20kT%7D%7BqL_D%7DF%28%5Cbeta%20%5Cpsi_s%2CV_D%2C%5Cfrac%7Bn_%7Bp0%7D%7D%7Bn_%7Bp0%7D%7D%29)
+
+and the total semiconductor surface charge is then obtained from Gauss' law:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_s%3D%5Cepsilon_s%5Cxi_s%3D%5Cpm%20%5Cfrac%7B%5Csqrt2%20%5Cepsilon_skT%7D%7BqL_D%7DF%28%5Cbeta%20%5Cpsi_s%2CV_D%2C%5Cfrac%7Bn_%7Bp0%7D%7D%7Bn_%7Bp0%7D%7D%29%20%5C%5C%5C%5C%20L_D%5Cequiv%20%5Csqrt%7B%5Cfrac%7BkT%5Cepsilon_s%7D%7BN_Aq%5E2%7D%7D)
+
+where L<sub>D</sub> is the Debye length. The inversion charge per unit area Q<sub>n</sub> after strong inversion is given by:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_n%3DQ_s-Q_B)
+
+where the depletion bulk charge is:
+
+![](https://latex.codecogs.com/svg.latex?%5CLARGE%20Q_B%3DqN_AW_D%3D%5Csqrt%7B2qN_A%5Cepsilon_s%28V_D&plus;2%5Cpsi_B%29%7D)
+
+After some mathematical simplification, the inversion charge Q<sub>s</sub> at the drain end as a function of surface potential can be given by:
 
 ![](https://latex.codecogs.com/svg.latex?%5CLARGE%20%7CQ_n%7C%3D%5Csqrt2qN_AL_D%5B%5Csqrt%7B%5Cbeta%5Cpsi_s&plus;%5Cfrac%7Bn_%7Bp0%7D%7D%7Bp_%7Bp0%7D%7Dexp%28%5Cbeta%5Cpsi_s-%5Cbeta%20V_D%29%7D&plus;%5Csqrt%7B%5Cbeta%5Cpsi_s%7D%5D)
 
